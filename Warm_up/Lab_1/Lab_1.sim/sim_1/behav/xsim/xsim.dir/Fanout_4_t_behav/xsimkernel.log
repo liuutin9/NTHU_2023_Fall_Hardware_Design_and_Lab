@@ -1,0 +1,7 @@
+Running: xsim.dir/Fanout_4_t_behav/xsimk.exe -simmode gui -wdb Fanout_4_t_behav.wdb -simrunnum 0 -socket 65020
+Design successfully loaded
+Design Loading Memory Usage: 6812 KB (Peak: 6812 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7400 KB (Peak: 7400 KB)
+Simulation CPU Usage: 0 ms
