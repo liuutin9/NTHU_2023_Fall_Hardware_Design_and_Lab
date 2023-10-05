@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement/Lab2_NAND_Implement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NAND_Implement
+INFO: [VRFC 10-311] analyzing module Mux_2to1
+INFO: [VRFC 10-311] analyzing module Mux_4to1
+INFO: [VRFC 10-311] analyzing module Mux_8to1
+INFO: [VRFC 10-311] analyzing module Not
+INFO: [VRFC 10-311] analyzing module And
+INFO: [VRFC 10-311] analyzing module Or
+INFO: [VRFC 10-311] analyzing module Nor
+INFO: [VRFC 10-311] analyzing module Xor
+INFO: [VRFC 10-311] analyzing module Xnor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement/NAND_Implement_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NAND_Implement_t

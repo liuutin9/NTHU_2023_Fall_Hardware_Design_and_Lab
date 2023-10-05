@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Half_Adder
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-311] analyzing module Not
+INFO: [VRFC 10-311] analyzing module And
+INFO: [VRFC 10-311] analyzing module Or
+INFO: [VRFC 10-311] analyzing module Xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Adders_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adders_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

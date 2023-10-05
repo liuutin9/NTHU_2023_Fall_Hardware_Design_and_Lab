@@ -6,24 +6,33 @@ input control;
 output [4-1:0] out1, out2, out1_extra, out2_extra;
 
 wire not_control;
-wire [3:0] in1_out1, in1_out2, in2_out1, in2_out2;
+wire [3:0] in1_out1, in1_out2, in2_out1, in2_out2, out1_tmp, out2_tmp;
 
 not(not_control, control);
 
-and(out1_extra[3], 1'b1, out1[3]);
-and(out1_extra[2], 1'b1, out1[2]);
-and(out1_extra[1], 1'b1, out1[1]);
-and(out1_extra[0], 1'b1, out1[0]);
-
-and(out2_extra[3], 1'b1, out2[3]);
-and(out2_extra[2], 1'b1, out2[2]);
-and(out2_extra[1], 1'b1, out2[1]);
-and(out2_extra[0], 1'b1, out2[0]);
+Fanout_1to2_4bits FO1(out1, out1_extra, out1_tmp);
+Fanout_1to2_4bits FO2(out2, out2_extra, out2_tmp);
 
 DMux_1to2_4bits DMux1(in1, control, in1_out1, in1_out2);
 DMux_1to2_4bits DMux2(in2, not_control, in2_out1, in2_out2);
-Mux_2to1_4bits Mux1(in1_out1, in2_out1, control, out1);
-Mux_2to1_4bits Mux2(in1_out2, in2_out2, not_control, out2);
+Mux_2to1_4bits Mux1(in1_out1, in2_out1, control, out1_tmp);
+Mux_2to1_4bits Mux2(in1_out2, in2_out2, not_control, out2_tmp);
+
+endmodule
+
+module Fanout_1to2_4bits(out0, out1, in);
+    input[3:0] in;
+    output[3:0] out0 ,out1;
+
+    and(out0[3], 1'b1, in[3]);
+    and(out0[2], 1'b1, in[2]);
+    and(out0[1], 1'b1, in[1]);
+    and(out0[0], 1'b1, in[0]);
+
+    and(out1[3], 1'b1, in[3]);
+    and(out1[2], 1'b1, in[2]);
+    and(out1[1], 1'b1, in[1]);
+    and(out1[0], 1'b1, in[0]);
 
 endmodule
 
