@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Carry_Look_Ahead_Adder_8bit
+INFO: [VRFC 10-311] analyzing module CLA_Generator_2bits
+INFO: [VRFC 10-311] analyzing module CLA_Generator_4bits
+INFO: [VRFC 10-311] analyzing module PGS_Generator
+INFO: [VRFC 10-311] analyzing module CarryCounter0
+INFO: [VRFC 10-311] analyzing module CarryCounter1
+INFO: [VRFC 10-311] analyzing module CarryCounter2
+INFO: [VRFC 10-311] analyzing module CarryCounter3
+INFO: [VRFC 10-311] analyzing module Half_Adder
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-311] analyzing module Not
+INFO: [VRFC 10-311] analyzing module Copy
+INFO: [VRFC 10-311] analyzing module And
+INFO: [VRFC 10-311] analyzing module And_3to1
+INFO: [VRFC 10-311] analyzing module And_4to1
+INFO: [VRFC 10-311] analyzing module And_5to1
+INFO: [VRFC 10-311] analyzing module Nand
+INFO: [VRFC 10-311] analyzing module Or
+INFO: [VRFC 10-311] analyzing module Or_3to1
+INFO: [VRFC 10-311] analyzing module Or_4to1
+INFO: [VRFC 10-311] analyzing module Or_5to1
+INFO: [VRFC 10-311] analyzing module Nor
+INFO: [VRFC 10-311] analyzing module Xor
+INFO: [VRFC 10-311] analyzing module Xnor

@@ -5,38 +5,89 @@ module Carry_Look_Ahead_Adder_8bit(a, b, c0, s, c8);
     input c0;
     output [8-1:0] s;
     output c8;
+    wire c1, c2, c3, c4, c5, c6, c7;
+    wire [7:0] p, g;
+    wire [3:0] p03, g03, p47, g47;
+
+    PGS_Generator PGS0(.p(p[0]), .g(g[0]), .s(s[0]), .a(a[0]), .b(b[0]), .c(c0));
+    PGS_Generator PGS1(.p(p[1]), .g(g[1]), .s(s[1]), .a(a[1]), .b(b[1]), .c(c1));
+    PGS_Generator PGS2(.p(p[2]), .g(g[2]), .s(s[2]), .a(a[2]), .b(b[2]), .c(c2));
+    PGS_Generator PGS3(.p(p[3]), .g(g[3]), .s(s[3]), .a(a[3]), .b(b[3]), .c(c3));
+
+    CLA_Generator_4bits CLAG403(.pout(p03), .gout(g03), .c1(c1), .c2(c2), .c3(c3), .pin(p[3:0]), .gin(g[3:0]), .c0(c0));
+
+    PGS_Generator PGS4(.p(p[4]), .g(g[4]), .s(s[4]), .a(a[4]), .b(b[4]), .c(c4));
+    PGS_Generator PGS5(.p(p[5]), .g(g[5]), .s(s[5]), .a(a[5]), .b(b[5]), .c(c5));
+    PGS_Generator PGS6(.p(p[6]), .g(g[6]), .s(s[6]), .a(a[6]), .b(b[6]), .c(c6));
+    PGS_Generator PGS7(.p(p[7]), .g(g[7]), .s(s[7]), .a(a[7]), .b(b[7]), .c(c7));
+
+    CLA_Generator_4bits CLAG447(.pout(p47), .gout(g47), .c1(c5), .c2(c6), .c3(c7), .pin(p[7:4]), .gin(g[7:4]), .c0(c4));
+
+    CLA_Generator_2bits CLAG2B(.c0(c0), .p03(p[3:0]), .g03(g[3:0]), .c4(c4), .p47(p[7:4]), .g47(g[7:4]), .c8(c8));
 
 endmodule
 
-module CLA_Generator_4bits(a, b, cin, cout);
+module CLA_Generator_2bits(c0, p03, g03, c4, p47, g47, c8);
+    input [3:0] p03, g03, p47, g47;
+    input c0, c4;
+    output c8;
+    wire c4;
+
+    CarryCounter3 CC04(.c4(c4), .p(p03), .g(g03), .c0(c0));
+    CarryCounter3 CC48(.c4(c8), .p(p47), .g(g47), .c0(c4));
+
+endmodule
+
+module CLA_Generator_4bits(pout, gout, c1, c2, c3, pin, gin, c0);
+    input [3:0] pin, gin;
+    input c0;
+    output [3:0] pout, gout;
+    output c1, c2, c3;
+
+    CarryCounter0 CC0(.c1(c1), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
+    CarryCounter1 CC1(.c2(c2), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
+    CarryCounter2 CC2(.c3(c3), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
+
+    And AndP3(.out(pout[3]), .a(pin[3]), .b(1));
+    And AndP2(.out(pout[2]), .a(pin[2]), .b(1));
+    And AndP1(.out(pout[1]), .a(pin[1]), .b(1));
+    And AndP0(.out(pout[0]), .a(pin[0]), .b(1));
+
+    And AndG3(.out(gout[3]), .a(gin[3]), .b(1));
+    And AndG2(.out(gout[2]), .a(gin[2]), .b(1));
+    And AndG1(.out(gout[1]), .a(gin[1]), .b(1));
+    And AndG0(.out(gout[0]), .a(gin[0]), .b(1));
+
+endmodule
+
+module PGS_Generator(p, g, s, a, b, c);
+    input a, b, c;
+    output p, g, s;
+    wire tmp;
+
+    Or P(.out(p), .a(a), .b(b));
+    And G(.out(g), .a(a), .b(b));
+    Xor Tmp(.out(tmp), .a(a), .b(b));
+    Xor S(.out(s), .a(tmp), .b(c));
+
+endmodule
+
+module CarryCounter0(c1, p, g, c0);
     input [3:0] p, g;
-    input cin;
-    output cout;
-
-endmodule
-
-module CarryCounter0(c1, a0, b0, c0);
-    input a0, b0, ci0;
+    input c0;
     output c1;
-    wire p0, g0, p0_and_c0;
+    wire p0_and_c0;
 
-    Or P0(.out(p0), .a(a0), .b(b0));
-    And G0(.out(g0), .a(a0), .b(b0));
-
-    And P0AndC0(.out(p0_and_c0), .a(p0), .b(c0));
-    Or OrOut(.out(c1), .a(p0_and_c0), .b(g0));
+    And P0AndC0(.out(p0_and_c0), .a(p[0]), .b(c0));
+    Or OrOut(.out(c1), .a(p0_and_c0), .b(g[0]));
 
 endmodule
 
-module CarryCounter1(c2, a0, b0, a1, b1, c0);
-    input a0, b0, a1, b1, c0;
+module CarryCounter1(c2, p, g, c0);
+    input [3:0] p, g;
+    input c0;
     output c2;
-    wire [1:0] p, g, tmp;
-
-    Or P0(.out(p[0]), .a(a0), .b(b0));
-    And G0(.out(g[0]), .a(a0), .b(b0));
-    Or P1(.out(p[1]), .a(a1), .b(b1));
-    And G1(.out(g[1]), .a(a1), .b(b1));
+    wire [1:0] tmp;
 
     And AndTmp0(.out(tmp[0]), .a(p[1]), .b(g[0]));
     And_3to1 AndTmp1(.out(tmp[1]), .a(p[1]), .b(p[0]), .c(c0));
@@ -45,17 +96,11 @@ module CarryCounter1(c2, a0, b0, a1, b1, c0);
 
 endmodule
 
-module CarryCounter2(c3, a0, b0, a1, b1, a2, b2, c0);
-    input a0, b0, a1, b1, a2, b2, c0;
+module CarryCounter2(c3, p, g, c0);
+    input [3:0] p, g;
+    input c0;
     output c3;
-    wire [2:0] p, g, tmp;
-
-    Or P0(.out(p[0]), .a(a0), .b(b0));
-    And G0(.out(g[0]), .a(a0), .b(b0));
-    Or P1(.out(p[1]), .a(a1), .b(b1));
-    And G1(.out(g[1]), .a(a1), .b(b1));
-    Or P2(.out(p[2]), .a(a2), .b(b2));
-    And G2(.out(g[2]), .a(a2), .b(b2));
+    wire [2:0] tmp;
 
     And AndTmp0(.out(tmp[0]), .a(p[2]), .b(g[1]));
     And_3to1 AndTmp1(.out(tmp[1]), .a(p[2]), .b(p[1]), .c(g[0]));
@@ -65,19 +110,11 @@ module CarryCounter2(c3, a0, b0, a1, b1, a2, b2, c0);
 
 endmodule
 
-module CarryCounter3(c4, a0, b0, a1, b1, a2, b2, a3, b3, c0);
-    input a0, b0, a1, b1, a2, b2, a3, b3, c0;
+module CarryCounter3(c4, p, g, c0);
+    input [3:0] p, g;
+    input c0;
     output c4;
-    wire [3:0] p, g, tmp;
-
-    Or P0(.out(p[0]), .a(a0), .b(b0));
-    And G0(.out(g[0]), .a(a0), .b(b0));
-    Or P1(.out(p[1]), .a(a1), .b(b1));
-    And G1(.out(g[1]), .a(a1), .b(b1));
-    Or P2(.out(p[2]), .a(a2), .b(b2));
-    And G2(.out(g[2]), .a(a2), .b(b2));
-    Or P3(.out(p[3]), .a(a3), .b(b3));
-    And G3(.out(g[3]), .a(a3), .b(b3));
+    wire [3:0] tmp;
 
     And AndTmp0(.out(tmp[0]), .a(p[3]), .b(g[2]));
     And_3to1 AndTmp1(.out(tmp[1]), .a(p[3]), .b(p[2]), .c(g[1]));

@@ -1,26 +1,23 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/10/06 08:47:11
-// Design Name: 
-// Module Name: Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t;
+    reg [7:0] a = 8'b00001010;
+    reg [7:0] b = 8'b00001011;
+    reg c0 = 1'b0;
+    wire [7:0] s;
+    wire c8;
 
-module Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t(
-
+    Carry_Look_Ahead_Adder_8bit CLAA8(
+        .a(a),
+        .b(b),
+        .c0(c0),
+        .s(s),
+        .c8(c8)
     );
+
+    initial begin
+        #1 c0 = 1;
+        #1 $finish;
+    end
+
 endmodule
