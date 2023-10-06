@@ -14,16 +14,15 @@ module Carry_Look_Ahead_Adder_8bit(a, b, c0, s, c8);
     PGS_Generator PGS2(.p(p[2]), .g(g[2]), .s(s[2]), .a(a[2]), .b(b[2]), .c(c2));
     PGS_Generator PGS3(.p(p[3]), .g(g[3]), .s(s[3]), .a(a[3]), .b(b[3]), .c(c3));
 
-    CLA_Generator_4bits CLAG403(.pout(p03), .gout(g03), .c1(c1), .c2(c2), .c3(c3), .pin(p[3:0]), .gin(g[3:0]), .c0(c0));
-
     PGS_Generator PGS4(.p(p[4]), .g(g[4]), .s(s[4]), .a(a[4]), .b(b[4]), .c(c4));
     PGS_Generator PGS5(.p(p[5]), .g(g[5]), .s(s[5]), .a(a[5]), .b(b[5]), .c(c5));
     PGS_Generator PGS6(.p(p[6]), .g(g[6]), .s(s[6]), .a(a[6]), .b(b[6]), .c(c6));
     PGS_Generator PGS7(.p(p[7]), .g(g[7]), .s(s[7]), .a(a[7]), .b(b[7]), .c(c7));
 
+    CLA_Generator_4bits CLAG403(.pout(p03), .gout(g03), .c1(c1), .c2(c2), .c3(c3), .pin(p[3:0]), .gin(g[3:0]), .c0(c0));
     CLA_Generator_4bits CLAG447(.pout(p47), .gout(g47), .c1(c5), .c2(c6), .c3(c7), .pin(p[7:4]), .gin(g[7:4]), .c0(c4));
 
-    CLA_Generator_2bits CLAG2B(.c0(c0), .p03(p[3:0]), .g03(g[3:0]), .c4(c4), .p47(p[7:4]), .g47(g[7:4]), .c8(c8));
+    CLA_Generator_2bits CLAG2B(.c0(c0), .p03(p03), .g03(g03), .c4(c4), .p47(p47), .g47(g47), .c8(c8));
 
 endmodule
 
@@ -119,42 +118,9 @@ module CarryCounter3(c4, p, g, c0);
     And AndTmp0(.out(tmp[0]), .a(p[3]), .b(g[2]));
     And_3to1 AndTmp1(.out(tmp[1]), .a(p[3]), .b(p[2]), .c(g[1]));
     And_4to1 AndTmp2(.out(tmp[2]), .a(p[3]), .b(p[2]), .c(p[1]), .d(g[0]));
-    And_5to1 AndTmp3(.out(tmp[2]), .a(p[3]), .b(p[2]), .c(p[1]), .d(p[0]), .e(c0));
+    And_5to1 AndTmp3(.out(tmp[3]), .a(p[3]), .b(p[2]), .c(p[1]), .d(p[0]), .e(c0));
 
     Or_5to1 OrOut(.out(c4), .a(tmp[0]), .b(tmp[1]), .c(tmp[2]), .d(tmp[3]), .e(g[3]));
-
-endmodule
-
-module Half_Adder(a, b, cout, sum);
-    input a, b;
-    output cout, sum;
-
-    Xor Xor(.out(sum), .a(a), .b(b));
-    And And(.out(cout), .a(a), .b(b));
-
-endmodule
-
-module Full_Adder (a, b, cin, cout, sum);
-    input a, b, cin;
-    output cout, sum;
-    wire a_xor_b;
-
-    Majority FullCarryOut(.a(a), .b(b), .c(cin), .out(cout));
-    Xor AXorB(.out(a_xor_b), .a(a), .b(b));
-    Xor FullSum(.out(sum), .a(a_xor_b), .b(cin));
-
-endmodule
-
-module Majority(a, b, c, out);
-    input a, b, c;
-    output out;
-    wire a_and_b, a_and_c, b_and_c, tmp_or;
-
-    And AAndB(.out(a_and_b), .a(a), .b(b));
-    And AAndC(.out(a_and_c), .a(a), .b(c));
-    And BAndC(.out(b_and_c), .a(b), .b(c));
-    Or TmpOr(.out(tmp_or), .a(a_and_b), .b(a_and_c));
-    Or Out(.out(out), .a(tmp_or), .b(b_and_c));
 
 endmodule
 
@@ -163,14 +129,6 @@ module Not(out, in);
     output out;
 
     nand(out, in, in);
-
-endmodule
-
-module Copy(out, in);
-    input in;
-    output out;
-
-    And And(.out(out), .a(in), .b(1));
 
 endmodule
 
@@ -265,16 +223,6 @@ module Or_5to1(out, a, b, c, d, e);
 
 endmodule
 
-module Nor(out, a, b);
-    input a, b;
-    output out;
-    wire a_or_b;
-
-    Or Or(.out(a_or_b), .a(a), .b(b));
-    Not Not(.out(out), .in(a_or_b));
-
-endmodule
-
 module Xor(out, a, b);
     input a, b;
     output out;
@@ -287,15 +235,5 @@ module Xor(out, a, b);
     And A_AND_NB(.out(a_and_nb), .a(a), .b(not_b));
 
     Or Or(.out(out), .a(na_and_b), .b(a_and_nb));
-
-endmodule
-
-module Xnor(out, a, b);
-    input a, b;
-    output out;
-    wire a_xor_b;
-
-    Xor Xor(.out(a_xor_b), .a(a), .b(b));
-    Not Not(.out(out), .in(a_xor_b));
 
 endmodule

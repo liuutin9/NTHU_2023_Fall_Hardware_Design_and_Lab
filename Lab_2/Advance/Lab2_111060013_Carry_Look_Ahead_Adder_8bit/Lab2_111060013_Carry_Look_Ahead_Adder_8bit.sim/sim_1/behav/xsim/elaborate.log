@@ -1,19 +1,40 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7c2d31dcb4164996a38ac3eae70b8ef0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Full_Adder_behav xil_defaultlib.Full_Adder xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7c2d31dcb4164996a38ac3eae70b8ef0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav xil_defaultlib.Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:50]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:51]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:52]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:57]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:58]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Not
-Compiling module xil_defaultlib.And
 Compiling module xil_defaultlib.Nand
 Compiling module xil_defaultlib.Or
-Compiling module xil_defaultlib.Majority
+Compiling module xil_defaultlib.And
 Compiling module xil_defaultlib.Xor
-Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.PGS_Generator
+Compiling module xil_defaultlib.CarryCounter0
+Compiling module xil_defaultlib.And_3to1
+Compiling module xil_defaultlib.Or_3to1
+Compiling module xil_defaultlib.CarryCounter1
+Compiling module xil_defaultlib.And_4to1
+Compiling module xil_defaultlib.Or_4to1
+Compiling module xil_defaultlib.CarryCounter2
+Compiling module xil_defaultlib.CLA_Generator_4bits
+Compiling module xil_defaultlib.And_5to1
+Compiling module xil_defaultlib.Or_5to1
+Compiling module xil_defaultlib.CarryCounter3
+Compiling module xil_defaultlib.CLA_Generator_2bits
+Compiling module xil_defaultlib.Carry_Look_Ahead_Adder_8bit
+Compiling module xil_defaultlib.Lab2_111060013_Carry_Look_Ahead_...
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot Full_Adder_behav
+Built simulation snapshot Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav
