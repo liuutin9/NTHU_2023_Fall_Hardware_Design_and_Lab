@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Oct  7 00:02:53 2023
+# Process ID: 11544
+# Current directory: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.sim/sim_1/behav/xsim/xsim.dir/Exhausted_Testing_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.sim/sim_1/behav/xsim/xsim.dir/Exhausted_Testing_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct  7 00:02:54 2023...

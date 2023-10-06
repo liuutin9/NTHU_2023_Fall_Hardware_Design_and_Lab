@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Ripple_Carry_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ripple_Carry_Adder
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Exhausted_Testing/Lab2_111060013_Exhausted_Testing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exhausted_Testing
