@@ -4,14 +4,6 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7c2d31dcb4
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:50]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:51]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:52]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:53]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:55]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:56]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:57]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'b' [C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v:58]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

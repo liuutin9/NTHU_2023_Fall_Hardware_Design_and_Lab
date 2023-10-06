@@ -22,18 +22,19 @@ module Carry_Look_Ahead_Adder_8bit(a, b, c0, s, c8);
     CLA_Generator_4bits CLAG403(.pout(p03), .gout(g03), .c1(c1), .c2(c2), .c3(c3), .pin(p[3:0]), .gin(g[3:0]), .c0(c0));
     CLA_Generator_4bits CLAG447(.pout(p47), .gout(g47), .c1(c5), .c2(c6), .c3(c7), .pin(p[7:4]), .gin(g[7:4]), .c0(c4));
 
-    CLA_Generator_2bits CLAG2B(.c0(c0), .p03(p03), .g03(g03), .c4(c4), .p47(p47), .g47(g47), .c8(c8));
+    CLA_Generator_2bits CLAG2(.c0(c0), .p03(p03), .g03(g03), .c4(c4), .p47(p47), .g47(g47), .c8(c8));
 
 endmodule
 
 module CLA_Generator_2bits(c0, p03, g03, c4, p47, g47, c8);
     input [3:0] p03, g03, p47, g47;
-    input c0, c4;
-    output c8;
-    wire c4;
+    input c0;
+    output c8, c4;
+    wire tmp_c4;
 
-    CarryCounter3 CC04(.c4(c4), .p(p03), .g(g03), .c0(c0));
-    CarryCounter3 CC48(.c4(c8), .p(p47), .g(g47), .c0(c4));
+    And Copy(.out(c4), .a(tmp_c4), .b(1'b1));
+    CarryCounter3 CC04(.c4(tmp_c4), .p(p03), .g(g03), .c0(c0));
+    CarryCounter3 CC48(.c4(c8), .p(p47), .g(g47), .c0(tmp_c4));
 
 endmodule
 
@@ -47,15 +48,15 @@ module CLA_Generator_4bits(pout, gout, c1, c2, c3, pin, gin, c0);
     CarryCounter1 CC1(.c2(c2), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
     CarryCounter2 CC2(.c3(c3), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
 
-    And AndP3(.out(pout[3]), .a(pin[3]), .b(1));
-    And AndP2(.out(pout[2]), .a(pin[2]), .b(1));
-    And AndP1(.out(pout[1]), .a(pin[1]), .b(1));
-    And AndP0(.out(pout[0]), .a(pin[0]), .b(1));
+    And AndP3(.out(pout[3]), .a(pin[3]), .b(1'b1));
+    And AndP2(.out(pout[2]), .a(pin[2]), .b(1'b1));
+    And AndP1(.out(pout[1]), .a(pin[1]), .b(1'b1));
+    And AndP0(.out(pout[0]), .a(pin[0]), .b(1'b1));
 
-    And AndG3(.out(gout[3]), .a(gin[3]), .b(1));
-    And AndG2(.out(gout[2]), .a(gin[2]), .b(1));
-    And AndG1(.out(gout[1]), .a(gin[1]), .b(1));
-    And AndG0(.out(gout[0]), .a(gin[0]), .b(1));
+    And AndG3(.out(gout[3]), .a(gin[3]), .b(1'b1));
+    And AndG2(.out(gout[2]), .a(gin[2]), .b(1'b1));
+    And AndG1(.out(gout[1]), .a(gin[1]), .b(1'b1));
+    And AndG0(.out(gout[0]), .a(gin[0]), .b(1'b1));
 
 endmodule
 
