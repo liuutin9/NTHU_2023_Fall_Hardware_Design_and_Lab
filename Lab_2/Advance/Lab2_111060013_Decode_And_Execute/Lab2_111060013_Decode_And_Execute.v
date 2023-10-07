@@ -4,18 +4,7 @@ module Decode_And_Execute(rs, rt, sel, rd);
     input [4-1:0] rs, rt;
     input [3-1:0] sel;
     output [4-1:0] rd;
-    wire [7:0] SIG;
     wire [3:0] sub000, add001, or010, and011, rs100, ls101, clt110, ceq111;
-    wire [3:0] as_sub, as_add, as_or, as_and, as_rs, as_ls, as_clt, as_ceq;
-
-    CompareEQ_3bits SIG000(.out(SIG[0]), .a(sel), .b(3'b000));
-    CompareEQ_3bits SIG001(.out(SIG[1]), .a(sel), .b(3'b001));
-    CompareEQ_3bits SIG010(.out(SIG[2]), .a(sel), .b(3'b010));
-    CompareEQ_3bits SIG011(.out(SIG[3]), .a(sel), .b(3'b011));
-    CompareEQ_3bits SIG100(.out(SIG[4]), .a(sel), .b(3'b100));
-    CompareEQ_3bits SIG101(.out(SIG[5]), .a(sel), .b(3'b101));
-    CompareEQ_3bits SIG110(.out(SIG[6]), .a(sel), .b(3'b110));
-    CompareEQ_3bits SIG111(.out(SIG[7]), .a(sel), .b(3'b111));
 
     Sub SUB000(.out(sub000), .rs(rs), .rt(rt), .sign());
     Add ADD001(.out(add001), .rs(rs), .rt(rt), .cout());
@@ -26,88 +15,57 @@ module Decode_And_Execute(rs, rt, sel, rd);
     CompareLT CLT110(.out(clt110), .rs(rs), .rt(rt));
     CompareEQ CEQ111(.out(ceq111), .rs(rs), .rt(rt));
 
-    AndSelect_4bits AsSub(.out(as_sub), .in(sub000), .sel(SIG[0]));
-    AndSelect_4bits AsAdd(.out(as_add), .in(add001), .sel(SIG[1]));
-    AndSelect_4bits AsOr(.out(as_or), .in(or010), .sel(SIG[2]));
-    AndSelect_4bits AsAnd(.out(as_and), .in(and011), .sel(SIG[3]));
-    AndSelect_4bits AsRs(.out(as_rs), .in(rs100), .sel(SIG[4]));
-    AndSelect_4bits AsLs(.out(as_ls), .in(ls101), .sel(SIG[5]));
-    AndSelect_4bits AsClt(.out(as_clt), .in(clt110), .sel(SIG[6]));
-    AndSelect_4bits AsCeq(.out(as_ceq), .in(ceq111), .sel(SIG[7]));
-
-    Or_8to1 Out3(
+    Mux_8to1 Selector3(
         .out(rd[3]),
-        .in0(as_sub[3]),
-        .in1(as_add[3]),
-        .in2(as_or[3]),
-        .in3(as_and[3]),
-        .in4(as_rs[3]),
-        .in5(as_ls[3]),
-        .in6(as_clt[3]),
-        .in7(as_ceq[3])
+        .in0(sub000[3]),
+        .in1(add001[3]),
+        .in2(or010[3]),
+        .in3(and011[3]),
+        .in4(rs100[3]),
+        .in5(ls101[3]),
+        .in6(clt110[3]),
+        .in7(ceq111[3]),
+        .sel(sel)
     );
-    Or_8to1 Out2(
+
+    Mux_8to1 Selector2(
         .out(rd[2]),
-        .in0(as_sub[2]),
-        .in1(as_add[2]),
-        .in2(as_or[2]),
-        .in3(as_and[2]),
-        .in4(as_rs[2]),
-        .in5(as_ls[2]),
-        .in6(as_clt[2]),
-        .in7(as_ceq[2])
+        .in0(sub000[2]),
+        .in1(add001[2]),
+        .in2(or010[2]),
+        .in3(and011[2]),
+        .in4(rs100[2]),
+        .in5(ls101[2]),
+        .in6(clt110[2]),
+        .in7(ceq111[2]),
+        .sel(sel)
     );
-    Or_8to1 Out1(
+
+    Mux_8to1 Selector1(
         .out(rd[1]),
-        .in0(as_sub[1]),
-        .in1(as_add[1]),
-        .in2(as_or[1]),
-        .in3(as_and[1]),
-        .in4(as_rs[1]),
-        .in5(as_ls[1]),
-        .in6(as_clt[1]),
-        .in7(as_ceq[1])
+        .in0(sub000[1]),
+        .in1(add001[1]),
+        .in2(or010[1]),
+        .in3(and011[1]),
+        .in4(rs100[1]),
+        .in5(ls101[1]),
+        .in6(clt110[1]),
+        .in7(ceq111[1]),
+        .sel(sel)
     );
-    Or_8to1 Out0(
+
+    Mux_8to1 Selector0(
         .out(rd[0]),
-        .in0(as_sub[0]),
-        .in1(as_add[0]),
-        .in2(as_or[0]),
-        .in3(as_and[0]),
-        .in4(as_rs[0]),
-        .in5(as_ls[0]),
-        .in6(as_clt[0]),
-        .in7(as_ceq[0])
+        .in0(sub000[0]),
+        .in1(add001[0]),
+        .in2(or010[0]),
+        .in3(and011[0]),
+        .in4(rs100[0]),
+        .in5(ls101[0]),
+        .in6(clt110[0]),
+        .in7(ceq111[0]),
+        .sel(sel)
     );
-
-endmodule
-
-module Or_8to1(out, in0, in1, in2, in3, in4, in5, in6, in7);
-    input in0, in1, in2, in3, in4, in5, in6, in7;
-    output out;
-    wire or01, or23, or45, or67, or0123, or4567;
-
-    Or Or01(.out(or01), .a(in0), .b(in1));
-    Or Or23(.out(or23), .a(in2), .b(in3));
-    Or Or45(.out(or45), .a(in4), .b(in5));
-    Or Or67(.out(or67), .a(in6), .b(in7));
-
-    Or Or0123(.out(or0123), .a(or01), .b(or23));
-    Or Or4567(.out(or4567), .a(or45), .b(or67));
-
-    Or OrOut(.out(out), .a(or0123), .b(or4567));
-
-endmodule
-
-module AndSelect_4bits(out, in, sel);
-    input [3:0] in;
-    input sel;
-    output [3:0] out;
-
-    And And3(.out(out[3]), .a(in[3]), .b(sel));
-    And And2(.out(out[2]), .a(in[2]), .b(sel));
-    And And1(.out(out[1]), .a(in[1]), .b(sel));
-    And And0(.out(out[0]), .a(in[0]), .b(sel));
 
 endmodule
 
@@ -270,21 +228,6 @@ module CompareEQ(out, rs, rt);
 
 endmodule
 
-module CompareEQ_3bits(out, a, b);
-    input [2:0] a, b;
-    output out;
-    wire [2:0] tmp;
-    wire tmp01;
-
-    Xnor Xnor2(.out(tmp[2]), .a(a[2]), .b(b[2]));
-    Xnor Xnor1(.out(tmp[1]), .a(a[1]), .b(b[1]));
-    Xnor Xnor0(.out(tmp[0]), .a(a[0]), .b(b[0]));
-
-    And And01(.out(tmp01), .a(tmp[0]), .b(tmp[1]));
-    And AndOut(.out(out), .a(tmp01), .b(tmp[2]));
-
-endmodule
-
 module Half_Adder(a, b, cout, sum);
     input a, b;
     output cout, sum;
@@ -366,16 +309,6 @@ module Or(out, a, b);
 
 endmodule
 
-module Nor(out, a, b);
-    input a, b;
-    output out;
-    wire a_or_b;
-
-    Or Or(.out(a_or_b), .a(a), .b(b));
-    Not Not(.out(out), .in(a_or_b));
-
-endmodule
-
 module Xor(out, a, b);
     input a, b;
     output out;
@@ -398,5 +331,45 @@ module Xnor(out, a, b);
 
     Xor Xor(.out(a_xor_b), .a(a), .b(b));
     Not Not(.out(out), .in(a_xor_b));
+
+endmodule
+
+module Mux_2to1(out, in0, in1, sel);
+    input in0, in1, sel;
+    output out;
+    wire not_sel, tmp0, tmp1;
+
+    Not Not(not_sel, sel);
+
+    And And0(tmp0, in0, not_sel);
+    And And1(tmp1, in1, sel);
+
+    Or OrOut(out, tmp0, tmp1);
+
+endmodule
+
+module Mux_4to1(out, in0, in1, in2, in3, sel);
+    input in0, in1, in2, in3;
+    input [1:0] sel;
+    output out;
+    wire tmp0, tmp1;
+
+    Mux_2to1 Mux0(tmp0, in0, in2, sel[1]);
+    Mux_2to1 Mux1(tmp1, in1, in3, sel[1]);
+
+    Mux_2to1 MuxOut(out, tmp0, tmp1, sel[0]);
+
+endmodule
+
+module Mux_8to1(out, in0, in1, in2, in3, in4, in5, in6, in7, sel);
+    input in0, in1, in2, in3, in4, in5, in6, in7;
+    input [2:0] sel;
+    output out;
+    wire tmp0, tmp1;
+
+    Mux_4to1 Mux0(tmp0, in0, in2, in4, in6, sel[2:1]);
+    Mux_4to1 Mux1(tmp1, in1, in3, in5, in7, sel[2:1]);
+
+    Mux_2to1 MuxOut(out, tmp0, tmp1, sel[0]);
 
 endmodule

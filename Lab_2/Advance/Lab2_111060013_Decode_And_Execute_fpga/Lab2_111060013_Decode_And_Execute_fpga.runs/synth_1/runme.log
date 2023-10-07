@@ -17,87 +17,85 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19956
+INFO: [Synth 8-7075] Helper process launched with PID 20412
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1016.500 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1017.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Center' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:270]
-INFO: [Synth 8-6157] synthesizing module 'CompareEQ_3bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:556]
-INFO: [Synth 8-6157] synthesizing module 'Xnor' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:694]
-INFO: [Synth 8-6157] synthesizing module 'Xor' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:679]
-INFO: [Synth 8-6157] synthesizing module 'Not' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:621]
+INFO: [Synth 8-6157] synthesizing module 'Copy_4bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:216]
+INFO: [Synth 8-6157] synthesizing module 'Copy' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:496]
 INFO: [Synth 8-6157] synthesizing module 'Universal_Gate' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Universal_Gate.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'Universal_Gate' (1#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Universal_Gate.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Not' (2#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:621]
-INFO: [Synth 8-6157] synthesizing module 'And' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:637]
-INFO: [Synth 8-6155] done synthesizing module 'And' (3#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:637]
-INFO: [Synth 8-6157] synthesizing module 'Or' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:658]
-INFO: [Synth 8-6157] synthesizing module 'Nand' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:648]
-INFO: [Synth 8-6155] done synthesizing module 'Nand' (4#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:648]
-INFO: [Synth 8-6155] done synthesizing module 'Or' (5#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:658]
-INFO: [Synth 8-6155] done synthesizing module 'Xor' (6#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:679]
-INFO: [Synth 8-6155] done synthesizing module 'Xnor' (7#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:694]
-INFO: [Synth 8-6155] done synthesizing module 'CompareEQ_3bits' (8#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:556]
-INFO: [Synth 8-6157] synthesizing module 'Sub' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:410]
-INFO: [Synth 8-6157] synthesizing module 'BitwiseInvt' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:426]
-INFO: [Synth 8-6155] done synthesizing module 'BitwiseInvt' (9#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:426]
-INFO: [Synth 8-6157] synthesizing module 'Add' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:397]
-INFO: [Synth 8-6157] synthesizing module 'Half_Adder' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:588]
-INFO: [Synth 8-6155] done synthesizing module 'Half_Adder' (10#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:588]
-INFO: [Synth 8-6157] synthesizing module 'Full_Adder' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:597]
-INFO: [Synth 8-6157] synthesizing module 'Majority' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:608]
-INFO: [Synth 8-6155] done synthesizing module 'Majority' (11#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:608]
-INFO: [Synth 8-6155] done synthesizing module 'Full_Adder' (12#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:597]
-INFO: [Synth 8-6155] done synthesizing module 'Add' (13#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:397]
-INFO: [Synth 8-6155] done synthesizing module 'Sub' (14#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:410]
-INFO: [Synth 8-6157] synthesizing module 'BitwiseOr' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:437]
-INFO: [Synth 8-6155] done synthesizing module 'BitwiseOr' (15#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:437]
-INFO: [Synth 8-6157] synthesizing module 'BitwiseAnd' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:448]
-INFO: [Synth 8-6155] done synthesizing module 'BitwiseAnd' (16#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:448]
-INFO: [Synth 8-6157] synthesizing module 'RightShift' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:459]
-INFO: [Synth 8-6157] synthesizing module 'Copy' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:629]
-INFO: [Synth 8-6155] done synthesizing module 'Copy' (17#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:629]
-INFO: [Synth 8-6155] done synthesizing module 'RightShift' (18#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:459]
-INFO: [Synth 8-6157] synthesizing module 'LeftShift' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:470]
-INFO: [Synth 8-6155] done synthesizing module 'LeftShift' (19#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:470]
-INFO: [Synth 8-6157] synthesizing module 'CompareLT' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:481]
-INFO: [Synth 8-6157] synthesizing module 'CLT_4bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:494]
-INFO: [Synth 8-6157] synthesizing module 'CLT_1bit' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:525]
-INFO: [Synth 8-6155] done synthesizing module 'CLT_1bit' (20#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:525]
-INFO: [Synth 8-6155] done synthesizing module 'CLT_4bits' (21#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:494]
-INFO: [Synth 8-6155] done synthesizing module 'CompareLT' (22#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:481]
-INFO: [Synth 8-6157] synthesizing module 'CompareEQ' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:535]
-INFO: [Synth 8-6155] done synthesizing module 'CompareEQ' (23#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:535]
-INFO: [Synth 8-6157] synthesizing module 'AndSelect_4bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:369]
-INFO: [Synth 8-6155] done synthesizing module 'AndSelect_4bits' (24#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:369]
-INFO: [Synth 8-6157] synthesizing module 'Or_8to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:352]
-INFO: [Synth 8-6155] done synthesizing module 'Or_8to1' (25#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:352]
-INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute' (26#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:270]
-INFO: [Synth 8-6157] synthesizing module 'Segment7_Display' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:14]
-INFO: [Synth 8-6157] synthesizing module 'Or_16to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'Or_16to1' (27#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:227]
-INFO: [Synth 8-6157] synthesizing module 'AndSelect_8bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:381]
-INFO: [Synth 8-6155] done synthesizing module 'AndSelect_8bits' (28#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:381]
-INFO: [Synth 8-6157] synthesizing module 'CompareEQ_4bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:571]
-INFO: [Synth 8-6155] done synthesizing module 'CompareEQ_4bits' (29#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:571]
-INFO: [Synth 8-6157] synthesizing module 'Copy_8bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:255]
-INFO: [Synth 8-6155] done synthesizing module 'Copy_8bits' (30#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:255]
-INFO: [Synth 8-6155] done synthesizing module 'Segment7_Display' (31#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'Center' (32#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Copy' (2#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:496]
+INFO: [Synth 8-6155] done synthesizing module 'Copy_4bits' (3#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:216]
+INFO: [Synth 8-6157] synthesizing module 'Decode_And_Execute' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:227]
+INFO: [Synth 8-6157] synthesizing module 'Sub' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:309]
+INFO: [Synth 8-6157] synthesizing module 'BitwiseInvt' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:325]
+INFO: [Synth 8-6157] synthesizing module 'Not' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'Not' (4#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'BitwiseInvt' (5#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:325]
+INFO: [Synth 8-6157] synthesizing module 'Add' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:296]
+INFO: [Synth 8-6157] synthesizing module 'Half_Adder' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:455]
+INFO: [Synth 8-6157] synthesizing module 'Xor' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:536]
+INFO: [Synth 8-6157] synthesizing module 'And' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:504]
+INFO: [Synth 8-6155] done synthesizing module 'And' (6#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:504]
+INFO: [Synth 8-6157] synthesizing module 'Or' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:525]
+INFO: [Synth 8-6157] synthesizing module 'Nand' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:515]
+INFO: [Synth 8-6155] done synthesizing module 'Nand' (7#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:515]
+INFO: [Synth 8-6155] done synthesizing module 'Or' (8#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'Xor' (9#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:536]
+INFO: [Synth 8-6155] done synthesizing module 'Half_Adder' (10#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:455]
+INFO: [Synth 8-6157] synthesizing module 'Full_Adder' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:464]
+INFO: [Synth 8-6157] synthesizing module 'Majority' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:475]
+INFO: [Synth 8-6155] done synthesizing module 'Majority' (11#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:475]
+INFO: [Synth 8-6155] done synthesizing module 'Full_Adder' (12#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:464]
+INFO: [Synth 8-6155] done synthesizing module 'Add' (13#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:296]
+INFO: [Synth 8-6155] done synthesizing module 'Sub' (14#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:309]
+INFO: [Synth 8-6157] synthesizing module 'BitwiseOr' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:336]
+INFO: [Synth 8-6155] done synthesizing module 'BitwiseOr' (15#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:336]
+INFO: [Synth 8-6157] synthesizing module 'BitwiseAnd' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:347]
+INFO: [Synth 8-6155] done synthesizing module 'BitwiseAnd' (16#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:347]
+INFO: [Synth 8-6157] synthesizing module 'RightShift' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:358]
+INFO: [Synth 8-6155] done synthesizing module 'RightShift' (17#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:358]
+INFO: [Synth 8-6157] synthesizing module 'LeftShift' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'LeftShift' (18#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:369]
+INFO: [Synth 8-6157] synthesizing module 'CompareLT' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:380]
+INFO: [Synth 8-6157] synthesizing module 'CLT_4bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:393]
+INFO: [Synth 8-6157] synthesizing module 'Xnor' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:551]
+INFO: [Synth 8-6155] done synthesizing module 'Xnor' (19#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:551]
+INFO: [Synth 8-6157] synthesizing module 'CLT_1bit' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'CLT_1bit' (20#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:424]
+INFO: [Synth 8-6155] done synthesizing module 'CLT_4bits' (21#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'CompareLT' (22#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:380]
+INFO: [Synth 8-6157] synthesizing module 'CompareEQ' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:434]
+INFO: [Synth 8-6155] done synthesizing module 'CompareEQ' (23#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:434]
+INFO: [Synth 8-6157] synthesizing module 'Mux_8to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:588]
+INFO: [Synth 8-6157] synthesizing module 'Mux_4to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:575]
+INFO: [Synth 8-6157] synthesizing module 'Mux_2to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:561]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_2to1' (24#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:561]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_4to1' (25#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:575]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_8to1' (26#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:588]
+INFO: [Synth 8-6155] done synthesizing module 'Decode_And_Execute' (27#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:227]
+INFO: [Synth 8-6157] synthesizing module 'Segment7_Display' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:16]
+INFO: [Synth 8-6157] synthesizing module 'Mux_16to1' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:601]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_16to1' (28#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:601]
+INFO: [Synth 8-6157] synthesizing module 'Copy_8bits' [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'Copy_8bits' (29#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'Segment7_Display' (30#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Center' (31#1) [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.500 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1017.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.500 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.500 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1016.500 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1017.941 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -108,29 +106,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Center_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1061.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1070.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1061.172 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1070.691 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'DAE/RS100/Copy3' (Copy) to 'DAE/RS100/Copy2'
 INFO: [Synth 8-223] decloning instance 'DAE/CLT110/Copy3' (Copy) to 'DAE/CLT110/Copy1'
@@ -157,25 +155,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -193,37 +191,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -240,31 +238,31 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT2 |     2|
-|2     |LUT3 |     4|
-|3     |LUT4 |     8|
+|2     |LUT3 |     1|
+|3     |LUT4 |    11|
 |4     |LUT5 |     3|
-|5     |LUT6 |    19|
+|5     |LUT6 |    14|
 |6     |IBUF |    11|
-|7     |OBUF |     8|
+|7     |OBUF |    12|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1061.172 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1061.172 ; gain = 44.672
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1070.691 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1070.691 ; gain = 52.750
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1062.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.691 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1062.145 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-82 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1062.145 ; gain = 45.645
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.691 ; gain = 52.750
 INFO: [Common 17-1381] The checkpoint 'D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1/Center.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Center_utilization_synth.rpt -pb Center_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 04:17:49 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 09:42:32 2023...

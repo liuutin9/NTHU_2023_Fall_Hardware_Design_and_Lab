@@ -3,6 +3,6 @@
 Nov 18 2020
 09:47:47
 D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.v,1696530257,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,,Add;And;AndSelect_4bits;BitwiseAnd;BitwiseInvt;BitwiseOr;CLT_1bit;CLT_4bits;CompareEQ;CompareEQ_3bits;CompareLT;Copy;Decode_And_Execute;Full_Adder;Half_Adder;LeftShift;Majority;Nand;Nor;Not;Or;Or_8to1;RightShift;Sub;Xnor;Xor,,,,,,,,
+D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.v,1696644158,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,,Add;And;BitwiseAnd;BitwiseInvt;BitwiseOr;CLT_1bit;CLT_4bits;CompareEQ;CompareLT;Copy;Decode_And_Execute;Full_Adder;Half_Adder;LeftShift;Majority;Mux_2to1;Mux_4to1;Mux_8to1;Nand;Not;Or;RightShift;Sub;Xnor;Xor,,,,,,,,
 D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,1696531349,verilog,,,,Lab2_111060013_Decode_And_Execute_t,,,,,,,,
 D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,1696524280,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,,Universal_Gate,,,,,,,,

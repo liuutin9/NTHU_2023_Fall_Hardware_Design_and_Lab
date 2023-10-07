@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Oct  7 04:18:25 2023
+| Date         : Sat Oct  7 09:44:41 2023
 | Host         : Utin-Desktop running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Center_timing_summary_routed.rpt -pb Center_timing_summary_routed.pb -rpx Center_timing_summary_routed.rpx -warn_on_violation
 | Design       : Center
