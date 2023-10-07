@@ -4,4 +4,4 @@ Nov 18 2020
 09:47:47
 D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.sim/sim_1/behav/xsim/glbl.v,1696581709,verilog,,,,glbl,,,,,,,,
 D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.v,1696644496,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.v,,And;And_3to1;And_4to1;And_5to1;CLA_Generator_2bits;CLA_Generator_4bits;CarryCounter0;CarryCounter1;CarryCounter2;CarryCounter3;Carry_Look_Ahead_Adder_8bit;Not;Or;Or_3to1;Or_4to1;Or_5to1;PGS_Generator;Xor,,,,,,,,
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.v,1696581710,verilog,,,,Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t,,,,,,,,
+D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.v,1696651949,verilog,,,,Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t,,,,,,,,
