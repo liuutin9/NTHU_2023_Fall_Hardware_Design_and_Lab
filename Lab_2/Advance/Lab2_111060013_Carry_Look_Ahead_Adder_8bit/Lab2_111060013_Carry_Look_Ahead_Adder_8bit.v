@@ -174,14 +174,6 @@ module And_5to1(out, a, b, c, d, e);
 
 endmodule
 
-module Nand(out, a, b);
-    input a, b;
-    output out;
-
-    nand(out, a, b);
-
-endmodule
-
 module Or(out, a, b);
     input a, b;
     output out;
@@ -189,7 +181,7 @@ module Or(out, a, b);
 
     Not Not_a(.out(not_a), .in(a));
     Not Not_b(.out(not_b), .in(b));
-    Nand NandOut(.out(out), .a(not_a), .b(not_b));
+    nand(out, not_a, not_b);
 
 endmodule
 
