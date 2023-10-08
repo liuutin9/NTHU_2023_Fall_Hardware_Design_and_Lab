@@ -187,9 +187,9 @@ module CLT_4bits(out, S, L);
     And A1(.out(FinalResult[1]), .a(tmp10), .b(tmp11));
 
     CLT_1bit C0(.out(tmp00), .S(S[0]), .L(L[0]));
-    And A01(.out(tmp01), .a(XnorResult3), .b(XnorResult2));
+    // And A01(.out(tmp01), .a(XnorResult3), .b(XnorResult2));
     And A02(.out(tmp02), .a(XnorResult1), .b(tmp00));
-    And A0(.out(FinalResult[0]), .a(tmp01), .b(tmp02));
+    And A0(.out(FinalResult[0]), .a(/*tmp01*/tmp11), .b(tmp02));
 
     Or O01(.out(or01), .a(FinalResult[0]), .b(FinalResult[1]));
     Or O23(.out(or23), .a(FinalResult[2]), .b(FinalResult[3]));
