@@ -163,7 +163,6 @@ module CompareLT(out, rs, rt);
     Copy Copy1(.out(out[1]), .in(1'b1));
     CLT_4bits C4(.out(out[0]), .S(rs), .L(rt));
 
-
 endmodule
 
 module CLT_4bits(out, S, L);
