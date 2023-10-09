@@ -48,15 +48,19 @@ module CLA_Generator_4bits(pout, gout, c1, c2, c3, pin, gin, c0);
     CarryCounter1 CC1(.c2(c2), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
     CarryCounter2 CC2(.c3(c3), .p(pin[3:0]), .g(gin[3:0]), .c0(c0));
 
-    And AndP3(.out(pout[3]), .a(pin[3]), .b(1'b1));
-    And AndP2(.out(pout[2]), .a(pin[2]), .b(1'b1));
-    And AndP1(.out(pout[1]), .a(pin[1]), .b(1'b1));
-    And AndP0(.out(pout[0]), .a(pin[0]), .b(1'b1));
+    BitwiseAnd AndP(.out(pout[3:0]), .a(pin[3:0]), .b(4'b1111));
+    BitwiseAnd AndG(.out(gout[3:0]), .a(gin[3:0]), .b(4'b1111));
 
-    And AndG3(.out(gout[3]), .a(gin[3]), .b(1'b1));
-    And AndG2(.out(gout[2]), .a(gin[2]), .b(1'b1));
-    And AndG1(.out(gout[1]), .a(gin[1]), .b(1'b1));
-    And AndG0(.out(gout[0]), .a(gin[0]), .b(1'b1));
+endmodule
+
+module BitwiseAnd(out, a, b);
+    input [3:0] a, b;
+    output [3:0] out;
+
+    And And3(.out(out[3]), .a(a[3]), .b(b[3]));
+    And And2(.out(out[2]), .a(a[2]), .b(b[2]));
+    And And1(.out(out[1]), .a(a[1]), .b(b[1]));
+    And And0(.out(out[0]), .a(a[0]), .b(b[0]));
 
 endmodule
 
