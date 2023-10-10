@@ -1,7 +1,7 @@
-Running: xsim.dir/Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav/xsimk.exe -simmode gui -wdb Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav.wdb -simrunnum 0 -socket 58150
+Running: xsim.dir/Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav/xsimk.exe -simmode gui -wdb Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav.wdb -simrunnum 0 -socket 61566
 Design successfully loaded
-Design Loading Memory Usage: 6992 KB (Peak: 6992 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 7024 KB (Peak: 7024 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7836 KB (Peak: 7836 KB)
-Simulation CPU Usage: 0 ms
+Simulation Memory Usage: 15796 KB (Peak: 15796 KB)
+Simulation CPU Usage: 265 ms

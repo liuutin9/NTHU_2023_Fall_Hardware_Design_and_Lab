@@ -5,27 +5,4 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Not
-Compiling module xil_defaultlib.Or
-Compiling module xil_defaultlib.And
-Compiling module xil_defaultlib.Xor
-Compiling module xil_defaultlib.PGS_Generator
-Compiling module xil_defaultlib.CarryCounter0
-Compiling module xil_defaultlib.And_3to1
-Compiling module xil_defaultlib.Or_3to1
-Compiling module xil_defaultlib.CarryCounter1
-Compiling module xil_defaultlib.And_4to1
-Compiling module xil_defaultlib.Or_4to1
-Compiling module xil_defaultlib.CarryCounter2
-Compiling module xil_defaultlib.CLA_Generator_4bits
-Compiling module xil_defaultlib.And_5to1
-Compiling module xil_defaultlib.Or_5to1
-Compiling module xil_defaultlib.CarryCounter3
-Compiling module xil_defaultlib.CLA_Generator_2bits
-Compiling module xil_defaultlib.Carry_Look_Ahead_Adder_8bit
-Compiling module xil_defaultlib.Lab2_111060013_Carry_Look_Ahead_...
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

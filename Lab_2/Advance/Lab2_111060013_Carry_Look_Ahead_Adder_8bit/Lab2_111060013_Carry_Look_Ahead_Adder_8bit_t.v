@@ -24,11 +24,17 @@ module Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t;
     end
 
     initial begin
+        a = 8'b00000000;
         repeat (2 ** 8) begin
-            #1
-            a <= a + 1;
-            b <= b + 1;
-            c0 <= ~c0;
+            b = 8'b00000000;
+            repeat (2 ** 8) begin
+                c0 = 1'b0;
+                repeat (2) begin
+                    #1 c0 = c0 + 1'b1;
+                end
+                b = b + 8'b00000001;
+            end
+            a = a + 8'b00000001;
         end
         #1 $finish;
     end

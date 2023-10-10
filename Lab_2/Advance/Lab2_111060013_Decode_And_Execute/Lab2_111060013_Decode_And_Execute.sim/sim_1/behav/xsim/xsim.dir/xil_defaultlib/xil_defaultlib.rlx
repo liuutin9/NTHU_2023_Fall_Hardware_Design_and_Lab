@@ -2,7 +2,7 @@
 2020.2
 Nov 18 2020
 09:47:47
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.v,1696782976,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,,Add;And;BitwiseAnd;BitwiseInvt;BitwiseOr;CLT_1bit;CLT_4bits;CompareEQ;CompareLT;Copy;Decode_And_Execute;Full_Adder;Half_Adder;LeftShift;Majority;Mux_2to1;Mux_4to1;Mux_8to1;Nand;Not;Or;RightShift;Sub;Xnor;Xor,,,,,,,,
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,1696531349,verilog,,,,Lab2_111060013_Decode_And_Execute_t,,,,,,,,
-D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,1696524280,verilog,,D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,,Universal_Gate,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/glbl.v,1696910069,verilog,,,,glbl,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.v,1696910069,verilog,,C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,,Add;And;BitwiseAnd;BitwiseInvt;BitwiseOr;CLT_1bit;CLT_4bits;CompareEQ;CompareLT;Copy;Decode_And_Execute;Full_Adder;Half_Adder;LeftShift;Majority;Mux_2to1;Mux_4to1;Mux_8to1;Nand;Not;Or;RightShift;Sub;Xnor;Xor,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,1696917375,verilog,,,,Lab2_111060013_Decode_And_Execute_t,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Universal_Gate.v,1696910069,verilog,,C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute_t.v,,Universal_Gate,,,,,,,,

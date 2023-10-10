@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 10 14:00:38 2023
+# Process ID: 17432
+# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8528 C:\Logic_Design_Lab\Lab_2\Advance\Lab2_111060013_Carry_Look_Ahead_Adder_8bit\Lab2_111060013_Carry_Look_Ahead_Adder_8bit.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Carry_Look_Ahead_Adder_8bit/Lab2_111060013_Carry_Look_Ahead_Adder_8bit.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -name {xsim.simulate.runtime} -value {15000} -objects [get_filesets sim_1]
+launch_simulation
+source Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.tcl
+set_property -name {xsim.simulate.runtime} -value {100000} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.tcl
+set_property -name {xsim.simulate.runtime} -value {100000000} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source Lab2_111060013_Carry_Look_Ahead_Adder_8bit_t.tcl
+close_sim

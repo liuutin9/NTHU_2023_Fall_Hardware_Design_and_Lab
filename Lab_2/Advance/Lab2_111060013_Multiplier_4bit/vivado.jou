@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 10 14:08:37 2023
+# Process ID: 9612
+# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18032 C:\Logic_Design_Lab\Lab_2\Advance\Lab2_111060013_Multiplier_4bit\Lab2_111060013_Multiplier_4bit.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab2_111060013_Multiplier_4bit_t.tcl
+close_sim

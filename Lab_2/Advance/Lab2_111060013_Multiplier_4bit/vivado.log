@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 10 14:08:37 2023
+# Process ID: 9612
+# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18032 C:\Logic_Design_Lab\Lab_2\Advance\Lab2_111060013_Multiplier_4bit\Lab2_111060013_Multiplier_4bit.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.gen/sources_1', nor could it be found using path 'D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Lab2_111060013_Multiplier_4bit_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Lab2_111060013_Multiplier_4bit_t_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplier_4bit
+INFO: [VRFC 10-2458] undeclared symbol tmp0123, assumed default net type wire [C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v:35]
+INFO: [VRFC 10-311] analyzing module Multiplier_4x1
+INFO: [VRFC 10-311] analyzing module Ripple_Carry_Adder
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-311] analyzing module Majority
+INFO: [VRFC 10-311] analyzing module Not
+INFO: [VRFC 10-311] analyzing module And
+INFO: [VRFC 10-311] analyzing module Or
+INFO: [VRFC 10-311] analyzing module Xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab2_111060013_Multiplier_4bit_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim'
+"xelab -wto 38217e992e6245ef9af5a13f725de4a9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab2_111060013_Multiplier_4bit_t_behav xil_defaultlib.Lab2_111060013_Multiplier_4bit_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 38217e992e6245ef9af5a13f725de4a9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab2_111060013_Multiplier_4bit_t_behav xil_defaultlib.Lab2_111060013_Multiplier_4bit_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Not
+Compiling module xil_defaultlib.And
+Compiling module xil_defaultlib.Multiplier_4x1
+Compiling module xil_defaultlib.Or
+Compiling module xil_defaultlib.Majority
+Compiling module xil_defaultlib.Xor
+Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.Ripple_Carry_Adder
+Compiling module xil_defaultlib.Multiplier_4bit
+Compiling module xil_defaultlib.Lab2_111060013_Multiplier_4bit_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Lab2_111060013_Multiplier_4bit_t_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim/xsim.dir/Lab2_111060013_Multiplier_4bit_t_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 10 14:10:27 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Lab2_111060013_Multiplier_4bit_t_behav -key {Behavioral:sim_1:Functional:Lab2_111060013_Multiplier_4bit_t} -tclbatch {Lab2_111060013_Multiplier_4bit_t.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source Lab2_111060013_Multiplier_4bit_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 257 ns : File "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit_t.v" Line 31
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Lab2_111060013_Multiplier_4bit_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.312 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 10 14:11:06 2023...

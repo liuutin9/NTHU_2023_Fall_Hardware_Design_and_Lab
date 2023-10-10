@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Multiplier_4bit
-INFO: [VRFC 10-2458] undeclared symbol tmp0123, assumed default net type wire [D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v:35]
+INFO: [VRFC 10-2458] undeclared symbol tmp0123, assumed default net type wire [C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.v:35]
 INFO: [VRFC 10-311] analyzing module Multiplier_4x1
 INFO: [VRFC 10-311] analyzing module Ripple_Carry_Adder
 INFO: [VRFC 10-311] analyzing module Full_Adder
@@ -9,5 +9,7 @@ INFO: [VRFC 10-311] analyzing module Not
 INFO: [VRFC 10-311] analyzing module And
 INFO: [VRFC 10-311] analyzing module Or
 INFO: [VRFC 10-311] analyzing module Xor
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit_t.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Lab2_111060013_Multiplier_4bit_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Multiplier_4bit/Lab2_111060013_Multiplier_4bit.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
