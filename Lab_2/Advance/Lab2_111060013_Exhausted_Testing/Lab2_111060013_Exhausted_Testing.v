@@ -33,15 +33,18 @@ reg tmp_cout;
 reg [3:0] tmp_sum;
 
 initial begin
-    repeat (15) begin
-        repeat (16 - a) begin
-            {tmp_cout, tmp_sum} = a + b + cin;
-            #1 error = (tmp_cout != cout) || (tmp_sum != sum);
-            #4 b = b + 4'b0001;
+    repeat (2) begin
+        repeat (16) begin
+            repeat (16) begin
+                {tmp_cout, tmp_sum} = a + b + cin;
+                #1 error = (tmp_cout != cout) || (tmp_sum != sum);
+                #4 b = b + 4'b0001;
+            end
+            a = a + 4'b0001;
         end
-        a = a + 4'b0001;
-        b = a;
+        cin = 1'b1;
     end
+
     done = 1'b1;
     #5 done = 1'b0;
     // design you test pattern here.
