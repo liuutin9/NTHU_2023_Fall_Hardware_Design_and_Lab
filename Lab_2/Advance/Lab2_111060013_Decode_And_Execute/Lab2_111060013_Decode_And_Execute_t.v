@@ -37,29 +37,6 @@ module Lab2_111060013_Decode_And_Execute_t;
             end
             rs = rs + 4'b0001;
         end
-        /*rs <= 4'b0000; // 0
-        rt <= 4'b0001; // 1
-        sel <= 3'b000;
-
-        repeat (7) #1 sel = sel + 1;
-
-        #1 rs <= 4'b1000; // 8
-           rt <= 4'b0001; // 1
-           sel <= 3'b000;
-
-        repeat (7) #1 sel = sel + 1;
-
-        #1 rs <= 4'b1000; // 8
-           rt <= 4'b1001; // 9
-           sel <= 3'b000;
-
-        repeat (7) #1 sel = sel + 1;
-
-        #1 rs <= 4'b1000; // 8
-           rt <= 4'b1000; // 8
-           sel <= 3'b000;
-
-        repeat (7) #1 sel = sel + 1;*/
 
         #5 $finish;
 

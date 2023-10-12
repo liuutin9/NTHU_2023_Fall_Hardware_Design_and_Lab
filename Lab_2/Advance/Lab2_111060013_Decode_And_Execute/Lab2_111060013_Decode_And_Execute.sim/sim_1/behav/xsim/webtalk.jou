@@ -2,11 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Oct 10 13:55:53 2023
-# Process ID: 18280
-# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/xsim.dir/Lab2_111060013_Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Thu Oct 12 19:51:05 2023
+# Process ID: 17812
+# Current directory: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/xsim.dir/Lab2_111060013_Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/xsim.dir/Lab2_111060013_Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
+source D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.sim/sim_1/behav/xsim/xsim.dir/Lab2_111060013_Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
