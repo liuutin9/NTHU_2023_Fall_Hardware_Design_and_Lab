@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc rfile:../../../Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc rfile:../../../Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN V17 [get_ports control]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

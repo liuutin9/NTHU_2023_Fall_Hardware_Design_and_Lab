@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 15:28:47 2023
+# Process ID: 6880
+# Current directory: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2064 C:\Logic_Design_Lab\Lab_2\Basic\Lab2_NAND_Implement\Lab2_NAND_Implement.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Basic/Lab2_NAND_Implement/Lab2_NAND_Implement.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source NAND_Implement_t.tcl
+close_sim

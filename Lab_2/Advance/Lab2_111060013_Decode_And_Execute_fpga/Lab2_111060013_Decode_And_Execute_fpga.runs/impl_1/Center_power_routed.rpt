@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sat Oct  7 09:44:41 2023
-| Host             : Utin-Desktop running 64-bit major release  (build 9200)
+| Date             : Thu Oct 12 16:11:25 2023
+| Host             : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command          : report_power -file Center_power_routed.rpt -pb Center_power_summary_routed.pb -rpx Center_power_routed.rpx
 | Design           : Center
 | Device           : xc7a35tcpg236-1

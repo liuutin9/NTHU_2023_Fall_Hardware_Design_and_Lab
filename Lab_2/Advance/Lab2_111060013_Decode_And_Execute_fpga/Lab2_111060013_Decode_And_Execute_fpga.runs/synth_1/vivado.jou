@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Oct  7 09:42:09 2023
-# Process ID: 5580
-# Current directory: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1
+# Start of session at: Thu Oct 12 16:09:55 2023
+# Process ID: 16480
+# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1
 # Command line: vivado.exe -log Center.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Center.tcl
-# Log file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1/Center.vds
-# Journal file: D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1\vivado.jou
+# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1/Center.vds
+# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Center.tcl -notrace

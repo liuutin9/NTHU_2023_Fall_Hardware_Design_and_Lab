@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 15:28:36 2023
+# Process ID: 14552
+# Current directory: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4620 C:\Logic_Design_Lab\Lab_2\Basic\Lab2_Adders\Lab2_Adders.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Adders_t.tcl
+close_sim

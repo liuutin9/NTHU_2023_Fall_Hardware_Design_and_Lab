@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 10 13:56:19 2023
+# Process ID: 14884
+# Current directory: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16504 C:\Logic_Design_Lab\Lab_2\Advance\Lab2_111060013_Decode_And_Execute\Lab2_111060013_Decode_And_Execute.xpr
+# Log file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute/Lab2_111060013_Decode_And_Execute.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Lab2_111060013_Decode_And_Execute_t.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_1]
+launch_simulation
+source Lab2_111060013_Decode_And_Execute_t.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {10000} -objects [get_filesets sim_1]
+launch_simulation
+source Lab2_111060013_Decode_And_Execute_t.tcl
+set_property -name {xsim.simulate.runtime} -value {13000} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source Lab2_111060013_Decode_And_Execute_t.tcl
+close_sim

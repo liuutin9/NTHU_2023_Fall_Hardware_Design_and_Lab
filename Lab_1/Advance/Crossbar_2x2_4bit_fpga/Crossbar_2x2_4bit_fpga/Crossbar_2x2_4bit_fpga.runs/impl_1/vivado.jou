@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Sep 26 21:02:43 2023
-# Process ID: 15872
-# Current directory: C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1
+# Start of session at: Thu Oct 12 16:27:33 2023
+# Process ID: 11952
+# Current directory: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1
 # Command line: vivado.exe -log Crossbar_2x2_4bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Crossbar_2x2_4bit.tcl -notrace
-# Log file: C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.vdi
-# Journal file: C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1\vivado.jou
+# Log file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.vdi
+# Journal file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Crossbar_2x2_4bit.tcl -notrace
