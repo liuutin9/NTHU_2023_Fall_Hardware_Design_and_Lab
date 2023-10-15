@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1695733327">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1697099217">
   <File Type="PA-TCL" Name="Crossbar_2x2_4bit.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Crossbar_2x2_4bit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Crossbar_2x2_4bit_reports.tcl"/>

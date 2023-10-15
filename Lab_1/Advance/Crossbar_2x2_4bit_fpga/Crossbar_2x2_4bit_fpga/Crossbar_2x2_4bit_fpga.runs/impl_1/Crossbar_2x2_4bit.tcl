@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.tcl"
+  variable script "C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,15 +129,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.cache/wt [current_project]
-  set_property parent.project_path C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.xpr [current_project]
-  set_property ip_output_repo C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.cache/wt [current_project]
+  set_property parent.project_path C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.xpr [current_project]
+  set_property ip_output_repo C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/synth_1/Crossbar_2x2_4bit.dcp
+  add_files -quiet C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/synth_1/Crossbar_2x2_4bit.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc
+  read_xdc C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.srcs/constrs_1/new/Crossbar_2x2_4bit.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

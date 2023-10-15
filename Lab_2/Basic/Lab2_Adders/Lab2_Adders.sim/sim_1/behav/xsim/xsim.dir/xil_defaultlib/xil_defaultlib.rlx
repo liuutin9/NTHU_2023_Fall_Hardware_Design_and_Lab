@@ -2,6 +2,6 @@
 2020.2
 Nov 18 2020
 09:47:47
-C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Adders_t.v,1696501245,verilog,,,,Adders_t,,,,,,,,
-C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.v,1696501782,verilog,,C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Adders_t.v,,And;Full_Adder;Half_Adder;Majority;Not;Or;Xor,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Adders_t.v,1696910069,verilog,,,,Adders_t,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.sim/sim_1/behav/xsim/glbl.v,1696910069,verilog,,,,glbl,,,,,,,,
+C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Lab2_Adders.v,1696910069,verilog,,C:/Logic_Design_Lab/Lab_2/Basic/Lab2_Adders/Adders_t.v,,And;Full_Adder;Half_Adder;Majority;Not;Or;Xor,,,,,,,,

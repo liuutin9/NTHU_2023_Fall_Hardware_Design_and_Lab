@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1'
+HD_PWD='C:/Logic_Design_Lab/Lab_2/Advance/Lab2_111060013_Decode_And_Execute_fpga/Lab2_111060013_Decode_And_Execute_fpga.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

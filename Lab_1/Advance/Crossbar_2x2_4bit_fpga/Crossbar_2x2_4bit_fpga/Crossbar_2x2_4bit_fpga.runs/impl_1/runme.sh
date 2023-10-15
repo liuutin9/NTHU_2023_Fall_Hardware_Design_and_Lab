@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1'
+HD_PWD='C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 16:26:21 2023
+# Process ID: 14208
+# Current directory: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12744 C:\Logic_Design_Lab\Lab_1\Advance\Crossbar_2x2_4bit_fpga\Crossbar_2x2_4bit_fpga\Crossbar_2x2_4bit_fpga.xpr
+# Log file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

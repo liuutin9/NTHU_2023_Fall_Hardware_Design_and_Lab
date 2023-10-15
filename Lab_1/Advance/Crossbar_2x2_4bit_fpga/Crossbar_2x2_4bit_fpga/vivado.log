@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 12 16:26:21 2023
+# Process ID: 14208
+# Current directory: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12744 C:\Logic_Design_Lab\Lab_1\Advance\Crossbar_2x2_4bit_fpga\Crossbar_2x2_4bit_fpga\Crossbar_2x2_4bit_fpga.xpr
+# Log file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.gen/sources_1', nor could it be found using path 'C:/Users/LiuUtin/Desktop/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Oct 12 16:26:57 2023] Launched synth_1...
+Run output will be captured here: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/synth_1/runme.log
+[Thu Oct 12 16:26:57 2023] Launched impl_1...
+Run output will be captured here: C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183713305A
+set_property PROGRAM.FILE {C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Logic_Design_Lab/Lab_1/Advance/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga/Crossbar_2x2_4bit_fpga.runs/impl_1/Crossbar_2x2_4bit.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183713305A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 16:57:03 2023...
