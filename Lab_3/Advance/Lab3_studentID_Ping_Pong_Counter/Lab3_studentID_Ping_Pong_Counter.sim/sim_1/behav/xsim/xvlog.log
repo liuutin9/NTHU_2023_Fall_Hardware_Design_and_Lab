@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_3/Advance/Lab3_studentID_Ping_Pong_Counter/Lab3_111060013_Ping_Pong_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ping_Pong_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_3/Advance/Lab3_studentID_Ping_Pong_Counter/Lab3_111060013_Ping_Pong_Counter_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab3_111060013_Ping_Pong_Counter_t
