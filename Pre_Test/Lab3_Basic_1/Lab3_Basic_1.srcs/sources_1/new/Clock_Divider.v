@@ -9,14 +9,14 @@ module Clock_Divider(clk, rst_n, dclk, sel);
 
     always @ (posedge clk) begin
         if (rst_n == 1'b0) begin
-            clk1_3 <= 1'b0;
-            clk1_2 <= 1'b0;
-            clk1_4 <= 1'b0;
-            clk1_8 <= 1'b0;
-            count3 <= 4'd0;
-            count2 <= 4'd0;
-            count4 <= 4'd0;
-            count8 <= 4'd0;
+            clk1_3 <= 1'b1;
+            clk1_2 <= 1'b1;
+            clk1_4 <= 1'b1;
+            clk1_8 <= 1'b1;
+            count3 <= 4'd1;
+            count2 <= 4'd1;
+            count4 <= 4'd1;
+            count8 <= 4'd1;
         end
         else begin
             if (count3 == 4'd0) begin

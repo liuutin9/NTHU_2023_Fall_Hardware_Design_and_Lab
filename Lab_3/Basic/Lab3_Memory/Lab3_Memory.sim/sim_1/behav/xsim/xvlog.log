@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_3/Basic/Lab3_Memory/Lab3_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_3/Basic/Lab3_Memory/Memory_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_t
