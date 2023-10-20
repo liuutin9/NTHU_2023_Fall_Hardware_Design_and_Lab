@@ -21,13 +21,7 @@ module Lab3_111060013_Ping_Pong_Counter_t;
         #1 rst_n <= 1'b0;
         #2 rst_n <= 1'b1;
            enable <= 1'b1;
-        #20 enable <= 1'b0;
-        #4 enable <= 1'b1;
-        #20 rst_n <= 1'b0;
-        #2 rst_n <= 1'b1;
-           enable <= 1'b0;
-        #4 enable <= 1'b1;
-        #20 $finish;
+        #200 $finish;
     end
 
 endmodule

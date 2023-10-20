@@ -9,7 +9,7 @@ module Ping_Pong_Counter (clk, rst_n, enable, direction, out);
     reg [3:0] dir_to_enable, enable_to_rst_n, rst_n_to_DFF, dir_from_xor, dir_from_rst_mux, dir_from_enable, dir_from_or;
 
     always @ (direction or out) begin
-        dir_from_or = (direction == 1'b1 & out == 4'b1110) | (direction == 1'b0 & out == 4'b0001);
+        dir_from_or = (direction == 1'b1 & out == 4'b1111) | (direction == 1'b0 & out == 4'b0000);
     end
 
     always @ (direction or dir_from_or) begin
@@ -17,7 +17,7 @@ module Ping_Pong_Counter (clk, rst_n, enable, direction, out);
     end
 
     always @ (dir_from_xor or enable) begin
-        case (rst_n)
+        case (enable)
             1'b0: dir_from_enable = direction;
             1'b1: dir_from_enable = dir_from_xor;
         endcase
@@ -37,8 +37,8 @@ module Ping_Pong_Counter (clk, rst_n, enable, direction, out);
     // Mux: selected by direction
     always @ (direction or out) begin
         case (direction)
-            1'b0: dir_to_enable = out - 1;
-            1'b1: dir_to_enable = out + 1;
+            1'b0: dir_to_enable = (out == 4'b0000) ? out + 1 : out - 1;
+            1'b1: dir_to_enable = (out == 4'b1111) ? out - 1 : out + 1;
         endcase
     end
 
