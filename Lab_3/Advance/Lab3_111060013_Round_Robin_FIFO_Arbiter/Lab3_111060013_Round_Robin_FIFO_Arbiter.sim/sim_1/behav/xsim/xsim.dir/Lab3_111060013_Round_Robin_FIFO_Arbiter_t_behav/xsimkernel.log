@@ -1,7 +1,7 @@
-Running: xsim.dir/Lab3_111060013_Round_Robin_FIFO_Arbiter_t_behav/xsimk.exe -simmode gui -wdb Lab3_111060013_Round_Robin_FIFO_Arbiter_t_behav.wdb -simrunnum 0 -socket 57234
+Running: xsim.dir/Lab3_111060013_Round_Robin_FIFO_Arbiter_t_behav/xsimk.exe -simmode gui -wdb Lab3_111060013_Round_Robin_FIFO_Arbiter_t_behav.wdb -simrunnum 0 -socket 62854
 Design successfully loaded
 Design Loading Memory Usage: 6864 KB (Peak: 6864 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 7532 KB (Peak: 7532 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 7540 KB (Peak: 7540 KB)
+Simulation CPU Usage: 0 ms

@@ -7,8 +7,6 @@ module Lab3_111060013_Round_Robin_FIFO_Arbiter_t;
     reg [7:0] a, b, c, d;
     wire valid;
     wire [7:0] dout;
-    wire [3:0] ren;
-    wire err_a, err_b, err_c, err_d;
 
     Round_Robin_FIFO_Arbiter RRFA(
         .clk(clk),
@@ -19,12 +17,7 @@ module Lab3_111060013_Round_Robin_FIFO_Arbiter_t;
         .c(c),
         .d(d),
         .dout(dout),
-        .valid(valid),
-        .ren(ren),
-        .err_a(err_a),
-        .err_b(err_b),
-        .err_c(err_c),
-        .err_d(err_d)
+        .valid(valid)
     );
 
     always # (1) clk = ~clk;
@@ -38,16 +31,22 @@ module Lab3_111060013_Round_Robin_FIFO_Arbiter_t;
            c <= 8'd9;
            d <= 8'd13;
         #2 wen <= 4'b1000;
+           a <= 8'd0;
+           b <= 8'd0;
+           c <= 8'd0;
            d <= 8'd85;
         #2 wen <= 4'b0100;
            c <= 8'd139;
+           d <= 8'd0;
         #2 wen <= 4'b0000;
+           c <= 8'd0;
         #2 wen <= 4'b0000;
         #2 wen <= 4'b0000;
         #2 wen <= 4'b0001;
            a <= 8'd51;
         #2 wen <= 4'b0000;
-        #2 wen <= 4'b0000;
+           a <= 8'd0;
+        #4 wen <= 4'b0000;
         #2 $finish;
     end
 
