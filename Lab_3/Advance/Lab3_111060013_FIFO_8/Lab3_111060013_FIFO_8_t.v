@@ -38,7 +38,8 @@ module Lab3_111060013_FIFO_8_t;
         #2 din <= 8'd12;
            ren <= 1'b0;
         #2 din <= 8'd77;
-        #2 wen <= 1'b0;
+        #2 wen <= 0;
+           din <= 8'd0;
         #2 $finish;
     end
 
