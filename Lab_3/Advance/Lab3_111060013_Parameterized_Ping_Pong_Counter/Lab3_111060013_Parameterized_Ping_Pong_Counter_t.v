@@ -25,8 +25,8 @@ module Lab3_111060013_Parameterized_Ping_Pong_Counter_t;
 
     initial begin
         #1 rst_n <= 1'b0;
-           max <= 4'b0100;
-           min <= 4'b0000;
+           max <= 4'b1111;
+           min <= 4'b0100;
         #2 rst_n <= 1'b1;
            enable <= 1'b1;
            flip <= 1'b0;

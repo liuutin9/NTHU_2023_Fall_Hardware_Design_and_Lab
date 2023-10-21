@@ -45,7 +45,7 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
     always @ (dir_from_enable or rst_n) begin
         case (rst_n)
             1'b0: dir_from_rst_mux = 1'b1;
-            1'b1: dir_from_rst_mux = dir_from_xor;
+            1'b1: dir_from_rst_mux = dir_from_enable;
         endcase
     end
 
