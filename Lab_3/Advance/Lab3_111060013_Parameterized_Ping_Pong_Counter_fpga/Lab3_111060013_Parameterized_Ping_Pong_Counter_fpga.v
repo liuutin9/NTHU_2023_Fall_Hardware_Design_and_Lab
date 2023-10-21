@@ -137,7 +137,7 @@ module SS7 (in, dir, clk, out, bit, rst_n);
     end
 
     // 0th bit
-    always @ (*) begin
+    always @ (dir) begin
         case (dir)
             1'b0: out_0 = 8'b11000111;
             1'b1: out_0 = 8'b00111011;
@@ -235,7 +235,7 @@ module Clock_Divider (clk, rst_n, dclk);
     input clk, rst_n;
     output dclk;
 
-    reg dclk;
+    reg dclk, tmp_dclk;
     reg [16:0] count, tmp_count;
 
     always @ (count or rst_n) begin
@@ -247,14 +247,37 @@ module Clock_Divider (clk, rst_n, dclk);
 
     always @ (count) begin
         case (count)
-            17'd0: dclk = 1'b1;
-            default: dclk = 1'b0;
+            17'd0: tmp_dclk = 1'b1;
+            default: tmp_dclk = 1'b0;
         endcase
     end
 
     always @ (posedge clk) begin
         count <= tmp_count;
+        dclk <= tmp_dclk;
     end
+
+/*
+    always @ (*) begin
+        if (rst_n == 1'b0) begin
+            tmp_dclk = 17'h0;
+            tmp_count = 1'b0;
+        end
+        else if (count == 17'h1ffff) begin
+            tmp_count = 17'h0;
+            tmp_dclk = 1'b1;
+        end
+        else begin
+            tmp_count = count + 1;
+            tmp_dclk = 1'b0;
+        end
+    end
+
+    always @(posedge clk) begin
+        dclk <= tmp_dclk;
+        count <= tmp_count;
+    end
+*/
 
 endmodule
 
@@ -262,10 +285,11 @@ module Clock_Divider_fast (clk, rst_n, dclk);
     input clk, rst_n;
     output dclk;
 
-    reg dclk;
+    reg dclk, tmp_dclk;
     reg [26:0] count, tmp_count;
 
-    always @ (count or rst_n) begin
+
+    always @ (rst_n) begin
         case (rst_n)
             1'b0: tmp_count = 27'd0;
             1'b1: tmp_count = count + 27'd1;
@@ -274,13 +298,36 @@ module Clock_Divider_fast (clk, rst_n, dclk);
 
     always @ (count) begin
         case (count)
-            27'd0: dclk = 1'b1;
-            default: dclk = 1'b0;
+            27'd0: tmp_dclk = 1'b1;
+            default: tmp_dclk = 1'b0;
         endcase
     end
 
     always @ (posedge clk) begin
         count <= tmp_count;
+        dclk <= tmp_dclk;
     end
+
+/*
+    always @ (*) begin
+        if (rst_n == 1'b0) begin
+            tmp_dclk = 1'b0;
+            tmp_count = 27'd0;
+        end
+        else if (count == 27'h7ffffff) begin
+            tmp_count = 27'd0;
+            tmp_dclk = 1'b1;
+        end
+        else begin
+            tmp_count = count + 1;
+            tmp_dclk = 1'b0;
+        end
+    end
+
+    always @ (posedge clk) begin
+        dclk <= tmp_dclk;
+        count <= tmp_count;
+    end
+*/
 
 endmodule

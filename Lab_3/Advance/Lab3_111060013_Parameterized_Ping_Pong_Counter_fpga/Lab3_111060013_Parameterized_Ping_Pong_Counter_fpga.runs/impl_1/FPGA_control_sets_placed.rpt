@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Oct 21 19:37:05 2023
+| Date         : Sat Oct 21 21:20:41 2023
 | Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file FPGA_control_sets_placed.rpt
 | Design       : FPGA
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     4 |
-|    Minimum number of control sets                        |     4 |
+| Total control sets                                       |     5 |
+|    Minimum number of control sets                        |     5 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    21 |
+| Unused register locations in slices containing registers |    27 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,8 +39,8 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     4 |
-| >= 0 to < 4        |     2 |
+| Total control sets |     5 |
+| >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     0 |
@@ -58,10 +58,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | No                     |               5 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              44 |           12 |
-| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | No                     |               4 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -70,13 +70,14 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  |    Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------+------------------+------------------+----------------+--------------+
-|  CDF/CLK       |                     |                  |                1 |              1 |         1.00 |
-|  CD/dclk       |                     |                  |                1 |              2 |         2.00 |
-|  CDF/CLK       | PPPC/out[3]_i_1_n_0 |                  |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG |                     | rst_n_IBUF       |               12 |             44 |         3.67 |
-+----------------+---------------------+------------------+------------------+----------------+--------------+
++-----------------+---------------------+------------------+------------------+----------------+--------------+
+|   Clock Signal  |    Enable Signal    | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+---------------------+------------------+------------------+----------------+--------------+
+|  CDF/dclk_reg_0 |                     |                  |                1 |              1 |         1.00 |
+|  CD/dclk_reg_0  |                     |                  |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG  |                     |                  |                2 |              2 |         1.00 |
+|  CDF/dclk_reg_0 | PPPC/out[3]_i_1_n_0 |                  |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG  |                     | rst_n_IBUF       |               12 |             44 |         3.67 |
++-----------------+---------------------+------------------+------------------+----------------+--------------+
 
 
