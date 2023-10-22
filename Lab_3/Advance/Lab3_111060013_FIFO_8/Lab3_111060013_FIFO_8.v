@@ -257,6 +257,7 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
         endcase
     end
 
+    // error
     always @ (posedge clk) begin
         error <= ((wp == 4'b1111) && rst_n && wen && !ren) || ((rp == 4'b1000) && rst_n && ren);
     end
