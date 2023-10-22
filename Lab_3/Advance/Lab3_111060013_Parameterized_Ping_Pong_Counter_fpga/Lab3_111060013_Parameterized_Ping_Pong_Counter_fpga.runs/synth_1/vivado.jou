@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Oct 23 02:10:43 2023
-# Process ID: 16984
-# Current directory: C:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1
+# Start of session at: Mon Oct 23 07:44:15 2023
+# Process ID: 23576
+# Current directory: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1
 # Command line: vivado.exe -log FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl
-# Log file: C:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1/FPGA.vds
-# Journal file: C:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1\vivado.jou
+# Log file: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1/FPGA.vds
+# Journal file: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source FPGA.tcl -notrace

@@ -237,14 +237,13 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
     // Combinational: direction
     always @ (*) begin
         newEnable = (enable == 1'b1) && (min < max) && !(out < min) && !(out > max);
-        able_flip = (out > min) && (out < max) && flip;
+        able_flip = (out > min) && (out < max) && flip == 1'b1;
         hit = (direction == 1'b1 && out == max) || (direction == 1'b0 && out == min);
     end
 
     always @ (*) begin
-        if (rst_n == 1'b0) tmp_dir = 1'b1;
+        if (rst_n == 1'b0) tmp_dir = 1'b0;
         else if ((rst_n == 1'b1) && newEnable && (able_flip || hit)) tmp_dir = ~direction;
-        else if (rst_n == 1'b1) tmp_dir = direction;
         else tmp_dir = direction;
     end
 
