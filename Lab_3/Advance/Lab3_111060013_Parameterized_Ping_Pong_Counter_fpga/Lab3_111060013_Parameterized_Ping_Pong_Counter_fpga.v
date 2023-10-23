@@ -21,24 +21,6 @@ module FPGA (clk, rst_n, enable, flip, max, min, out, bit);
     Square_Signal_Generator SSG_rst_n(.in(db_rst_n), .out(ssg_rst_n), .clk(clk));
     Square_Signal_Generator SSG_flip(.in(db_flip), .out(ssg_flip), .clk(clk));
 
-    // rst_n
-    always @ (*) begin
-        if (ssg_rst_n) tmp_rst_count = 27'd0;
-        else tmp_rst_count = rst_count + 1;
-    end
-
-    always @ (*) begin
-        if (ssg_rst_n) tr = 1'b0;
-        else if (rst_count == 27'h7ffffff) tr = 1'b1;
-        else tr = tmp_rst_n;
-    end
-
-    always @ (posedge clk) begin
-        tmp_rst_n <= tr;
-        rst_count <= tmp_rst_count;
-    end
-    // rst_n
-
     // flip
     always @ (*) begin
         if (ssg_flip) tmp_flip_count = 27'd0;
@@ -70,14 +52,15 @@ module FPGA (clk, rst_n, enable, flip, max, min, out, bit);
     );
 
     Parameterized_Ping_Pong_Counter PPPC(
-        .clk(CKT_clk),
-        .rst_n(tmp_rst_n),
+        .clk(clk),
+        .rst_n(!ssg_rst_n),
         .enable(enable),
         .flip(tmp_flip),
         .max(max),
         .min(min),
         .direction(dir),
-        .out(raw_out)
+        .out(raw_out),
+        .dclk(CKT_clk)
     );
 
     SS7 Display(
@@ -220,8 +203,8 @@ module SS7 (in, dir, clk, out, bit);
 
 endmodule
 
-module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, direction, out);
-    input clk, rst_n;
+module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, direction, out, dclk);
+    input clk, rst_n, dclk;
     input enable;
     input flip;
     input [4-1:0] max;
@@ -242,8 +225,13 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
 
     always @ (*) begin
         if (rst_n == 1'b0) tmp_dir = 1'b1;
-        else if (newEnable && (able_flip || hit)) tmp_dir = ~direction;
-        else tmp_dir = direction;
+        else begin
+            if (dclk) begin
+                if (newEnable && (able_flip || hit)) tmp_dir = ~direction;
+                else tmp_dir = direction;
+            end
+            else tmp_dir = direction;
+        end
     end
 
     // DFF: direction
@@ -254,16 +242,21 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
     // Mux: out
     always @ (*) begin
         if (rst_n == 1'b0) tmp_out = min;
-        else if (newEnable && (rst_n == 1'b1)) begin
-            case ({direction, able_flip})
-                2'b00: tmp_out = (out == min) ? out + 1 : out - 1;
-                2'b10: tmp_out = (out == max) ? out - 1 : out + 1;
-                2'b01: tmp_out = out + 1;
-                2'b11: tmp_out = out - 1;
-                default: tmp_out = out;
-            endcase
+        else begin
+            if (dclk) begin
+                if (newEnable && (rst_n == 1'b1)) begin
+                    case ({direction, able_flip})
+                        2'b00: tmp_out = (out == min) ? out + 1 : out - 1;
+                        2'b10: tmp_out = (out == max) ? out - 1 : out + 1;
+                        2'b01: tmp_out = out + 1;
+                        2'b11: tmp_out = out - 1;
+                        default: tmp_out = out;
+                    endcase
+                end
+                else tmp_out = out;
+            end
+            else tmp_out = out;
         end
-        else tmp_out = out;
     end
 
     // DFF: out
@@ -310,11 +303,11 @@ module Clock_Divider_Circuit (clk, rst_n, dclk);
     reg [26:0] count, tmp_count;
 
     always @ (*) begin
-        /*if (rst_n == 1'b0) begin
+        if (rst_n == 1'b0) begin
             tmp_count = 27'd0;
             tmp_dclk = 1'b0;
         end
-        else */if (count == 27'h7ffffff) begin
+        else if (count == 27'h7ffffff) begin
             tmp_count = 27'd0;
             tmp_dclk = 1'b1;
         end

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Oct 23 18:44:45 2023
+| Date         : Mon Oct 23 22:50:44 2023
 | Host         : Utin-Desktop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file FPGA_methodology_drc_routed.rpt -pb FPGA_methodology_drc_routed.pb -rpx FPGA_methodology_drc_routed.rpx
 | Design       : FPGA
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 121
+             Violations found: 93
 +-----------+------------------+-----------------------------+------------+
 | Rule      | Severity         | Description                 | Violations |
 +-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 121        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 93         |
 +-----------+------------------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -494,147 +494,7 @@ Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin rst_count_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#94 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[10]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#95 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[11]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#96 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[12]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#97 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[13]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#98 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[14]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#99 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[15]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#100 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[16]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#101 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[17]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#102 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[18]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#103 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[19]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#104 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#105 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[20]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#106 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[21]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#107 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[22]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#108 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[23]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#109 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[24]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#110 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[25]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#111 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[26]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#112 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#113 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#114 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#115 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#116 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#117 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#118 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#119 Critical Warning
-Non-clocked sequential cell  
-The clock pin rst_count_reg[9]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#120 Critical Warning
-Non-clocked sequential cell  
 The clock pin tmp_flip_reg/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#121 Critical Warning
-Non-clocked sequential cell  
-The clock pin tmp_rst_n_reg/C is not reached by a timing clock
 Related violations: <none>
 
 
