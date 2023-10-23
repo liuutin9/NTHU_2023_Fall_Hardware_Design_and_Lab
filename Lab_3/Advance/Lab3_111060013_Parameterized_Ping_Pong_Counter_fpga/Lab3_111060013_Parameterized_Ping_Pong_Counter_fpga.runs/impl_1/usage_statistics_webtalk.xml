@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Oct 23 07:45:21 2023'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Mon Oct 23 14:23:30 2023'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="3064766" description="" />
-  <keyValuePair key="date_generated" value="Mon Oct 23 07:45:21 2023" description="" />
+  <keyValuePair key="date_generated" value="Mon Oct 23 14:23:30 2023" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2020.2 (64-bit)" description="" />
   <keyValuePair key="project_id" value="58676c432ea24840aed0849b050b9fb8" description="" />
-  <keyValuePair key="project_iteration" value="151" description="" />
+  <keyValuePair key="project_iteration" value="169" description="" />
   <keyValuePair key="random_id" value="31270a58254a52f88c0d63d24e833bc2" description="" />
   <keyValuePair key="registration_id" value="31270a58254a52f88c0d63d24e833bc2" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
@@ -124,17 +124,17 @@
    <keyValuePair key="devstatic" value="0.486018" description="" />
    <keyValuePair key="die" value="xc7a35tcpg236-1" description="" />
    <keyValuePair key="dsp_output_toggle" value="12.500000" description="" />
-   <keyValuePair key="dynamic" value="39.046643" description="" />
+   <keyValuePair key="dynamic" value="38.830085" description="" />
    <keyValuePair key="effective_thetaja" value="5.00" description="" />
    <keyValuePair key="enable_probability" value="0.990000" description="" />
    <keyValuePair key="family" value="artix7" description="" />
    <keyValuePair key="ff_toggle" value="12.500000" description="" />
    <keyValuePair key="flow_state" value="routed" description="" />
    <keyValuePair key="heatsink" value="medium (Medium Profile)" description="" />
-   <keyValuePair key="i/o" value="37.490175" description="" />
+   <keyValuePair key="i/o" value="37.269525" description="" />
    <keyValuePair key="input_toggle" value="12.500000" description="" />
    <keyValuePair key="junction_temp" value="125.0 (C)" description="" />
-   <keyValuePair key="logic" value="0.673648" description="" />
+   <keyValuePair key="logic" value="0.676421" description="" />
    <keyValuePair key="mgtavcc_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_static_current" value="0.000000" description="" />
    <keyValuePair key="mgtavcc_total_current" value="0.000000" description="" />
@@ -145,7 +145,7 @@
    <keyValuePair key="mgtavtt_voltage" value="1.200000" description="" />
    <keyValuePair key="netlist_net_matched" value="NA" description="" />
    <keyValuePair key="off-chip_power" value="0.000000" description="" />
-   <keyValuePair key="on-chip_power" value="39.532660" description="" />
+   <keyValuePair key="on-chip_power" value="39.316102" description="" />
    <keyValuePair key="output_enable" value="1.000000" description="" />
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
@@ -159,7 +159,7 @@
    <keyValuePair key="read_saif" value="False" description="" />
    <keyValuePair key="set/reset_probability" value="0.000000" description="" />
    <keyValuePair key="signal_rate" value="False" description="" />
-   <keyValuePair key="signals" value="0.882818" description="" />
+   <keyValuePair key="signals" value="0.884138" description="" />
    <keyValuePair key="simulation_file" value="None" description="" />
    <keyValuePair key="speedgrade" value="-1" description="" />
    <keyValuePair key="static_prob" value="False" description="" />
@@ -176,21 +176,21 @@
    <keyValuePair key="vccadc_static_current" value="0.020000" description="" />
    <keyValuePair key="vccadc_total_current" value="0.020000" description="" />
    <keyValuePair key="vccadc_voltage" value="1.800000" description="" />
-   <keyValuePair key="vccaux_dynamic_current" value="1.372040" description="" />
+   <keyValuePair key="vccaux_dynamic_current" value="1.363955" description="" />
    <keyValuePair key="vccaux_io_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_static_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_total_current" value="0.000000" description="" />
    <keyValuePair key="vccaux_io_voltage" value="1.800000" description="" />
    <keyValuePair key="vccaux_static_current" value="0.053387" description="" />
-   <keyValuePair key="vccaux_total_current" value="1.425428" description="" />
+   <keyValuePair key="vccaux_total_current" value="1.417342" description="" />
    <keyValuePair key="vccaux_voltage" value="1.800000" description="" />
    <keyValuePair key="vccbram_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vccbram_static_current" value="0.009934" description="" />
    <keyValuePair key="vccbram_total_current" value="0.009934" description="" />
    <keyValuePair key="vccbram_voltage" value="1.000000" description="" />
-   <keyValuePair key="vccint_dynamic_current" value="1.604466" description="" />
+   <keyValuePair key="vccint_dynamic_current" value="1.608559" description="" />
    <keyValuePair key="vccint_static_current" value="0.340686" description="" />
-   <keyValuePair key="vccint_total_current" value="1.945153" description="" />
+   <keyValuePair key="vccint_total_current" value="1.949245" description="" />
    <keyValuePair key="vccint_voltage" value="1.000000" description="" />
    <keyValuePair key="vcco12_dynamic_current" value="0.000000" description="" />
    <keyValuePair key="vcco12_static_current" value="0.000000" description="" />
@@ -212,9 +212,9 @@
    <keyValuePair key="vcco25_static_current" value="0.000000" description="" />
    <keyValuePair key="vcco25_total_current" value="0.000000" description="" />
    <keyValuePair key="vcco25_voltage" value="2.500000" description="" />
-   <keyValuePair key="vcco33_dynamic_current" value="10.597729" description="" />
+   <keyValuePair key="vcco33_dynamic_current" value="10.535275" description="" />
    <keyValuePair key="vcco33_static_current" value="0.001000" description="" />
-   <keyValuePair key="vcco33_total_current" value="10.598729" description="" />
+   <keyValuePair key="vcco33_total_current" value="10.536276" description="" />
    <keyValuePair key="vcco33_voltage" value="3.300000" description="" />
    <keyValuePair key="version" value="2020.2" description="" />
   </section>
@@ -491,10 +491,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:19s" description="" />
+   <keyValuePair key="elapsed" value="00:00:20s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="52.316MB" description="" />
-   <keyValuePair key="memory_peak" value="1068.238MB" description="" />
+   <keyValuePair key="memory_gain" value="39.152MB" description="" />
+   <keyValuePair key="memory_peak" value="1054.312MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
@@ -533,30 +533,40 @@
  </section>
  <section name="vivado_usage" level="1" order="10" description="">
   <section name="gui_handlers" level="2" order="1" description="">
-   <keyValuePair key="basedialog_cancel" value="4" description="" />
-   <keyValuePair key="basedialog_ok" value="8" description="" />
-   <keyValuePair key="basedialog_yes" value="7" description="" />
-   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="7" description="" />
-   <keyValuePair key="gettingstartedview_open_project" value="1" description="" />
-   <keyValuePair key="numjobschooser_number_of_jobs" value="1" description="" />
-   <keyValuePair key="pacommandnames_auto_connect_target" value="1" description="" />
-   <keyValuePair key="pacommandnames_open_hardware_manager" value="1" description="" />
-   <keyValuePair key="paviews_project_summary" value="1" description="" />
-   <keyValuePair key="programdebugtab_open_target" value="1" description="" />
-   <keyValuePair key="programdebugtab_program_device" value="5" description="" />
-   <keyValuePair key="programfpgadialog_program" value="5" description="" />
-   <keyValuePair key="syntheticastatemonitor_cancel" value="1" description="" />
-   <keyValuePair key="touchpointsurveydialog_no" value="1" description="" />
+   <keyValuePair key="basedialog_cancel" value="21" description="" />
+   <keyValuePair key="basedialog_ok" value="30" description="" />
+   <keyValuePair key="basedialog_yes" value="27" description="" />
+   <keyValuePair key="cmdmsgdialog_ok" value="1" description="" />
+   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="34" description="" />
+   <keyValuePair key="gettingstartedview_open_project" value="2" description="" />
+   <keyValuePair key="mainmenumgr_checkpoint" value="4" description="" />
+   <keyValuePair key="mainmenumgr_export" value="4" description="" />
+   <keyValuePair key="mainmenumgr_file" value="2" description="" />
+   <keyValuePair key="mainmenumgr_import" value="4" description="" />
+   <keyValuePair key="mainmenumgr_ip" value="5" description="" />
+   <keyValuePair key="mainmenumgr_project" value="2" description="" />
+   <keyValuePair key="mainmenumgr_text_editor" value="5" description="" />
+   <keyValuePair key="numjobschooser_number_of_jobs" value="2" description="" />
+   <keyValuePair key="pacommandnames_auto_connect_target" value="2" description="" />
+   <keyValuePair key="pacommandnames_open_hardware_manager" value="3" description="" />
+   <keyValuePair key="paviews_project_summary" value="3" description="" />
+   <keyValuePair key="programdebugtab_open_target" value="2" description="" />
+   <keyValuePair key="programdebugtab_program_device" value="23" description="" />
+   <keyValuePair key="programfpgadialog_program" value="23" description="" />
+   <keyValuePair key="syntheticastatemonitor_cancel" value="2" description="" />
+   <keyValuePair key="touchpointsurveydialog_no" value="2" description="" />
   </section>
   <section name="java_command_handlers" level="2" order="2" description="">
-   <keyValuePair key="autoconnecttarget" value="1" description="" />
-   <keyValuePair key="launchprogramfpga" value="5" description="" />
-   <keyValuePair key="openhardwaremanager" value="1" description="" />
-   <keyValuePair key="openproject" value="1" description="" />
-   <keyValuePair key="runbitgen" value="7" description="" />
+   <keyValuePair key="autoconnecttarget" value="2" description="" />
+   <keyValuePair key="exitapp" value="1" description="" />
+   <keyValuePair key="launchprogramfpga" value="23" description="" />
+   <keyValuePair key="openhardwaremanager" value="3" description="" />
+   <keyValuePair key="openproject" value="2" description="" />
+   <keyValuePair key="runbitgen" value="27" description="" />
+   <keyValuePair key="runschematic" value="1" description="" />
   </section>
   <section name="other_data" level="2" order="3" description="">
-   <keyValuePair key="guimode" value="6" description="" />
+   <keyValuePair key="guimode" value="7" description="" />
   </section>
   <section name="project_data" level="2" order="4" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />

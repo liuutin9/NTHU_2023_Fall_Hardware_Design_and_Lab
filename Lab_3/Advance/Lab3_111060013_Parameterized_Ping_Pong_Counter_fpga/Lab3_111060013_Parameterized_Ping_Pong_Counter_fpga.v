@@ -141,7 +141,7 @@ module SS7 (in, dir, clk, out, bit);
         count <= count + 1;
     end
 
-    always @ (count) begin
+    always @ (*) begin
         case (count)
             2'b00: bit = 4'b0111;
             2'b01: bit = 4'b1011;
@@ -150,7 +150,7 @@ module SS7 (in, dir, clk, out, bit);
         endcase
     end
 
-    always @ (count or out_3 or out_2 or out_1 or out_0) begin
+    always @ (*) begin
         case (count)
             2'b00: out = out_3;
             2'b01: out = out_2;
@@ -160,7 +160,7 @@ module SS7 (in, dir, clk, out, bit);
     end
 
     // 3rd bit
-    always @ (in) begin
+    always @ (*) begin
         case (in)
             4'b0000: out_3 = 8'b00000011;
             4'b0001: out_3 = 8'b00000011;
@@ -182,7 +182,7 @@ module SS7 (in, dir, clk, out, bit);
     end
 
     // 2nd bit
-    always @ (in) begin
+    always @ (*) begin
         case (in)
             4'd0: out_2 = 8'b00000011;
             4'd1: out_2 = 8'b10011111;
@@ -204,18 +204,20 @@ module SS7 (in, dir, clk, out, bit);
     end
 
     // 1st bit
-    always @ (dir) begin
+    always @ (*) begin
         case (dir)
             1'b0: out_1 = 8'b11000111;
             1'b1: out_1 = 8'b00111011;
+            default: out_1 = 8'b00111011;
         endcase
     end
 
     // 0th bit
-    always @ (dir) begin
+    always @ (*) begin
         case (dir)
             1'b0: out_0 = 8'b11000111;
             1'b1: out_0 = 8'b00111011;
+            default: out_0 = 8'b00111011;
         endcase
     end
 
@@ -242,8 +244,8 @@ module Parameterized_Ping_Pong_Counter (clk, rst_n, enable, flip, max, min, dire
     end
 
     always @ (*) begin
-        if (rst_n == 1'b0) tmp_dir = 1'b0;
-        else if ((rst_n == 1'b1) && newEnable && (able_flip || hit)) tmp_dir = ~direction;
+        if (rst_n == 1'b0) tmp_dir = 1'b1;
+        else if (newEnable && (able_flip || hit)) tmp_dir = ~direction;
         else tmp_dir = direction;
     end
 
