@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Oct 23 14:23:23 2023
+| Date             : Mon Oct 23 18:44:46 2023
 | Host             : Utin-Desktop running 64-bit major release  (build 9200)
 | Command          : report_power -file FPGA_power_routed.rpt -pb FPGA_power_summary_routed.pb -rpx FPGA_power_routed.rpx
 | Design           : FPGA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 39.316 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 28.759 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 38.830                           |
+| Dynamic (W)              | 28.273                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 5.0                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.676 |      286 |       --- |             --- |
-|   LUT as Logic |     0.568 |       87 |     20800 |            0.42 |
+| Slice Logic    |     0.582 |      258 |       --- |             --- |
+|   LUT as Logic |     0.475 |       73 |     20800 |            0.35 |
 |   CARRY4       |     0.053 |       25 |      8150 |            0.31 |
 |   Register     |     0.049 |      121 |     41600 |            0.29 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       18 |       --- |             --- |
-| Signals        |     0.884 |      263 |       --- |             --- |
-| I/O            |    37.270 |       36 |       106 |           33.96 |
+| Signals        |     0.748 |      234 |       --- |             --- |
+| I/O            |    26.942 |       24 |       106 |           22.64 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    39.316 |          |           |                 |
+| Total          |    28.759 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.949 |       1.609 |      0.341 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.417 |       1.364 |      0.053 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |    10.536 |      10.535 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.719 |       1.378 |      0.341 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.039 |       0.986 |      0.053 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     7.613 |       7.612 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,15 +138,15 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| FPGA        |    38.830 |
-|   CDC       |     0.276 |
-|   CDS       |     0.176 |
+| FPGA        |    28.273 |
+|   CDC       |     0.140 |
+|   CDS       |     0.185 |
 |   De_flip   |     0.016 |
-|   De_rst_n  |     0.013 |
-|   Display   |     0.211 |
-|   PPPC      |     0.553 |
+|   De_rst_n  |     0.016 |
+|   Display   |     0.170 |
+|   PPPC      |     0.496 |
 |   SSG_flip  |     0.003 |
-|   SSG_rst_n |     0.008 |
+|   SSG_rst_n |     0.004 |
 +-------------+-----------+
 
 

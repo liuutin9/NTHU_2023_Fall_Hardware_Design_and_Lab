@@ -1,13 +1,13 @@
 `timescale 1ns/1ps
 
-module FPGA (clk, rst_n, enable, flip, max, min, out, bit, raw_out, max_out, min_out);
+module FPGA (clk, rst_n, enable, flip, max, min, out, bit);
     input clk, rst_n, enable, flip;
     input [3:0] max, min;
     output [7:0] out;
     output [3:0] bit;
 
     wire dir, SS7_clk, CKT_clk;
-    output wire [3:0] raw_out, max_out, min_out;
+    wire [3:0] raw_out;
     wire not_rst_n, db_flip, db_rst_n;
     wire ssg_rst_n, ssg_flip;
     reg tmp_rst_n, tmp_flip, tr, tf;
@@ -20,9 +20,6 @@ module FPGA (clk, rst_n, enable, flip, max, min, out, bit, raw_out, max_out, min
 
     Square_Signal_Generator SSG_rst_n(.in(db_rst_n), .out(ssg_rst_n), .clk(clk));
     Square_Signal_Generator SSG_flip(.in(db_flip), .out(ssg_flip), .clk(clk));
-
-    assign max_out = max;
-    assign min_out = min;
 
     // rst_n
     always @ (*) begin
@@ -313,11 +310,11 @@ module Clock_Divider_Circuit (clk, rst_n, dclk);
     reg [26:0] count, tmp_count;
 
     always @ (*) begin
-        if (rst_n == 1'b0) begin
+        /*if (rst_n == 1'b0) begin
             tmp_count = 27'd0;
             tmp_dclk = 1'b0;
         end
-        else if (count == 27'h7ffffff) begin
+        else */if (count == 27'h7ffffff) begin
             tmp_count = 27'd0;
             tmp_dclk = 1'b1;
         end

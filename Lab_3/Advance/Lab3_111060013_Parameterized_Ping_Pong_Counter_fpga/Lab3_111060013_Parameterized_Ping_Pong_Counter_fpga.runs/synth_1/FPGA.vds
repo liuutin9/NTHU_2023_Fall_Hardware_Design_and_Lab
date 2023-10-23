@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Oct 23 14:22:19 2023
-# Process ID: 6376
+# Start of session at: Mon Oct 23 18:40:42 2023
+# Process ID: 8632
 # Current directory: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1
 # Command line: vivado.exe -log FPGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FPGA.tcl
 # Log file: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1/FPGA.vds
@@ -17,73 +17,145 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21780
+INFO: [Synth 8-7075] Helper process launched with PID 24580
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1015.160 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1017.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'FPGA' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Debounce' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:112]
-INFO: [Synth 8-6155] done synthesizing module 'Debounce' (1#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:112]
-INFO: [Synth 8-6157] synthesizing module 'Square_Signal_Generator' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:96]
-INFO: [Synth 8-6155] done synthesizing module 'Square_Signal_Generator' (2#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:96]
-INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_Circuit' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:308]
-INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_Circuit' (3#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:308]
-INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_SS7' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:279]
-INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_SS7' (4#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:279]
-INFO: [Synth 8-6157] synthesizing module 'Parameterized_Ping_Pong_Counter' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:226]
-INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:261]
-INFO: [Synth 8-6155] done synthesizing module 'Parameterized_Ping_Pong_Counter' (5#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:226]
-INFO: [Synth 8-6157] synthesizing module 'SS7' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:130]
-INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:208]
-INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:217]
-INFO: [Synth 8-6155] done synthesizing module 'SS7' (6#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:130]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (1#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:109]
+INFO: [Synth 8-6157] synthesizing module 'Square_Signal_Generator' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'Square_Signal_Generator' (2#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:93]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_Circuit' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_Circuit' (3#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:305]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_SS7' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_SS7' (4#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:276]
+INFO: [Synth 8-6157] synthesizing module 'Parameterized_Ping_Pong_Counter' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:223]
+INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:258]
+INFO: [Synth 8-6155] done synthesizing module 'Parameterized_Ping_Pong_Counter' (5#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:223]
+INFO: [Synth 8-6157] synthesizing module 'SS7' [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:127]
+INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:205]
+INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'SS7' (6#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:127]
 INFO: [Synth 8-6155] done synthesizing module 'FPGA' (7#1) [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.160 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.160 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.160 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.121 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1015.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1017.121 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'raw_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'raw_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'min_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[0]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[1]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[2]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'max_out[3]'. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FPGA_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/FPGA_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.059 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.203 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -125,25 +197,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1038.203 ; gain = 23.043
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1034.059 ; gain = 16.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -161,37 +233,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -212,34 +284,35 @@ Report Cell Usage:
 |3     |LUT1   |     6|
 |4     |LUT2   |    22|
 |5     |LUT3   |    13|
-|6     |LUT4   |    37|
-|7     |LUT5   |    11|
+|6     |LUT4   |    11|
+|7     |LUT5   |     9|
 |8     |LUT6   |    33|
 |9     |FDRE   |   120|
 |10    |FDSE   |     1|
 |11    |IBUF   |    12|
-|12    |OBUF   |    24|
+|12    |OBUF   |    12|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.312 ; gain = 16.109
-Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1054.312 ; gain = 39.152
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.961 ; gain = 20.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.961 ; gain = 37.840
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1054.312 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1064.750 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1057.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1068.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 24 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1057.742 ; gain = 42.582
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1068.043 ; gain = 50.922
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/synth_1/FPGA.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file FPGA_utilization_synth.rpt -pb FPGA_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 14:22:43 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 18:41:04 2023...
