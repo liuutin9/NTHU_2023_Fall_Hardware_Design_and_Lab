@@ -57,7 +57,14 @@ module Round_Robin_FIFO_Arbiter(clk, rst_n, wen, a, b, c, d, dout, valid);
     end
 
     always @ (*) begin
-        valid = (err == 4'b0000) && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
+        case (ren)
+            4'b0001: valid = !err[3] && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
+            4'b0010: valid = !err[0] && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
+            4'b0100: valid = !err[1] && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
+            4'b1000: valid = !err[2] && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
+            default: valid = 8'd0;
+        endcase
+        // valid = (err == 4'b0000) && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
     end
 
     // count ren
