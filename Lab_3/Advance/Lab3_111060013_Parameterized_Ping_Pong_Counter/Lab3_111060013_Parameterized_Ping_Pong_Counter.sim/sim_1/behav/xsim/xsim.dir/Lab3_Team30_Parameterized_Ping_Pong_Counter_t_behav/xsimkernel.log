@@ -1,0 +1,7 @@
+Running: xsim.dir/Lab3_Team30_Parameterized_Ping_Pong_Counter_t_behav/xsimk.exe -simmode gui -wdb Lab3_Team30_Parameterized_Ping_Pong_Counter_t_behav.wdb -simrunnum 0 -socket 49939
+Design successfully loaded
+Design Loading Memory Usage: 6804 KB (Peak: 6804 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7452 KB (Peak: 7452 KB)
+Simulation CPU Usage: 0 ms

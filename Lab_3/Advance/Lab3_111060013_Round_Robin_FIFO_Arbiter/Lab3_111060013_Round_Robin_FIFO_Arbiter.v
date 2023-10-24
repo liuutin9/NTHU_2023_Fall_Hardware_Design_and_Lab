@@ -12,10 +12,24 @@ module Round_Robin_FIFO_Arbiter(clk, rst_n, wen, a, b, c, d, dout, valid);
     wire [3:0] err;
     reg [3:0] ren, rst_ren;
     reg tmp_valid, rst_valid;
-    reg[7:0] tmp_dout, rst_dout, valid_dout;
+    reg[7:0] tmp_dout, rst_dout, mux_dout;
     wire [3:0] real_ren;
+    reg [3:0] clk_wen;
+    reg clk_rst;
+    reg [3:0] read_invalid;
 
-    assign real_ren = !wen && ren;
+    always @ (posedge clk) begin
+        clk_wen <= wen;
+    end
+
+    always @ (posedge clk) begin
+        clk_rst <= rst_n;
+    end
+
+    assign real_ren[3] = !wen[3] && ren[3];
+    assign real_ren[2] = !wen[2] && ren[2];
+    assign real_ren[1] = !wen[1] && ren[1];
+    assign real_ren[0] = !wen[0] && ren[0];
 
     // dout
     always @ (*) begin
@@ -23,31 +37,27 @@ module Round_Robin_FIFO_Arbiter(clk, rst_n, wen, a, b, c, d, dout, valid);
             tmp_dout = 8'd0;
         end
         else begin
-            if (tmp_valid) begin
-                case (ren)
-                    4'b0001: tmp_dout = QA_Mux;
-                    4'b0010: tmp_dout = QB_Mux;
-                    4'b0100: tmp_dout = QC_Mux;
-                    4'b1000: tmp_dout = QD_Mux;
-                    default: tmp_dout = dout;
-                endcase
-            end
-            else tmp_dout = 8'd0;
+            case (real_ren)
+                4'b0001: tmp_dout = QA_Mux;
+                4'b0010: tmp_dout = QB_Mux;
+                4'b0100: tmp_dout = QC_Mux;
+                4'b1000: tmp_dout = QD_Mux;
+                default: tmp_dout = 8'd0;
+            endcase
         end
     end
 
     always @ (posedge clk) begin
-        dout <= tmp_dout;
+        mux_dout <= tmp_dout;
     end
 
-    // valid
     always @ (*) begin
-        if (!rst_n) tmp_valid = 1'b0;
-        else tmp_valid = (err == 4'b0000) && ((ren & wen) == 4'b0000);
+        if (valid) dout = mux_dout;
+        else dout = 8'd0;
     end
 
-    always @ (posedge clk) begin
-        valid <= tmp_valid;
+    always @ (*) begin
+        valid = (err == 4'b0000) && (({ren[0], ren[3:1]} & clk_wen) == 4'b0000);
     end
 
     // count ren
@@ -67,7 +77,7 @@ module Round_Robin_FIFO_Arbiter(clk, rst_n, wen, a, b, c, d, dout, valid);
         .clk(clk),
         .rst_n(rst_n),
         .wen(wen[0]),
-        .ren(ren[0]),
+        .ren(real_ren[0]),
         .din(a),
         .dout(QA_Mux),
         .error(err[0])
@@ -217,17 +227,13 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
     end
 
     always @ (*) begin
-        if (!rst_n) tmp_out = 8'd0;
-        else tmp_out = DFF[rp];
-    end
-
-    always @ (posedge clk) begin
-        dout <= tmp_out;
+        dout = DFF[rp];
     end
 
     // error
     always @ (*) begin
-        tmp_err = ((wp == 4'b1111) && rst_n && wen && !ren) || ((rp == 4'b1000) && rst_n && ren);
+        if (!rst_n) tmp_err = 1'b1;
+        else tmp_err = ((wp == 4'b1111) && wen == 1'b1) || ((rp == 4'b1000) && ren == 1'b1);
     end
 
     always @ (posedge clk) begin
