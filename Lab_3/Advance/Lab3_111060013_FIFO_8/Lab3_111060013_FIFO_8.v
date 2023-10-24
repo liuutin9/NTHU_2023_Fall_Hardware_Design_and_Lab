@@ -62,7 +62,7 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
     always @ (rp or wp or tmp_din or DFF[7]) begin
         case ({ren, wen})
             2'b00: Mux7 = DFF[7];
-            2'b01: Mux7 = tmp_din;
+            2'b01: Mux7 = /*tmp_din*/din;
             2'b10: Mux7 = DFF[7];
             2'b11: Mux7 = DFF[7];
         endcase
@@ -227,7 +227,7 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
     end
 
     // read enable
-    always @ (ren or wen or DFF[rp]) begin
+    always @ (ren or wen or DFF[rp] or rp) begin
         case ({ren, wen})
             2'b00: tmp_dout = tmp_dout;
             2'b01: tmp_dout = tmp_dout;
@@ -245,16 +245,6 @@ module FIFO_8(clk, rst_n, wen, ren, din, dout, error);
 
     always @ (posedge clk) begin
         dout <= tmp_dout2;
-    end
-
-    // write enable
-    always @ (ren or wen or din) begin
-        case ({ren, wen})
-            2'b00: tmp_din = tmp_din;
-            2'b01: tmp_din = din;
-            2'b10: tmp_din = tmp_din;
-            2'b11: tmp_din = tmp_din;
-        endcase
     end
 
     // error

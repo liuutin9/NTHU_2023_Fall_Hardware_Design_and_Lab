@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 24 09:11:14 2023
+# Process ID: 8880
+# Current directory: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_FIFO_8/Lab3_111060013_FIFO_8.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_FIFO_8/Lab3_111060013_FIFO_8.sim/sim_1/behav/xsim/xsim.dir/Lab3_111060013_FIFO_8_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_FIFO_8/Lab3_111060013_FIFO_8.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_FIFO_8/Lab3_111060013_FIFO_8.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_FIFO_8/Lab3_111060013_FIFO_8.sim/sim_1/behav/xsim/xsim.dir/Lab3_111060013_FIFO_8_t_behav/webtalk/xsim_webtalk.tcl -notrace
