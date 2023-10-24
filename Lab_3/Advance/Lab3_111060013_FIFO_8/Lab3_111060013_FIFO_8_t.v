@@ -1,4 +1,5 @@
-/*`timescale 1ns / 1ps
+/*
+`timescale 1ns / 1ps
 
 module Lab3_111060013_FIFO_8_t;
     reg clk = 1'b1, rst_n = 1'b1, ren, wen;
@@ -43,8 +44,8 @@ module Lab3_111060013_FIFO_8_t;
         #2 $finish;
     end
 
-endmodule*/
-
+endmodule
+*/
 
 `timescale 1ns / 1ps
 
@@ -179,7 +180,4 @@ initial begin
     $finish;
 end
 
-
-
 endmodule
-
