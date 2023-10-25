@@ -1,7 +1,7 @@
-Running: xsim.dir/Lab3_Team30_Round_Robin_Arbiter_t_behav/xsimk.exe -simmode gui -wdb Lab3_Team30_Round_Robin_Arbiter_t_behav.wdb -simrunnum 0 -socket 50185
+Running: xsim.dir/Lab3_Team30_Round_Robin_Arbiter_t_behav/xsimk.exe -simmode gui -wdb Lab3_Team30_Round_Robin_Arbiter_t_behav.wdb -simrunnum 0 -socket 54229
 Design successfully loaded
-Design Loading Memory Usage: 6868 KB (Peak: 6868 KB)
+Design Loading Memory Usage: 6856 KB (Peak: 6856 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 7540 KB (Peak: 7540 KB)
+Simulation Memory Usage: 7516 KB (Peak: 7516 KB)
 Simulation CPU Usage: 0 ms
