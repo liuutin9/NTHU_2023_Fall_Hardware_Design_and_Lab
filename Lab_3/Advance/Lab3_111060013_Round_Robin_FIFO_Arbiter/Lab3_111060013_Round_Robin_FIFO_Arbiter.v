@@ -11,19 +11,12 @@ module Round_Robin_FIFO_Arbiter(clk, rst_n, wen, a, b, c, d, dout, valid);
     wire [7:0] QA_Mux, QB_Mux, QC_Mux, QD_Mux;
     wire [3:0] err;
     reg [3:0] ren, rst_ren;
-    reg tmp_valid, rst_valid;
-    reg[7:0] tmp_dout, rst_dout, mux_dout;
+    reg[7:0] tmp_dout, mux_dout;
     wire [3:0] real_ren;
     reg [3:0] clk_wen;
-    reg clk_rst;
-    reg [3:0] read_invalid;
 
     always @ (posedge clk) begin
         clk_wen <= wen;
-    end
-
-    always @ (posedge clk) begin
-        clk_rst <= rst_n;
     end
 
     assign real_ren[3] = !wen[3] && ren[3];
