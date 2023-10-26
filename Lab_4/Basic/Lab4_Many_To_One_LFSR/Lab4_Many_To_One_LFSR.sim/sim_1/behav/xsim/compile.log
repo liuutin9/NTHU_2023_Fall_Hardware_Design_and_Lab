@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Many_To_One_LFSR
+INFO: [VRFC 10-2458] undeclared symbol in, assumed default net type wire [C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Many_To_One_LFSR_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Many_To_One_LFSR_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

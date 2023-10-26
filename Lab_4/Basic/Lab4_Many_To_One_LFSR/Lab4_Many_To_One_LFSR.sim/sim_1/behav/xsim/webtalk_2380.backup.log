@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 26 16:04:56 2023
+# Process ID: 2380
+# Current directory: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim/xsim.dir/Many_To_One_LFSR_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Many_To_One_LFSR/Lab4_Many_To_One_LFSR.sim/sim_1/behav/xsim/xsim.dir/Many_To_One_LFSR_t_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 26 16:04:57 2023...

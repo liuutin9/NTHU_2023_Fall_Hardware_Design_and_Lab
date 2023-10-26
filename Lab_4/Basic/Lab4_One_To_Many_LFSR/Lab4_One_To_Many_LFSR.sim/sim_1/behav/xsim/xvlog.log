@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_One_To_Many_LFSR/Lab4_One_To_Many_LFSR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_TO_Many_LFSR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_One_To_Many_LFSR/One_To_Many_LFSR_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module One_To_Many_LFSR_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Basic/Lab4_One_To_Many_LFSR/Lab4_One_To_Many_LFSR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

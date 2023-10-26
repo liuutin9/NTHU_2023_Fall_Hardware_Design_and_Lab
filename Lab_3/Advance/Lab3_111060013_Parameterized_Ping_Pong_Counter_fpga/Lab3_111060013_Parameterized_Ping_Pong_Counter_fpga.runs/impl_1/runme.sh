@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/impl_1'
+HD_PWD='C:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log FPGA.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source FPGA.tcl -notrace
 
 

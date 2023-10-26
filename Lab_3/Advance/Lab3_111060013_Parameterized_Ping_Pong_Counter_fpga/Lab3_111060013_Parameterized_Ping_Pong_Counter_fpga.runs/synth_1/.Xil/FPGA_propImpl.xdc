@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Logic_Design_Lab/Lab_3/Advance/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga/Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab3_111060013_Parameterized_Ping_Pong_Counter_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W4 [get_ports {bit[3]}]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
