@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Pre_Test/Lab4_Basic_1/Lab4_Basic_1.srcs/sources_1/new/Lab4_Basic_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab4_Basic_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Pre_Test/Lab4_Basic_1/Lab4_Basic_1.srcs/sources_1/new/Lab4_Basic_1_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab4_Basic_1_t
