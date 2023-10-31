@@ -32,7 +32,7 @@ initial begin
     #2 rst_n <= 1'b1;
        enable <= 1'b1;
        flip <= 1'b0;
-    #7
+    #6
         max = 4'b1111;
         min = 4'b0111;
     #(2)
