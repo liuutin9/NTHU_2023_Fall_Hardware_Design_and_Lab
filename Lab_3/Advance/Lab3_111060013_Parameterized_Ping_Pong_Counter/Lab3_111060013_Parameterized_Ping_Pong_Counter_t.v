@@ -1,6 +1,75 @@
 `timescale 1ns / 1ps
 
 module Lab3_111060013_Parameterized_Ping_Pong_Counter_t;
+
+reg clk = 1'b1;
+reg rst_n = 1'b1;
+reg enable = 1'b1;
+reg flip = 1'b0;
+reg [3:0]max = 4'b1000;
+reg [3:0]min = 4'b0000;
+wire direction;
+wire [3:0] out;
+
+always #1 clk = !clk;
+
+Parameterized_Ping_Pong_Counter P(
+    .clk(clk),
+    .rst_n(rst_n),
+    .enable(enable),
+    .flip(flip),
+    .max(max),
+    .min(min),
+    .direction(direction),
+    .out(out)
+);
+
+
+initial begin
+    #1 rst_n <= 1'b0;
+       max <= 4'b0111;
+       min <= 4'b0100;
+    #2 rst_n <= 1'b1;
+       enable <= 1'b1;
+       flip <= 1'b0;
+    #7
+        max = 4'b1111;
+        min = 4'b0111;
+    #(2)
+        @(negedge clk)flip = 1'b1;
+        @(negedge clk)flip = 1'b0;
+    #(5)
+    #(2)
+    //enable = 0
+    repeat(2*4) @(posedge clk)enable = 1'b0;
+    enable = 1'b1;
+    #(3)
+    //max < min
+    max = 4'b0001;
+    min = 4'b1100;
+    #(5)
+    
+    max = 4'b1001;
+    min = 4'b0010;
+    #(2)
+    max = 4'b1001;
+    min = 4'b0000;
+    #(4)
+    @(negedge clk)flip = 1'b1;
+    @(negedge clk)flip = 1'b0;
+    #(4)
+    // out < min
+    max = 4'b1110;
+    min = 4'b1100;
+    #(5)
+    // out > max
+    max = 4'b1000;
+    min = 4'b0010;
+    #(5)
+	#1 $finish;
+end
+
+/*
     reg clk = 1'b1;
     reg rst_n = 1'b1;
     reg enable;
@@ -37,7 +106,7 @@ module Lab3_111060013_Parameterized_Ping_Pong_Counter_t;
         #24 enable <= 1'b0;
         #4 $finish; 
     end
-
+*/
 endmodule
 
 
