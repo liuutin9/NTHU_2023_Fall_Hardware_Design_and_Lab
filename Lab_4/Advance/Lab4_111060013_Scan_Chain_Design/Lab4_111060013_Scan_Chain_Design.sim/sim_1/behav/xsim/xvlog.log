@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Scan_Chain_Design
-INFO: [VRFC 10-311] analyzing module SDFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design_t.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Lab4_111060013_Scan_Chain_Design_t

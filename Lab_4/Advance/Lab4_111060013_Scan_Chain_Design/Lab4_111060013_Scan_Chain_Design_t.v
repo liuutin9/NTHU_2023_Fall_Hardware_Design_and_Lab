@@ -11,7 +11,7 @@ module Lab4_111060013_Scan_Chain_Design_t;
     always # (1) clk = ~clk;
 
     initial begin
-
+/*
         // reset
         @ (negedge clk)
             rst_n <= 1'b0;
@@ -80,6 +80,46 @@ module Lab4_111060013_Scan_Chain_Design_t;
 
         @ (negedge clk)
             $finish;
+*/
+
+        @(negedge clk)
+        rst_n = 1'b0;
+        @(negedge clk)
+        rst_n = 1'b1;
+        scan_en = 1'b1;
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b0;
+        scan_en = 1'b0;
+        @(negedge clk)
+        scan_en = 1'b1;
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b0;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b1;
+        @(negedge clk)
+        scan_in = 1'b0;
+        #(9*2);
+        $finish;
 
     end
 
