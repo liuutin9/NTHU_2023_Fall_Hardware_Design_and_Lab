@@ -1,0 +1,12 @@
+
+{ 
+    crc :  4146774990181350273  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto fb5afa688d3f4f3d9f3b24a3939026a9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Lab4_111060013_Mealy_Sequence_Detector_t_behav xil_defaultlib.Lab4_111060013_Mealy_Sequence_Detector_t xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Lab4_111060013_Mealy_Sequence_Detector_t_behav/xsimk.exe\"   \"xsim.dir/Lab4_111060013_Mealy_Sequence_Detector_t_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Lab4_111060013_Mealy_Sequence_Detector_t_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
