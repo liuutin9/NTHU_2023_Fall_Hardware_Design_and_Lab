@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Content_Addressable_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab4_111060013_Content_Addressable_Memory_t
