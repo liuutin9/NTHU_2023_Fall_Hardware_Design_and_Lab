@@ -1,26 +1,86 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2023/11/01 08:21:42
-// Design Name: 
-// Module Name: Lab4_111060013_Scan_Chain_Design_t
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+module Lab4_111060013_Scan_Chain_Design_t;
+    reg clk = 1'b1;
+    reg rst_n = 1'b1;
+    reg scan_in, scan_en;
+    wire scan_out;
 
-module Lab4_111060013_Scan_Chain_Design_t(
+    Scan_Chain_Design SCD(clk, rst_n, scan_in, scan_en, scan_out);
 
-    );
+    always # (1) clk = ~clk;
+
+    initial begin
+
+        // reset
+        @ (negedge clk)
+            rst_n <= 1'b0;
+            scan_in <= 1'b0;
+            scan_en <= 1'b0;
+
+        // input
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b1;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b1;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b1;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b1;
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b1;
+            scan_en <= 1'b1;
+
+        // capture
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b0;
+
+        // output
+        repeat(8) begin
+            @ (negedge clk)
+                rst_n <= 1'b1;
+                scan_in <= 1'b0;
+                scan_en <= 1'b1;
+        end
+
+        @ (negedge clk)
+            rst_n <= 1'b1;
+            scan_in <= 1'b0;
+            scan_en <= 1'b0;
+
+        @ (negedge clk)
+            $finish;
+
+    end
+
 endmodule
