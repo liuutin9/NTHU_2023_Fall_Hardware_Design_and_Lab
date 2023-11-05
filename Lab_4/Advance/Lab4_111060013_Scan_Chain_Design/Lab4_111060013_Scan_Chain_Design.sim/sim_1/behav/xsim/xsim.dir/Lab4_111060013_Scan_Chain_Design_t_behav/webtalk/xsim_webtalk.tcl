@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed Nov  1 17:06:38 2023" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Nov  5 17:00:40 2023" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "1bde974c-ecb9-4b54-bb81-4da72a94bdc2" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "df8a581d9d254bc9841646d060204bb6" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "11" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "25" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "49 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "165 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Memory -value "7496_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3036173778 -regid "" -xml C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 2584139409 -regid "" -xml C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Scan_Chain_Design/Lab4_111060013_Scan_Chain_Design.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Scan_Chain_Design_t_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
