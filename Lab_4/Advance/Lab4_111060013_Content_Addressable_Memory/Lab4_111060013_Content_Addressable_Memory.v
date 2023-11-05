@@ -24,25 +24,26 @@ module Content_Addressable_Memory(clk, wen, ren, din, addr, dout, hit);
             if ((isHit | 16'b0) != 16'b0) begin
                 tmp_din = mem[addr];
                 tmp_hit = 1'b1;
-                if (isHit[15]) tmp_dout = 16'd15;
-                else if (isHit[14]) tmp_dout = 16'd14;
-                else if (isHit[13]) tmp_dout = 16'd13;
-                else if (isHit[12]) tmp_dout = 16'd12;
+                if (isHit[15]) tmp_dout = 4'd15;
+                else if (isHit[14]) tmp_dout = 4'd14;
+                else if (isHit[13]) tmp_dout = 4'd13;
+                else if (isHit[12]) tmp_dout = 4'd12;
 
-                else if (isHit[11]) tmp_dout = 16'd11;
-                else if (isHit[10]) tmp_dout = 16'd10;
-                else if (isHit[9]) tmp_dout = 16'd9;
-                else if (isHit[8]) tmp_dout = 16'd8;
+                else if (isHit[11]) tmp_dout = 4'd11;
+                else if (isHit[10]) tmp_dout = 4'd10;
+                else if (isHit[9]) tmp_dout = 4'd9;
+                else if (isHit[8]) tmp_dout = 4'd8;
 
-                else if (isHit[7]) tmp_dout = 16'd7;
-                else if (isHit[6]) tmp_dout = 16'd6;
-                else if (isHit[5]) tmp_dout = 16'd5;
-                else if (isHit[4]) tmp_dout = 16'd4;
+                else if (isHit[7]) tmp_dout = 4'd7;
+                else if (isHit[6]) tmp_dout = 4'd6;
+                else if (isHit[5]) tmp_dout = 4'd5;
+                else if (isHit[4]) tmp_dout = 4'd4;
 
-                else if (isHit[3]) tmp_dout = 16'd3;
-                else if (isHit[2]) tmp_dout = 16'd2;
-                else if (isHit[1]) tmp_dout = 16'd1;
-                else if (isHit[0]) tmp_dout = 16'd0;
+                else if (isHit[3]) tmp_dout = 4'd3;
+                else if (isHit[2]) tmp_dout = 4'd2;
+                else if (isHit[1]) tmp_dout = 4'd1;
+                else if (isHit[0]) tmp_dout = 4'd0;
+                else tmp_dout = 4'd0;
             end
             else begin
                 tmp_din = mem[addr];
