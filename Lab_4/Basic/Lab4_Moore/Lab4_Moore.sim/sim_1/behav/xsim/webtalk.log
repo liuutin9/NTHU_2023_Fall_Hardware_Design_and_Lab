@@ -2,12 +2,12 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct 26 16:18:06 2023
-# Process ID: 17388
-# Current directory: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/xsim.dir/Moore_t_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Tue Nov  7 21:29:59 2023
+# Process ID: 5112
+# Current directory: D:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/xsim.dir/Moore_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/xsim.dir/Moore_t_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Thu Oct 26 16:18:07 2023...
+source D:/Logic_Design_Lab/Lab_4/Basic/Lab4_Moore/Lab4_Moore.sim/sim_1/behav/xsim/xsim.dir/Moore_t_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  7 21:30:00 2023...

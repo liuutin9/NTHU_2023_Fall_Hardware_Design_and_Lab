@@ -32,22 +32,21 @@ module SSD_Decoder(dclk_ssd, scan_in, a, b, scan_out, SSD_out, SSD_bit, rst_n);
     reg [7:0] mux_in, mux_a, mux_b, mux_out;
 
     always @ (posedge dclk_ssd) begin
-        SSD_out <= tmp_out;
         SSD_bit <= tmp_bit;
     end
 
     always @ (*) begin
         if (rst_n == 1'b0) begin
-            tmp_out = 7'd0;
+            SSD_out = 8'd0;
             tmp_bit = 4'b0111;
         end
         else begin
             case (SSD_bit)
-                4'b0111: tmp_out = mux_in;
-                4'b1011: tmp_out = mux_a;
-                4'b1101: tmp_out = mux_b;
-                4'b1110: tmp_out = mux_out;
-                default: tmp_out = SSD_out;
+                4'b0111: SSD_out = mux_in;
+                4'b1011: SSD_out = mux_a;
+                4'b1101: SSD_out = mux_b;
+                4'b1110: SSD_out = mux_out;
+                default: SSD_out = 8'd0;
             endcase
             tmp_bit = {SSD_bit[0], SSD_bit[3:1]};
         end
@@ -112,12 +111,12 @@ endmodule
 module Debounce(clk, in, out);
     input clk, in;
     output wire out;
-    reg [3:0] DFF;
+    reg [7:0] DFF;
 
-    assign out = DFF[3] && DFF[2] && DFF[1] && DFF[0];
+    assign out = DFF == 8'b11111111;
 
     always @ (posedge clk) begin
-        DFF <= {DFF[2:0], in};
+        DFF <= {DFF[6:0], in};
     end
 
 endmodule

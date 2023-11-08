@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1'
+HD_PWD='D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

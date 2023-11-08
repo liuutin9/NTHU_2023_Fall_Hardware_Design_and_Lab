@@ -11,7 +11,7 @@ module Lab4_111060013_Built_In_Self_Test_t;
     always # (1) clk = ~clk;
 
     initial begin
-/*
+        
         @ (negedge clk)
             rst_n <= 1'b0;
             scan_en <= 1'b0;
@@ -40,24 +40,7 @@ module Lab4_111060013_Built_In_Self_Test_t;
 
         @ (negedge clk)
             $finish;
-*/
-        @(negedge clk)
-        rst_n = 1'b0;
-        @(negedge clk)
-        rst_n = 1'b1;
-        scan_en = 1'b1;
-        #(8*2);
-        @(negedge clk)
-        scan_en = 1'b0;
-        @(negedge clk)
-        scan_en = 1'b1;
-        #(7*2);
-        @(negedge clk)
-        scan_en = 1'b0;
-        @(negedge clk)
-        scan_en = 1'b1;
-        #(7*2);
-        $finish;
+
     end
 
 endmodule

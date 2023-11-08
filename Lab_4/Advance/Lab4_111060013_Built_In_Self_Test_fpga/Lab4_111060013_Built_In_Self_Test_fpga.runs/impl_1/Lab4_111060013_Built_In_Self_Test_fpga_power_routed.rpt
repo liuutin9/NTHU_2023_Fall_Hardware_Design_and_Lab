@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Nov  1 16:51:41 2023
-| Host             : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
+| Date             : Tue Nov  7 22:22:03 2023
+| Host             : Utin-Desktop running 64-bit major release  (build 9200)
 | Command          : report_power -file Lab4_111060013_Built_In_Self_Test_fpga_power_routed.rpt -pb Lab4_111060013_Built_In_Self_Test_fpga_power_summary_routed.pb -rpx Lab4_111060013_Built_In_Self_Test_fpga_power_routed.rpx
 | Design           : Lab4_111060013_Built_In_Self_Test_fpga
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 9.285        |
+| Total On-Chip Power (W)  | 7.037        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 9.155        |
-| Device Static (W)        | 0.130        |
+| Dynamic (W)              | 6.932        |
+| Device Static (W)        | 0.105        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 38.6         |
-| Junction Temperature (C) | 71.4         |
+| Max Ambient (C)          | 49.8         |
+| Junction Temperature (C) | 60.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.235 |      162 |       --- |             --- |
-|   LUT as Logic |     0.192 |       66 |     20800 |            0.32 |
-|   Register     |     0.019 |       58 |     41600 |            0.14 |
+| Slice Logic    |     0.220 |      170 |       --- |             --- |
+|   LUT as Logic |     0.180 |       78 |     20800 |            0.38 |
 |   CARRY4       |     0.018 |        6 |      8150 |            0.07 |
+|   Register     |     0.016 |       58 |     41600 |            0.14 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
 |   Others       |     0.000 |       14 |       --- |             --- |
-| Signals        |     0.318 |      131 |       --- |             --- |
-| I/O            |     8.603 |       32 |       106 |           30.19 |
-| Static Power   |     0.130 |          |           |                 |
-| Total          |     9.285 |          |           |                 |
+| Signals        |     0.282 |      143 |       --- |             --- |
+| I/O            |     6.430 |       32 |       106 |           30.19 |
+| Static Power   |     0.105 |          |           |                 |
+| Total          |     7.037 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.658 |       0.601 |      0.057 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.331 |       0.313 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.422 |       2.421 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.587 |       0.550 |      0.037 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.249 |       0.234 |      0.015 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     1.807 |       1.806 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,24 +139,22 @@ Table of Contents
 +----------------------------------------+-----------+
 | Name                                   | Power (W) |
 +----------------------------------------+-----------+
-| Lab4_111060013_Built_In_Self_Test_fpga |     9.155 |
-|   BIST                                 |     0.142 |
-|     MTOL                               |     0.011 |
-|     SCD                                |     0.131 |
-|       SDFF0                            |     0.004 |
-|       SDFF1                            |     0.016 |
-|       SDFF2                            |     0.008 |
-|       SDFF3                            |     0.023 |
-|       SDFF4                            |     0.007 |
-|       SDFF5                            |     0.014 |
-|       SDFF6                            |     0.010 |
-|       SDFF7                            |     0.023 |
-|   CDS                                  |     0.235 |
-|   DB_DCLK                              |     0.015 |
-|   DB_RST_N                             |     0.015 |
-|   OP_DCLK                              |     0.006 |
-|   OP_RST_N                             |     0.026 |
-|   SD                                   |     0.065 |
+| Lab4_111060013_Built_In_Self_Test_fpga |     6.932 |
+|   BIST                                 |     0.083 |
+|     MTOL                               |     0.002 |
+|     SCD                                |     0.081 |
+|       SDFF1                            |     0.002 |
+|       SDFF2                            |     0.004 |
+|       SDFF3                            |     0.016 |
+|       SDFF4                            |     0.006 |
+|       SDFF5                            |     0.016 |
+|       SDFF6                            |     0.007 |
+|       SDFF7                            |     0.004 |
+|   CDS                                  |     0.226 |
+|   DB_DCLK                              |     0.027 |
+|   DB_RST_N                             |     0.028 |
+|   OP_RST_N                             |     0.008 |
+|   SD                                   |     0.080 |
 +----------------------------------------+-----------+
 
 

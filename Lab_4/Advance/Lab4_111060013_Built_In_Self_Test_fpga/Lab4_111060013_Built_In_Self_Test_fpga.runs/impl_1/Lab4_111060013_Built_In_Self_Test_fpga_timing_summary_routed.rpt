@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Nov  1 16:51:41 2023
-| Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
+| Date         : Tue Nov  7 22:22:03 2023
+| Host         : Utin-Desktop running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Lab4_111060013_Built_In_Self_Test_fpga_timing_summary_routed.rpt -pb Lab4_111060013_Built_In_Self_Test_fpga_timing_summary_routed.pb -rpx Lab4_111060013_Built_In_Self_Test_fpga_timing_summary_routed.rpx -warn_on_violation
 | Design       : Lab4_111060013_Built_In_Self_Test_fpga
 | Device       : 7a35t-cpg236
@@ -42,7 +42,7 @@ Table of Contents
 1. checking no_clock (58)
 2. checking constant_clock (0)
 3. checking pulse_width_clock (0)
-4. checking unconstrained_internal_endpoints (119)
+4. checking unconstrained_internal_endpoints (104)
 5. checking no_input_delay (11)
 6. checking no_output_delay (20)
 7. checking multiple_clock (0)
@@ -54,9 +54,9 @@ Table of Contents
 
 1. checking no_clock (58)
 -------------------------
- There are 46 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 54 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 12 register/latch pins with no clock driven by root clock pin: CDS/dclk_ssd_reg/Q (HIGH)
+ There are 4 register/latch pins with no clock driven by root clock pin: CDS/dclk_ssd_reg/Q (HIGH)
 
 
 2. checking constant_clock (0)
@@ -69,9 +69,9 @@ Table of Contents
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints (119)
+4. checking unconstrained_internal_endpoints (104)
 --------------------------------------------------
- There are 119 pins that are not constrained for maximum delay. (HIGH)
+ There are 104 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

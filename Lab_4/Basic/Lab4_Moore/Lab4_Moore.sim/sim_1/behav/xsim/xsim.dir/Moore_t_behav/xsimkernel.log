@@ -1,7 +1,7 @@
-Running: xsim.dir/Moore_t_behav/xsimk.exe -simmode gui -wdb Moore_t_behav.wdb -simrunnum 0 -socket 58846
+Running: xsim.dir/Moore_t_behav/xsimk.exe -simmode gui -wdb Moore_t_behav.wdb -simrunnum 0 -socket 64992
 Design successfully loaded
-Design Loading Memory Usage: 7296 KB (Peak: 7296 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 7308 KB (Peak: 7308 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7924 KB (Peak: 7924 KB)
-Simulation CPU Usage: 0 ms
+Simulation Memory Usage: 7940 KB (Peak: 7940 KB)
+Simulation CPU Usage: 15 ms

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov  5 18:25:50 2023
+# Process ID: 9956
+# Current directory: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Content_Addressable_Memory_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Content_Addressable_Memory/Lab4_111060013_Content_Addressable_Memory.sim/sim_1/behav/xsim/xsim.dir/Lab4_111060013_Content_Addressable_Memory_t_behav/webtalk/xsim_webtalk.tcl -notrace
