@@ -6,15 +6,17 @@ module Lab4_111060013_Built_In_Self_Test_fpga(clk, rst_n, dclk, scan_en, rst_val
     output wire [7:0] SSD_out;
     output wire [3:0] SSD_bit, a, b;
     wire db_rst_n, db_dclk, op_rst_n, op_dclk;
-    wire dclk_ssd;
+    wire dclk_ssd, dclk_db;
 
-    Debounce DB_RST_N(clk, rst_n, db_rst_n);
-    Debounce DB_DCLK(clk, dclk, db_dclk);
+    Debounce DB_RST_N(clk, rst_n, db_rst_n, dclk_db);
+    Debounce DB_DCLK(clk, dclk, db_dclk, dclk_db);
 
     One_Pulse OP_RST_N(clk, db_rst_n, op_rst_n);
     One_Pulse OP_DCLK(clk, db_dclk, op_dclk);
 
     Clock_Divider_SSD CDS(clk, !op_rst_n, dclk_ssd);
+    Clock_Divider_DB CDD(clk, !op_rst_n, dclk_db);
+
     SSD_Decoder SD(dclk_ssd, scan_in, a, b, scan_out, SSD_out, SSD_bit, !op_rst_n);
 
     Built_In_Self_Test BIST(clk, !op_rst_n, scan_en, scan_in, scan_out, op_dclk, a, b, rst_val);
@@ -108,15 +110,16 @@ module SSD_Decoder(dclk_ssd, scan_in, a, b, scan_out, SSD_out, SSD_bit, rst_n);
 
 endmodule
 
-module Debounce(clk, in, out);
-    input clk, in;
+module Debounce(clk, in, out, dclk_db);
+    input clk, in, dclk_db;
     output wire out;
-    reg [7:0] DFF;
+    reg [3:0] DFF;
 
-    assign out = DFF == 8'b11111111;
+    assign out = DFF == 4'hf;
 
     always @ (posedge clk) begin
-        DFF <= {DFF[6:0], in};
+        if (dclk_db) DFF <= {DFF[2:0], in};
+        else DFF <= DFF;
     end
 
 endmodule
@@ -133,6 +136,30 @@ module One_Pulse(clk, in, out);
 
 endmodule
 
+module Clock_Divider_DB(clk, rst_n, dclk_db);
+    input clk, rst_n;
+    output reg dclk_db;
+    reg tmp_dclk;
+    reg [19:0] count, tmp_count;
+
+    always @ (posedge clk) begin
+        dclk_db <= tmp_dclk;
+        count <= tmp_count;
+    end
+
+    always @ (*) begin
+        if (count == 20'hfffff) begin
+            tmp_dclk = 1'b1;
+            tmp_count = 20'd0;
+        end
+        else begin
+            tmp_dclk = 1'b0;
+            tmp_count = count + 20'd1;
+        end
+    end
+
+endmodule
+
 module Clock_Divider_SSD(clk, rst_n, dclk_ssd);
     input clk, rst_n;
     output reg dclk_ssd;
@@ -145,11 +172,11 @@ module Clock_Divider_SSD(clk, rst_n, dclk_ssd);
     end
 
     always @ (*) begin
-        if (rst_n == 1'b0) begin
+        /*if (rst_n == 1'b0) begin
             tmp_dclk = 1'b0;
             tmp_count = 17'd0;
         end
-        else begin
+        else begin*/
             if (count == 17'h1ffff) begin
                 tmp_dclk = 1'b1;
                 tmp_count = 17'd0;
@@ -158,7 +185,7 @@ module Clock_Divider_SSD(clk, rst_n, dclk_ssd);
                 tmp_dclk = 1'b0;
                 tmp_count = count + 17'd1;
             end
-        end
+        // end
     end
 
 endmodule

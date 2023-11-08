@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Nov  7 22:21:50 2023
+| Date         : Wed Nov  8 11:22:09 2023
 | Host         : Utin-Desktop running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Lab4_111060013_Built_In_Self_Test_fpga_control_sets_placed.rpt
 | Design       : Lab4_111060013_Built_In_Self_Test_fpga
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     5 |
-|    Minimum number of control sets                        |     5 |
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    14 |
+| Unused register locations in slices containing registers |     9 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     5 |
+| Total control sets |     7 |
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     2 |
+| >= 8 to < 10       |     4 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,26 +58,28 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |            4 |
+| No           | No                    | No                     |               8 |            5 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              22 |            8 |
-| Yes          | No                    | No                     |               8 |            2 |
+| No           | Yes                   | No                     |              39 |           10 |
+| Yes          | No                    | No                     |              16 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               8 |            5 |
+| Yes          | Yes                   | No                     |               8 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-----------------+--------------------+------------------+----------------+--------------+
-|  Clock Signal  |  Enable Signal  |  Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+-----------------+--------------------+------------------+----------------+--------------+
-|  CDS/CLK       |                 | OP_RST_N/out_reg_0 |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | OP_DCLK/op_dclk | OP_RST_N/out_reg_0 |                5 |              8 |         1.60 |
-|  clk_IBUF_BUFG | OP_RST_N/E[0]   |                    |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG |                 | OP_RST_N/out_reg_0 |                7 |             18 |         2.57 |
-|  clk_IBUF_BUFG |                 |                    |                4 |             20 |         5.00 |
-+----------------+-----------------+--------------------+------------------+----------------+--------------+
++----------------+-----------------+-----------------------+------------------+----------------+--------------+
+|  Clock Signal  |  Enable Signal  |    Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-----------------+-----------------------+------------------+----------------+--------------+
+|  CDS/CLK       |                 | OP_RST_N/out_reg_0    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                 |                       |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | CDD/E[0]        |                       |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | OP_DCLK/op_dclk | OP_RST_N/out_reg_0    |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | OP_RST_N/E[0]   |                       |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG |                 | CDS/count[16]_i_1_n_0 |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                 | CDD/count[19]_i_1_n_0 |                5 |             19 |         3.80 |
++----------------+-----------------+-----------------------+------------------+----------------+--------------+
 
 
