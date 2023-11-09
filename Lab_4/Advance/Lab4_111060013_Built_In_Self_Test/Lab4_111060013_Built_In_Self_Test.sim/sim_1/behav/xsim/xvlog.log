@@ -1,8 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Built_In_Self_Test
 INFO: [VRFC 10-311] analyzing module Many_To_One_LFSR
-INFO: [VRFC 10-2458] undeclared symbol in, assumed default net type wire [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v:21]
+INFO: [VRFC 10-2458] undeclared symbol in, assumed default net type wire [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v:21]
 INFO: [VRFC 10-311] analyzing module Scan_Chain_Design
 INFO: [VRFC 10-311] analyzing module SDFF
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Lab4_111060013_Built_In_Self_Test_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

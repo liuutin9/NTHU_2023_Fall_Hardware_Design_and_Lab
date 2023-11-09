@@ -2,6 +2,6 @@
 2020.2
 Nov 18 2020
 09:47:47
-D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.sim/sim_1/behav/xsim/glbl.v,1698847978,verilog,,,,glbl,,,,,,,,
-D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v,1698847978,verilog,,D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v,,Built_In_Self_Test;Many_To_One_LFSR;SDFF;Scan_Chain_Design,,,,,,,,
-D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v,1699372882,verilog,,,,Lab4_111060013_Built_In_Self_Test_t,,,,,,,,
+C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test.v,1698815618,verilog,,C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v,,Built_In_Self_Test;Many_To_One_LFSR;SDFF;Scan_Chain_Design,,,,,,,,
+C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test/Lab4_111060013_Built_In_Self_Test_t.v,1699497740,verilog,,,,Lab4_111060013_Built_In_Self_Test_t,,,,,,,,
