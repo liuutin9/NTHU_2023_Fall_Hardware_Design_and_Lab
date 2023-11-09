@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Nov  8 11:21:51 2023
-# Process ID: 32248
-# Current directory: D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1
+# Start of session at: Thu Nov  9 15:26:09 2023
+# Process ID: 5908
+# Current directory: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1
 # Command line: vivado.exe -log Lab4_111060013_Built_In_Self_Test_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab4_111060013_Built_In_Self_Test_fpga.tcl -notrace
-# Log file: D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1/Lab4_111060013_Built_In_Self_Test_fpga.vdi
-# Journal file: D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1\vivado.jou
+# Log file: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1/Lab4_111060013_Built_In_Self_Test_fpga.vdi
+# Journal file: C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Lab4_111060013_Built_In_Self_Test_fpga.tcl -notrace

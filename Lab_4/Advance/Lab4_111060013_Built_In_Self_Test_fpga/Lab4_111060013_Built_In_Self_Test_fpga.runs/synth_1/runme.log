@@ -17,78 +17,78 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 39644
+INFO: [Synth 8-7075] Helper process launched with PID 18280
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1019.879 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.332 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Lab4_111060013_Built_In_Self_Test_fpga' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Debounce' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:113]
-INFO: [Synth 8-6155] done synthesizing module 'Debounce' (1#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:113]
-INFO: [Synth 8-6157] synthesizing module 'One_Pulse' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:127]
-INFO: [Synth 8-6155] done synthesizing module 'One_Pulse' (2#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:127]
-INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_SSD' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:163]
-INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_SSD' (3#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:163]
-INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_DB' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:139]
-INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_DB' (4#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:139]
-INFO: [Synth 8-6157] synthesizing module 'SSD_Decoder' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:27]
-INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:63]
-INFO: [Synth 8-226] default block is never used [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:85]
-INFO: [Synth 8-6155] done synthesizing module 'SSD_Decoder' (5#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:27]
-INFO: [Synth 8-6157] synthesizing module 'Built_In_Self_Test' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:193]
-INFO: [Synth 8-6157] synthesizing module 'Many_To_One_LFSR' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:208]
-INFO: [Synth 8-6155] done synthesizing module 'Many_To_One_LFSR' (6#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:208]
-INFO: [Synth 8-6157] synthesizing module 'Scan_Chain_Design' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:229]
-INFO: [Synth 8-6157] synthesizing module 'SDFF' [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:256]
-INFO: [Synth 8-6155] done synthesizing module 'SDFF' (7#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:256]
-INFO: [Synth 8-6155] done synthesizing module 'Scan_Chain_Design' (8#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:229]
-INFO: [Synth 8-6155] done synthesizing module 'Built_In_Self_Test' (9#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:193]
-INFO: [Synth 8-6155] done synthesizing module 'Lab4_111060013_Built_In_Self_Test_fpga' (10#1) [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Lab4_111060013_Built_In_Self_Test_fpga' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Debounce' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:113]
+INFO: [Synth 8-6155] done synthesizing module 'Debounce' (1#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:113]
+INFO: [Synth 8-6157] synthesizing module 'One_Pulse' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'One_Pulse' (2#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:127]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_SSD' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_SSD' (3#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:163]
+INFO: [Synth 8-6157] synthesizing module 'Clock_Divider_DB' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_Divider_DB' (4#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:139]
+INFO: [Synth 8-6157] synthesizing module 'SSD_Decoder' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:63]
+INFO: [Synth 8-226] default block is never used [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'SSD_Decoder' (5#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:27]
+INFO: [Synth 8-6157] synthesizing module 'Built_In_Self_Test' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:193]
+INFO: [Synth 8-6157] synthesizing module 'Many_To_One_LFSR' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:208]
+INFO: [Synth 8-6155] done synthesizing module 'Many_To_One_LFSR' (6#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:208]
+INFO: [Synth 8-6157] synthesizing module 'Scan_Chain_Design' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:229]
+INFO: [Synth 8-6157] synthesizing module 'SDFF' [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'SDFF' (7#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:256]
+INFO: [Synth 8-6155] done synthesizing module 'Scan_Chain_Design' (8#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'Built_In_Self_Test' (9#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'Lab4_111060013_Built_In_Self_Test_fpga' (10#1) [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.879 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.332 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.879 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.332 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1019.879 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1019.332 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1019.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1019.332 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]
-Finished Parsing XDC File [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab4_111060013_Built_In_Self_Test_fpga_propImpl.xdc].
+Parsing XDC File [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]
+Finished Parsing XDC File [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab4_111060013_Built_In_Self_Test_fpga_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Lab4_111060013_Built_In_Self_Test_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1033.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.910 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1034.887 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -127,25 +127,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.910 ; gain = 14.031
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1034.887 ; gain = 15.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1042.949 ; gain = 23.070
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1044.504 ; gain = 25.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -163,37 +163,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -224,25 +224,25 @@ Report Cell Usage:
 |13    |OBUF   |    20|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1049.703 ; gain = 15.793
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1049.703 ; gain = 29.824
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1051.289 ; gain = 16.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1051.289 ; gain = 31.957
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1061.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1063.371 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1061.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1061.801 ; gain = 41.922
-INFO: [Common 17-1381] The checkpoint 'D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/synth_1/Lab4_111060013_Built_In_Self_Test_fpga.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1063.371 ; gain = 44.039
+INFO: [Common 17-1381] The checkpoint 'C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.runs/synth_1/Lab4_111060013_Built_In_Self_Test_fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Lab4_111060013_Built_In_Self_Test_fpga_utilization_synth.rpt -pb Lab4_111060013_Built_In_Self_Test_fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov  8 11:21:45 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 15:26:01 2023...

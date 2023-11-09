@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Logic_Design_Lab/Lab_4/Advance/Lab4_111060013_Built_In_Self_Test_fpga/Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab4_111060013_Built_In_Self_Test_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L1 [get_ports {a[3]}]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1699413680">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1699514724">
   <File Type="BITSTR-BMM" Name="Lab4_111060013_Built_In_Self_Test_fpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Lab4_111060013_Built_In_Self_Test_fpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Lab4_111060013_Built_In_Self_Test_fpga_timing_summary_init.rpt"/>

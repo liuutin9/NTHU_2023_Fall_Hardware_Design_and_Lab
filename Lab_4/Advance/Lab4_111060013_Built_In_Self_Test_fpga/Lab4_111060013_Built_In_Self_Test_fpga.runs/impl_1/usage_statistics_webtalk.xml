@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Wed Nov  8 11:22:29 2023'>
+<webTalkData  fileName='usage_statistics_webtalk.xml'  majorVersion='1' minorVersion='0' timeStamp='Thu Nov  9 15:26:53 2023'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="3064766" description="" />
-  <keyValuePair key="date_generated" value="Wed Nov  8 11:22:29 2023" description="" />
+  <keyValuePair key="date_generated" value="Thu Nov  9 15:26:53 2023" description="" />
   <keyValuePair key="os_platform" value="WIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2020.2 (64-bit)" description="" />
   <keyValuePair key="project_id" value="1710b36f6a164661b04415829e64037c" description="" />
-  <keyValuePair key="project_iteration" value="13" description="" />
-  <keyValuePair key="random_id" value="31270a58254a52f88c0d63d24e833bc2" description="" />
-  <keyValuePair key="registration_id" value="31270a58254a52f88c0d63d24e833bc2" description="" />
+  <keyValuePair key="project_iteration" value="14" description="" />
+  <keyValuePair key="random_id" value="5dca2851f0e65a4282700df606ebece1" description="" />
+  <keyValuePair key="registration_id" value="5dca2851f0e65a4282700df606ebece1" description="" />
   <keyValuePair key="route_design" value="TRUE" description="" />
   <keyValuePair key="target_device" value="xc7a35t" description="" />
   <keyValuePair key="target_family" value="artix7" description="" />
@@ -19,12 +19,12 @@
   <keyValuePair key="tool_flow" value="Vivado" description="" />
  </section>
  <section name="user_environment" level="1" order="2" description="">
-  <keyValuePair key="cpu_name" value="AMD Ryzen 5 5600X 6-Core Processor             " description="" />
-  <keyValuePair key="cpu_speed" value="3700 MHz" description="" />
+  <keyValuePair key="cpu_name" value="11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz" description="" />
+  <keyValuePair key="cpu_speed" value="2496 MHz" description="" />
   <keyValuePair key="os_name" value="Windows Server 2016 or Windows 10" description="" />
   <keyValuePair key="os_release" value="major release  (build 9200)" description="" />
-  <keyValuePair key="system_ram" value="34.000 GB" description="" />
-  <keyValuePair key="total_processors" value="2" description="" />
+  <keyValuePair key="system_ram" value="16.000 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
  </section>
  <section name="phys_opt_design_post_place" level="1" order="3" description="">
   <section name="command_line_options" level="2" order="1" description="">
@@ -150,7 +150,7 @@
    <keyValuePair key="output_load" value="5.000000" description="" />
    <keyValuePair key="output_toggle" value="12.500000" description="" />
    <keyValuePair key="package" value="cpg236" description="" />
-   <keyValuePair key="pct_clock_constrained" value="1.000000" description="" />
+   <keyValuePair key="pct_clock_constrained" value="0.000000" description="" />
    <keyValuePair key="pct_inputs_defined" value="0" description="" />
    <keyValuePair key="platform" value="nt64" description="" />
    <keyValuePair key="process" value="typical" description="" />
@@ -493,10 +493,10 @@
    <keyValuePair key="-verilog_define" value="default::[not_specified]" description="" />
   </section>
   <section name="usage" level="2" order="2" description="">
-   <keyValuePair key="elapsed" value="00:00:19s" description="" />
+   <keyValuePair key="elapsed" value="00:00:31s" description="" />
    <keyValuePair key="hls_ip" value="0" description="" />
-   <keyValuePair key="memory_gain" value="29.824MB" description="" />
-   <keyValuePair key="memory_peak" value="1049.703MB" description="" />
+   <keyValuePair key="memory_gain" value="31.957MB" description="" />
+   <keyValuePair key="memory_peak" value="1051.289MB" description="" />
   </section>
  </section>
  <section name="unisim_transformation" level="1" order="9" description="">
@@ -537,20 +537,20 @@
  </section>
  <section name="vivado_usage" level="1" order="10" description="">
   <section name="gui_handlers" level="2" order="1" description="">
-   <keyValuePair key="basedialog_cancel" value="7" description="" />
-   <keyValuePair key="basedialog_ok" value="25" description="" />
-   <keyValuePair key="basedialog_yes" value="13" description="" />
+   <keyValuePair key="basedialog_cancel" value="9" description="" />
+   <keyValuePair key="basedialog_ok" value="26" description="" />
+   <keyValuePair key="basedialog_yes" value="14" description="" />
    <keyValuePair key="cmdmsgdialog_ok" value="2" description="" />
    <keyValuePair key="createconstraintsfilepanel_file_name" value="1" description="" />
    <keyValuePair key="createsrcfiledialog_file_location" value="1" description="" />
    <keyValuePair key="createsrcfiledialog_file_name" value="1" description="" />
-   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="20" description="" />
+   <keyValuePair key="flownavigatortreepanel_flow_navigator_tree" value="21" description="" />
    <keyValuePair key="fpgachooser_family" value="1" description="" />
    <keyValuePair key="fpgachooser_fpga_table" value="1" description="" />
    <keyValuePair key="fpgachooser_package" value="1" description="" />
    <keyValuePair key="fpgachooser_speed" value="1" description="" />
    <keyValuePair key="gettingstartedview_create_new_project" value="1" description="" />
-   <keyValuePair key="gettingstartedview_open_project" value="2" description="" />
+   <keyValuePair key="gettingstartedview_open_project" value="3" description="" />
    <keyValuePair key="mainmenumgr_window" value="4" description="" />
    <keyValuePair key="numjobschooser_number_of_jobs" value="2" description="" />
    <keyValuePair key="pacommandnames_auto_connect_target" value="3" description="" />
@@ -558,8 +558,8 @@
    <keyValuePair key="pacommandnames_ports_window" value="2" description="" />
    <keyValuePair key="paviews_project_summary" value="5" description="" />
    <keyValuePair key="programdebugtab_open_target" value="3" description="" />
-   <keyValuePair key="programdebugtab_program_device" value="16" description="" />
-   <keyValuePair key="programfpgadialog_program" value="15" description="" />
+   <keyValuePair key="programdebugtab_program_device" value="17" description="" />
+   <keyValuePair key="programfpgadialog_program" value="16" description="" />
    <keyValuePair key="projectnamechooser_choose_project_location" value="1" description="" />
    <keyValuePair key="projectnamechooser_project_name" value="3" description="" />
    <keyValuePair key="signaltreepanel_signal_tree_table" value="53" description="" />
@@ -568,19 +568,19 @@
   </section>
   <section name="java_command_handlers" level="2" order="2" description="">
    <keyValuePair key="autoconnecttarget" value="3" description="" />
-   <keyValuePair key="exitapp" value="2" description="" />
-   <keyValuePair key="launchprogramfpga" value="16" description="" />
+   <keyValuePair key="exitapp" value="3" description="" />
+   <keyValuePair key="launchprogramfpga" value="17" description="" />
    <keyValuePair key="newproject" value="1" description="" />
    <keyValuePair key="openhardwaremanager" value="3" description="" />
-   <keyValuePair key="openproject" value="2" description="" />
-   <keyValuePair key="runbitgen" value="13" description="" />
+   <keyValuePair key="openproject" value="3" description="" />
+   <keyValuePair key="runbitgen" value="14" description="" />
    <keyValuePair key="runimplementation" value="2" description="" />
    <keyValuePair key="savedesign" value="1" description="" />
    <keyValuePair key="showview" value="2" description="" />
    <keyValuePair key="viewtaskimplementation" value="3" description="" />
   </section>
   <section name="other_data" level="2" order="3" description="">
-   <keyValuePair key="guimode" value="3" description="" />
+   <keyValuePair key="guimode" value="4" description="" />
   </section>
   <section name="project_data" level="2" order="4" description="">
    <keyValuePair key="constraintsetcount" value="1" description="" />

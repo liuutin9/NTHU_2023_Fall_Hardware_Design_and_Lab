@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Nov  8 11:22:09 2023
-| Host         : Utin-Desktop running 64-bit major release  (build 9200)
+| Date         : Thu Nov  9 15:26:30 2023
+| Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Lab4_111060013_Built_In_Self_Test_fpga_control_sets_placed.rpt
 | Design       : Lab4_111060013_Built_In_Self_Test_fpga
 | Device       : xc7a35t
@@ -76,8 +76,8 @@ Table of Contents
 |  CDS/CLK       |                 | OP_RST_N/out_reg_0    |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG |                 |                       |                5 |              8 |         1.60 |
 |  clk_IBUF_BUFG | CDD/E[0]        |                       |                1 |              8 |         8.00 |
-|  clk_IBUF_BUFG | OP_DCLK/op_dclk | OP_RST_N/out_reg_0    |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG | OP_RST_N/E[0]   |                       |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | OP_DCLK/op_dclk | OP_RST_N/out_reg_0    |                3 |              8 |         2.67 |
 |  clk_IBUF_BUFG |                 | CDS/count[16]_i_1_n_0 |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG |                 | CDD/count[19]_i_1_n_0 |                5 |             19 |         3.80 |
 +----------------+-----------------+-----------------------+------------------+----------------+--------------+
