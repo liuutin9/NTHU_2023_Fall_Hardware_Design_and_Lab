@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Booth_Multiplier_4bit/Lab5_111060013_Booth_Multiplier_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Booth_Multiplier_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Booth_Multiplier_4bit/Lab5_111060013_Booth_Multiplier_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab5_111060013_Booth_Multiplier_4bit_t
