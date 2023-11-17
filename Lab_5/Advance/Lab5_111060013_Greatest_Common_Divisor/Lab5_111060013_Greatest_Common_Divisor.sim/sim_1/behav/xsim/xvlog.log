@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Greatest_Common_Divisor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab5_111060013_Greatest_Common_Divisor_t

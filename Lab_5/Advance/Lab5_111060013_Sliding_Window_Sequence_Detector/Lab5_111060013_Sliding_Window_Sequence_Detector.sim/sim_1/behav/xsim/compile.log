@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Sliding_Window_Sequence_Detector/Lab5_111060013_Sliding_Window_Sequence_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sliding_Window_Sequence_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Sliding_Window_Sequence_Detector/Lab5_111060013_Sliding_Window_Sequence_Detector_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Lab5_111060013_Sliding_Window_Sequence_Detector_t
