@@ -77,13 +77,8 @@ module Lab5_Team28_Vending_Machine_fpga(rst, insert5, insert10, insert50, cancel
     parameter [8:0] KEY_D = 9'h023;
     parameter [8:0] KEY_F = 9'h02b;
 
-    reg [15:0] nums, next_nums;
     reg [3:0] key_num;
-    reg [9:0] last_key;
-
     wire [7:0] Money_to_SSD;
-    
-    wire shift_down;
     wire [511:0] key_down;
     wire [8:0] last_change;
     wire been_ready;
@@ -119,7 +114,7 @@ module Lab5_Team28_Vending_Machine_fpga(rst, insert5, insert10, insert50, cancel
     );
 
     always @ (posedge clk) begin
-        if (been_ready) begin
+        if (been_ready && key_down[last_change]) begin
             case (last_change)
                 KEY_A: key_num <= 4'b1000;
                 KEY_S: key_num <= 4'b0100;
