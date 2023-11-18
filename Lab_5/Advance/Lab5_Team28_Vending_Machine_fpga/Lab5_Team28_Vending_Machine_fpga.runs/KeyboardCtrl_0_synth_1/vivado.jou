@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Nov 18 12:28:14 2023
+# Process ID: 10828
+# Current directory: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/KeyboardCtrl_0_synth_1
+# Command line: vivado.exe -log KeyboardCtrl_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KeyboardCtrl_0.tcl
+# Log file: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/KeyboardCtrl_0_synth_1/KeyboardCtrl_0.vds
+# Journal file: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/KeyboardCtrl_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source KeyboardCtrl_0.tcl -notrace
