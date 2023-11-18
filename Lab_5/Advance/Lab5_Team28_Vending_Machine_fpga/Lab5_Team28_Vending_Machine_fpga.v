@@ -7,7 +7,7 @@ module Lab5_Team28_Vending_Machine_fpga(rst, insert5, insert10, insert50, cancel
     inout wire PS2_CLK;
     output wire [7:0] display;
     output wire [3:0] digit;
-    output reg [3:0] led;
+    output wire [3:0] led;
 
     wire db_rst, db_insert5, db_insert10, db_insert50, db_cancel;
     wire op_rst, op_insert5, op_insert10, op_insert50, op_cancel;
@@ -114,28 +114,9 @@ module Lab5_Team28_Vending_Machine_fpga(rst, insert5, insert10, insert50, cancel
         .insert50(op_insert50),
         .cancel(op_cancel),
         .asdf(key_num),
-        .sumMoney(Money_to_SSD)
+        .sumMoney(Money_to_SSD),
+        .led(led)
     );
-
-    /*always @ (posedge clk, posedge rst) begin
-        if (rst) begin
-            nums <= 16'b0;
-        end else begin
-            nums <= next_nums;
-        end
-    end
-    always @ (*) begin
-        next_nums = nums;
-        if (been_ready && key_down[last_change] == 1'b1) begin
-            if (key_num != 4'b1111) begin
-                if (shift_down == 1'b1) begin
-                    next_nums = {key_num, nums[15:4]};
-                end else begin
-                    next_nums = {nums[11:0], key_num};
-                end
-            end else next_nums = next_nums;
-        end else next_nums = next_nums;
-    end*/
 
     always @ (posedge clk) begin
         if (been_ready) begin
@@ -155,10 +136,11 @@ module Lab5_Team28_Vending_Machine_fpga(rst, insert5, insert10, insert50, cancel
 
 endmodule
 
-module Money(rst, clk, insert5, insert10, insert50, cancel, asdf, sumMoney);
+module Money(rst, clk, insert5, insert10, insert50, cancel, asdf, sumMoney, led);
     input wire rst, clk, insert5, insert10, insert50, cancel;
     input wire [3:0] asdf;
     output reg [7:0] sumMoney;
+    output reg [3:0] led;
     reg [7:0] tmp_sumMoney;
     reg state, tmp_state;
     reg [26:0] count, tmp_count;
@@ -170,6 +152,13 @@ module Money(rst, clk, insert5, insert10, insert50, cancel, asdf, sumMoney);
     parameter Coke = 8'd30;
     parameter Oolong = 8'd25;
     parameter Water = 8'd20;
+
+    always @ (*) begin
+        led[3] = !(sumMoney < Coffee);
+        led[2] = !(sumMoney < Coke);
+        led[1] = !(sumMoney < Oolong);
+        led[0] = !(sumMoney < Water);
+    end
 
     always @ (posedge clk) begin
         sumMoney <= tmp_sumMoney;
@@ -189,24 +178,52 @@ module Money(rst, clk, insert5, insert10, insert50, cancel, asdf, sumMoney);
                 INSERT_MONEY: begin
                     case ({asdf, cancel})
                         5'b10000: begin
-                            tmp_state = RETURN_MONEY;
-                            tmp_sumMoney = sumMoney - Coffee;
-                            tmp_count = 27'd0;
+                            if (led[3]) begin
+                                tmp_state = RETURN_MONEY;
+                                tmp_sumMoney = sumMoney - Coffee;
+                                tmp_count = 27'd0;
+                            end
+                            else begin
+                                tmp_state = INSERT_MONEY;
+                                tmp_sumMoney = sumMoney;
+                                tmp_count = 27'd0;
+                            end
                         end
                         5'b01000: begin
-                            tmp_state = RETURN_MONEY;
-                            tmp_sumMoney = sumMoney - Coke;
-                            tmp_count = 27'd0;
+                            if (led[2]) begin
+                                tmp_state = RETURN_MONEY;
+                                tmp_sumMoney = sumMoney - Coke;
+                                tmp_count = 27'd0;
+                            end
+                            else begin
+                                tmp_state = INSERT_MONEY;
+                                tmp_sumMoney = sumMoney;
+                                tmp_count = 27'd0;
+                            end
                         end
                         5'b00100: begin
-                            tmp_state = RETURN_MONEY;
-                            tmp_sumMoney = sumMoney - Oolong;
-                            tmp_count = 27'd0;
+                            if (led[1]) begin
+                                tmp_state = RETURN_MONEY;
+                                tmp_sumMoney = sumMoney - Oolong;
+                                tmp_count = 27'd0;
+                            end
+                            else begin
+                                tmp_state = INSERT_MONEY;
+                                tmp_sumMoney = sumMoney;
+                                tmp_count = 27'd0;
+                            end
                         end
                         5'b00010: begin
-                            tmp_state = RETURN_MONEY;
-                            tmp_sumMoney = sumMoney - Water;
-                            tmp_count = 27'd0;
+                            if (led[0]) begin
+                                tmp_state = RETURN_MONEY;
+                                tmp_sumMoney = sumMoney - Water;
+                                tmp_count = 27'd0;
+                            end
+                            else begin
+                                tmp_state = INSERT_MONEY;
+                                tmp_sumMoney = sumMoney;
+                                tmp_count = 27'd0;
+                            end
                         end
                         5'b00001: begin
                             tmp_state = RETURN_MONEY;

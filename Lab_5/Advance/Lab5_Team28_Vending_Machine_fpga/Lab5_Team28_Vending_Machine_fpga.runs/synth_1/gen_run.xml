@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1700288544">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1700292983">
   <File Type="PA-TCL" Name="Lab5_Team28_Vending_Machine_fpga.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Lab5_Team28_Vending_Machine_fpga_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Lab5_Team28_Vending_Machine_fpga_reports.tcl"/>

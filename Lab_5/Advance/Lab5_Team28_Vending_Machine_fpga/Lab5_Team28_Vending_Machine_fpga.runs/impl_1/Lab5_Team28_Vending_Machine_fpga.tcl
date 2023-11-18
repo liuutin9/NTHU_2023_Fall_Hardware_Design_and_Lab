@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1/Lab5_Team28_Vending_Machine_fpga.tcl"
+  variable script "D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1/Lab5_Team28_Vending_Machine_fpga.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,7 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
@@ -130,18 +130,18 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.cache/wt [current_project]
-  set_property parent.project_path C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.xpr [current_project]
-  set_property ip_repo_paths C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/ip [current_project]
+  set_property webtalk.parent_dir D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.cache/wt [current_project]
+  set_property parent.project_path D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.xpr [current_project]
+  set_property ip_repo_paths D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.cache/ip [current_project]
+  set_property ip_output_repo D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/synth_1/Lab5_Team28_Vending_Machine_fpga.dcp
-  read_ip -quiet C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci
+  add_files -quiet D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/synth_1/Lab5_Team28_Vending_Machine_fpga.dcp
+  read_ip -quiet D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc
+  read_xdc D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
