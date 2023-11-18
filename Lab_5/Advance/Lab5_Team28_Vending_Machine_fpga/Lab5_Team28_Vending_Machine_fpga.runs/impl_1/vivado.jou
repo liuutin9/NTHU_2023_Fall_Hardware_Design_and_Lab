@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Nov 18 14:22:33 2023
-# Process ID: 7436
-# Current directory: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1
+# Start of session at: Sat Nov 18 15:36:56 2023
+# Process ID: 13676
+# Current directory: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1
 # Command line: vivado.exe -log Lab5_Team28_Vending_Machine_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab5_Team28_Vending_Machine_fpga.tcl -notrace
-# Log file: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1/Lab5_Team28_Vending_Machine_fpga.vdi
-# Journal file: C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1\vivado.jou
+# Log file: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1/Lab5_Team28_Vending_Machine_fpga.vdi
+# Journal file: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Lab5_Team28_Vending_Machine_fpga.tcl -notrace

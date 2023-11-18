@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sat Nov 18 14:23:07 2023
-| Host             : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
+| Date             : Sat Nov 18 15:37:25 2023
+| Host             : Utin-Desktop running 64-bit major release  (build 9200)
 | Command          : report_power -file Lab5_Team28_Vending_Machine_fpga_power_routed.rpt -pb Lab5_Team28_Vending_Machine_fpga_power_summary_routed.pb -rpx Lab5_Team28_Vending_Machine_fpga_power_routed.rpx
 | Design           : Lab5_Team28_Vending_Machine_fpga
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.490        |
+| Total On-Chip Power (W)  | 4.499        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.415        |
-| Device Static (W)        | 0.075        |
+| Dynamic (W)              | 4.412        |
+| Device Static (W)        | 0.087        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 77.5         |
-| Junction Temperature (C) | 32.5         |
+| Max Ambient (C)          | 62.5         |
+| Junction Temperature (C) | 47.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.657 |      563 |       --- |             --- |
-|   LUT as Logic |     0.555 |      213 |     20800 |            1.02 |
-|   CARRY4       |     0.055 |       22 |      8150 |            0.27 |
-|   Register     |     0.040 |      222 |     41600 |            0.53 |
+| Slice Logic    |     0.705 |      566 |       --- |             --- |
+|   LUT as Logic |     0.608 |      231 |     20800 |            1.11 |
+|   CARRY4       |     0.053 |       22 |      8150 |            0.27 |
+|   Register     |     0.035 |      222 |     41600 |            0.53 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   F7/F8 Muxes  |     0.002 |        2 |     32600 |           <0.01 |
-|   Others       |     0.000 |       30 |       --- |             --- |
-| Signals        |     0.651 |      439 |       --- |             --- |
-| I/O            |     0.107 |       24 |       106 |           22.64 |
-| Static Power   |     0.075 |          |           |                 |
-| Total          |     1.490 |          |           |                 |
+|   F7/F8 Muxes  |     0.004 |        4 |     32600 |            0.01 |
+|   Others       |     0.000 |       29 |       --- |             --- |
+| Signals        |     0.649 |      436 |       --- |             --- |
+| I/O            |     3.058 |       24 |       106 |           22.64 |
+| Static Power   |     0.087 |          |           |                 |
+| Total          |     4.499 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.345 |       1.333 |      0.012 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.016 |       0.003 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.024 |       0.023 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.400 |       1.378 |      0.022 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.125 |       0.111 |      0.014 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.860 |       0.859 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -139,15 +139,15 @@ Table of Contents
 +----------------------------------+-----------+
 | Name                             | Power (W) |
 +----------------------------------+-----------+
-| Lab5_Team28_Vending_Machine_fpga |     1.415 |
-|   DB_RST                         |     0.093 |
-|   MNY                            |     0.677 |
-|   OP_CANCEL                      |     0.031 |
-|   OP_RST                         |     0.010 |
-|   key_de                         |     0.449 |
-|     inst                         |     0.448 |
-|       inst                       |     0.448 |
-|   seven_seg                      |     0.093 |
+| Lab5_Team28_Vending_Machine_fpga |     4.412 |
+|   DB_RST                         |     0.079 |
+|   MNY                            |     0.739 |
+|   OP_CANCEL                      |     0.008 |
+|   OP_RST                         |     0.002 |
+|   key_de                         |     0.475 |
+|     inst                         |     0.474 |
+|       inst                       |     0.474 |
+|   seven_seg                      |     0.097 |
 +----------------------------------+-----------+
 
 
