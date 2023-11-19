@@ -2,12 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Nov 19 21:52:05 2023
-# Process ID: 3944
+# Start of session at: Sun Nov 19 21:50:31 2023
+# Process ID: 4256
 # Current directory: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.sim/sim_1/behav/xsim/xsim.dir/Lab5_111060013_Greatest_Common_Divisor_t_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/Logic_Design_Lab/Lab_5/Advance/Lab5_111060013_Greatest_Common_Divisor/Lab5_111060013_Greatest_Common_Divisor.sim/sim_1/behav/xsim/xsim.dir/Lab5_111060013_Greatest_Common_Divisor_t_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 21:52:06 2023...

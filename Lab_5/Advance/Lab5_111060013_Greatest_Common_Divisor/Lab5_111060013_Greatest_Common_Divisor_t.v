@@ -46,6 +46,30 @@ module Lab5_111060013_Greatest_Common_Divisor_t;
         @ (negedge clk);
 
         @ (negedge clk)
+            a <= 16'd12;
+            b <= 16'd6;
+            start <= 1'b1;
+
+        while (!done) begin
+            @ (negedge clk) start <= 1'b0;
+        end
+
+        @ (negedge clk);
+        @ (negedge clk);
+
+        @ (negedge clk)
+            a <= 16'd90;
+            b <= 16'd75;
+            start <= 1'b1;
+
+        while (!done) begin
+            @ (negedge clk) start <= 1'b0;
+        end
+
+        @ (negedge clk);
+        @ (negedge clk);
+
+        @ (negedge clk)
             $finish;
         
     end

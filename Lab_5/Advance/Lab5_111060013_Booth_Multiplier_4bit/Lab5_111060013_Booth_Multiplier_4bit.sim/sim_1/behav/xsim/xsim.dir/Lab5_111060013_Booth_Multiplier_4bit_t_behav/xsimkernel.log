@@ -1,7 +1,4 @@
-Running: xsim.dir/Lab5_111060013_Booth_Multiplier_4bit_t_behav/xsimk.exe -simmode gui -wdb Lab5_111060013_Booth_Multiplier_4bit_t_behav.wdb -simrunnum 0 -socket 51968
+Running: xsim.dir/Lab5_111060013_Booth_Multiplier_4bit_t_behav/xsimk.exe -simmode gui -wdb Lab5_111060013_Booth_Multiplier_4bit_t_behav.wdb -simrunnum 0 -socket 52754
 Design successfully loaded
-Design Loading Memory Usage: 6812 KB (Peak: 6812 KB)
+Design Loading Memory Usage: 6816 KB (Peak: 6816 KB)
 Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 7620 KB (Peak: 7620 KB)
-Simulation CPU Usage: 0 ms
