@@ -2,3 +2,6 @@ Running: xsim.dir/Lab5_111060013_Booth_Multiplier_4bit_t_behav/xsimk.exe -simmod
 Design successfully loaded
 Design Loading Memory Usage: 6816 KB (Peak: 6816 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7684 KB (Peak: 7684 KB)
+Simulation CPU Usage: 15 ms
