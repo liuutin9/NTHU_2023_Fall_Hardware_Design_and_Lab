@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Nov 18 15:37:11 2023
-| Host         : Utin-Desktop running 64-bit major release  (build 9200)
+| Date         : Thu Nov 23 15:26:25 2023
+| Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_drc -file Lab5_Team28_Vending_Machine_fpga_drc_opted.rpt -pb Lab5_Team28_Vending_Machine_fpga_drc_opted.pb -rpx Lab5_Team28_Vending_Machine_fpga_drc_opted.rpx
 | Design       : Lab5_Team28_Vending_Machine_fpga
 | Device       : xc7a35tcpg236-1

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Logic_Design_Lab/Lab_5/Advance/Lab5_Team28_Vending_Machine_fpga/Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc rfile:../../../Lab5_Team28_Vending_Machine_fpga.srcs/constrs_1/new/fpga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]

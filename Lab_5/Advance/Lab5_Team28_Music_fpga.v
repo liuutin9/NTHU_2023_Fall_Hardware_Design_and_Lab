@@ -465,13 +465,24 @@ always@(posedge clk)begin
         half_second_count <= 26'd1;
     end
     else begin
-        count <= count + 27'd1;
-        half_second_count <= half_second_count + 26'd1;
+        if(count==27'd99999999)begin
+            count <= 27'd0;
+        end
+        else begin
+            count <= count + 27'd1;
+        end
+        
+        if(half_second_count == 26'd49999999)begin
+            half_second_count <= 26'd0;
+        end
+        else begin
+            half_second_count <= half_second_count + 26'd1;
+        end
     end
 end
 
 always@(*)begin
-    if(half_second_count == 26'd0 - 26'd1)begin
+    if(half_second_count == 26'd49999999)begin
         Half_second = 1'b1;
     end
     else begin
@@ -480,7 +491,7 @@ always@(*)begin
 end
 
 always@(*)begin
-    if(count == 27'd0 - 27'd1)begin
+    if(count == 27'd99999999)begin
         One_second = 1'b1;
     end
     else begin
