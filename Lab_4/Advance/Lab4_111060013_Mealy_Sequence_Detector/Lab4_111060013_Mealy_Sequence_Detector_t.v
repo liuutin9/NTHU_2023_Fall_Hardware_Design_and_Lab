@@ -5,6 +5,7 @@ module Lab4_111060013_Mealy_Sequence_Detector_t;
     reg rst_n = 1'b1;
     reg in = 1'b0;
     wire dec;
+    reg [3:0] counter = 4'd0;
 
     Mealy_Sequence_Detector MSD(clk, rst_n, in, dec);
 
@@ -82,7 +83,7 @@ module Lab4_111060013_Mealy_Sequence_Detector_t;
 
         @ (negedge clk)
             $finish;
-
+        
     end
 
 endmodule
