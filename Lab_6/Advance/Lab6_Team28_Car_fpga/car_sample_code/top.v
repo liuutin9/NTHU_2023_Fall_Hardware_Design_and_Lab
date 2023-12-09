@@ -12,38 +12,77 @@ module Top(
     output reg [1:0]right
 );
 
+    parameter STOP = 3'd0;
+    parameter FOWARD = 3'd1;
+    parameter BACK = 3'd2;
+    parameter LEFT = 3'd3;
+    parameter RIGHT = 3'd4;
+
     wire Rst_n, rst_pb, stop;
+    wire [2:0] state;
+    reg [2:0] mode;
     debounce d0(rst_pb, rst, clk);
     onepulse d1(rst_pb, clk, Rst_n);
 
     motor A(
-        .clk(),
-        .rst(),
-        //.mode(),
-        .pwm()
+        .clk(clk),
+        .rst(rst_pb),
+        .mode(mode),
+        .pwm({left_motor, right_motor})
     );
 
     sonic_top B(
-        .clk(), 
-        .rst(), 
-        .Echo(), 
-        .Trig(),
-        .stop()
+        .clk(clk), 
+        .rst(rst_pb), 
+        .Echo(echo), 
+        .Trig(trig),
+        .stop(stop)
     );
     
     tracker_sensor C(
-        .clk(), 
-        .reset(), 
-        .left_signal(), 
-        .right_signal(),
-        .mid_signal(), 
-        //.state()
-       );
+        .clk(clk), 
+        .reset(rst_pb), 
+        .left_signal(left_signal), 
+        .right_signal(right_signal),
+        .mid_signal(mid_signal), 
+        .state(state)
+    );
 
     always @(*) begin
         // [TO-DO] Use left and right to set your pwm
         //if(stop) {left, right} = ???;
         //else  {left, right} = ???;
+        if (stop) mode = STOP;
+        else mode = state;
+    end
+
+    always @ (*) begin
+        case (mode)
+            STOP: begin
+                left = 2'b00;
+                right = 2'b00;
+            end
+            FOWARD: begin
+                left = 2'b10;
+                right = 2'b10;
+            end
+            BACK: begin
+                left = 2'b01;
+                right = 2'b01;
+            end
+            LEFT: begin
+                left = 2'b00;
+                right = 2'b10;
+            end
+            RIGHT: begin
+                left = 2'b10;
+                right = 2'b00;
+            end
+            default: begin
+                left = 2'b00;
+                right = 2'b00;
+            end
+        endcase
     end
 
 endmodule

@@ -1,13 +1,19 @@
 module motor(
     input clk,
     input rst,
-    // input [?? :0]mode,
-    output  [1:0]pwm
+    input [2:0] mode,
+    output [1:0] pwm
 );
 
-    reg [9:0]next_left_motor, next_right_motor;
+    wire [9:0]next_left_motor, next_right_motor;
     reg [9:0]left_motor, right_motor;
     wire left_pwm, right_pwm;
+
+    parameter STOP = 3'd0;
+    parameter FOWARD = 3'd1;
+    parameter BACK = 3'd2;
+    parameter LEFT = 3'd3;
+    parameter RIGHT = 3'd4;
 
     motor_pwm m0(clk, rst, left_motor, left_pwm);
     motor_pwm m1(clk, rst, right_motor, right_pwm);
@@ -21,10 +27,41 @@ module motor(
             right_motor <= next_right_motor;
         end
     end
-    
+
+    assign next_left_motor = 10'd1023;
+    assign next_right_motor = 10'd1023;
+
+    /*always @ (*) begin
+        case (mode)
+            STOP: begin
+                next_left_motor = 10'd0;
+                next_right_motor = 10'd0;
+            end
+            FOWARD: begin
+                next_left_motor = 10'd511;
+                next_right_motor = 10'd511;
+            end
+            BACK: begin
+                next_left_motor = 10'd511;
+                next_right_motor = 10'd511;
+            end
+            LEFT: begin
+                next_left_motor = 10'd0;
+                next_right_motor = 10'd255;
+            end
+            RIGHT: begin
+                next_left_motor = 10'd255;
+                next_right_motor = 10'd0;
+            end
+            default: begin
+                next_left_motor = 10'd0;
+                next_right_motor = 10'd0;
+            end
+        endcase
+    end
+    */
     // [TO-DO] take the right speed for different situation
-
-
+    
     assign pwm = {left_pwm, right_pwm};
 endmodule
 
