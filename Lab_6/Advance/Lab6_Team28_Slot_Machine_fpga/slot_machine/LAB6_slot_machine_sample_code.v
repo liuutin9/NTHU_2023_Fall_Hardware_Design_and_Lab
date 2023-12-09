@@ -4,8 +4,8 @@
 `define MID 10'd2
 `define SLOW 10'd1
 
-module Top(clk, rst, start, vgaRed, vgaBlue, vgaGreen, hsync, vsync);
-	input clk, rst, start;//button
+module Top(clk, rst, start, vgaRed, vgaBlue, vgaGreen, hsync, vsync, start_up);
+	input clk, rst, start, start_up;//button
     output [3:0] vgaRed, vgaGreen, vgaBlue;
     output hsync, vsync;
 	
@@ -21,8 +21,8 @@ module Top(clk, rst, start, vgaRed, vgaBlue, vgaGreen, hsync, vsync);
 	wire [9:0] A_v_count, B_v_count, C_v_count;
 	wire run;
 	//signals
-	wire start_db, rst_db;
-	wire start_op, rst_op;
+	wire start_db, rst_db, start_up_db;
+	wire start_op, rst_op, start_up_op;
 	
 	assign h_cnt_re = h_cnt>>1;
 	assign v_cnt_re = v_cnt>>1;
@@ -36,18 +36,22 @@ module Top(clk, rst, start, vgaRed, vgaBlue, vgaGreen, hsync, vsync);
 	//signals
 	debounce DB0(.s(start), .s_db(start_db), .clk(clk));
 	debounce DB1(.s(rst), .s_db(rst_db), .clk(clk));
+	debounce DB2(.s(start_up), .s_db(start_up_db), .clk(clk));
 	onepulse OP0(.s(start_db), .s_op(start_op), .clk(clk_d22));
 	onepulse OP1(.s(rst_db), .s_op(rst_op), .clk(clk_d22));
+	onepulse OP2(.s(start_up_db), .s_op(start_up_op), .clk(clk_d22));
 	
 	//control
 	state_control SC0(
 		.clk(clk_d22),
 		.rst(rst_op),
 		.start(start_op),
+		.start_up(start_up_op),
 		.A_v_count(A_v_count),
 		.B_v_count(B_v_count),
 		.C_v_count(C_v_count)
 	);
+
 	mem_addr_gen MAG(
 		.h_cnt(h_cnt_re),
 		.v_cnt(v_cnt_re), 
@@ -114,8 +118,8 @@ module clk_div #(parameter n = 2)(clk, clk_d);
 	assign clk_d = count[n-1];
 endmodule
 
-module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
-	input clk, rst, start;
+module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count, start_up);
+	input clk, rst, start, start_up;
 	
 	reg [9:0]A_state, B_state, C_state; 
 	wire [9:0]next_A_state, next_B_state, next_C_state;
@@ -124,7 +128,8 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 	wire [9:0]next_counter;
 	
 	output reg [9:0]A_v_count, B_v_count, C_v_count;
-	wire [9:0]next_A_v_count, next_B_v_count, next_C_v_count;
+	reg [9:0]next_A_v_count, next_B_v_count, next_C_v_count;
+	reg dir, next_dir;
 	
 	reg [9:0]A_to, B_to, C_to;
 	
@@ -137,6 +142,7 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 			A_v_count <= 10'd0;
 			B_v_count <= 10'd0;
 			C_v_count <= 10'd0;
+			dir <= 1'd0;
 		end
 		else begin
 			A_state <= next_A_state;
@@ -146,13 +152,14 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 			A_v_count <= next_A_v_count;
 			B_v_count <= next_B_v_count;
 			C_v_count <= next_C_v_count;
+			dir <= next_dir;
 		end
 	end
 	
 	always@(*)begin
 		case(C_state)
 			`STOP:begin
-				C_to = (start==1'b1 && counter==10'd0)? `SLOW : `STOP;
+				C_to = ((start==1'b1 || start_up==1'b1) && counter==10'd0)? `SLOW : `STOP;
 			end
 			`SLOW:begin
 				C_to = (counter>=10'd959)? `STOP : (counter>=10'd239 && counter<10'd359)? `MID : `SLOW;
@@ -168,7 +175,7 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 	always@(*)begin
 		case(B_state)
 			`STOP:begin
-				B_to = (start==1'b1 && counter==10'd0)? `SLOW : `STOP;
+				B_to = ((start==1'b1 || start_up==1'b1) && counter==10'd0)? `SLOW : `STOP;
 			end
 			`SLOW:begin
 				B_to = (counter>=10'd799)? `STOP : (counter>=10'd239 && counter<10'd359)? `MID : `SLOW;
@@ -184,7 +191,7 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 	always@(*)begin
 		case(A_state)
 			`STOP:begin
-				A_to = (start==1'b1 && counter==10'd0)? `SLOW : `STOP;
+				A_to = ((start==1'b1 || start_up==1'b1) && counter==10'd0)? `SLOW : `STOP;
 			end
 			`SLOW:begin
 				A_to = (counter>=10'd599)? `STOP : (counter>=10'd239 && counter<10'd359)? `MID : `SLOW;
@@ -198,14 +205,58 @@ module state_control(clk, rst, start, A_v_count, B_v_count, C_v_count);
 		endcase
 	end
 	
-	assign next_counter = ((start==1'b0 && counter==10'd0) || (counter >= 10'd1000))? counter : counter+1'b1;
+	assign next_counter = ((start==1'b0 && start_up==1'b0 && counter==10'd0) || (counter >= 10'd1000))? /*counter*/10'd0 : counter+1'b1;
 	assign next_C_state = C_to;
 	assign next_B_state = B_to;
 	assign next_A_state = A_to;
 	
-	assign next_A_v_count = (A_v_count + A_state >= 10'd240)? A_v_count + A_state - 10'd240: A_v_count + A_state;
+	always @ (*) begin
+		if ({A_state, B_state, C_state} == {`STOP, `STOP, `STOP}) begin
+			case ({start_up, start})
+				2'b01: next_dir = 1'd0;
+				default: next_dir = 1'd1;
+			endcase
+		end
+		else begin
+			next_dir = dir;
+		end
+	end
+
+	always @ (*) begin
+		if ({A_state, B_state, C_state} == {`STOP, `STOP, `STOP}) begin
+			case ({start_up, start})
+				2'b01: begin
+					next_A_v_count = (A_v_count + A_state >= 10'd240)? A_v_count + A_state - 10'd240: A_v_count + A_state;
+					next_B_v_count = (B_v_count + B_state >= 10'd240)? B_v_count + B_state - 10'd240: B_v_count + B_state;
+					next_C_v_count = (C_v_count + C_state >= 10'd240)? C_v_count + C_state - 10'd240: C_v_count + C_state;
+				end
+				default: begin
+					next_A_v_count = (A_v_count < A_state)? A_v_count + 10'd240 - A_state: A_v_count - A_state;
+					next_B_v_count = (B_v_count < B_state)? B_v_count + 10'd240 - B_state: B_v_count - B_state;
+					next_C_v_count = (C_v_count < C_state)? C_v_count + 10'd240 - C_state: C_v_count - C_state;
+				end
+			endcase
+		end
+		else begin
+			case (dir)
+				1'd0: begin
+					next_A_v_count = (A_v_count + A_state >= 10'd240)? A_v_count + A_state - 10'd240: A_v_count + A_state;
+					next_B_v_count = (B_v_count + B_state >= 10'd240)? B_v_count + B_state - 10'd240: B_v_count + B_state;
+					next_C_v_count = (C_v_count + C_state >= 10'd240)? C_v_count + C_state - 10'd240: C_v_count + C_state;
+				end
+				default: begin
+					next_A_v_count = (A_v_count < A_state)? A_v_count + 10'd240 - A_state: A_v_count - A_state;
+					next_B_v_count = (B_v_count < B_state)? B_v_count + 10'd240 - B_state: B_v_count - B_state;
+					next_C_v_count = (C_v_count < C_state)? C_v_count + 10'd240 - C_state: C_v_count - C_state;
+				end
+
+			endcase
+		end
+	end
+
+	/*assign next_A_v_count = (A_v_count + A_state >= 10'd240)? A_v_count + A_state - 10'd240: A_v_count + A_state;
 	assign next_B_v_count = (B_v_count + B_state >= 10'd240)? B_v_count + B_state - 10'd240: B_v_count + B_state;
-	assign next_C_v_count = (C_v_count + C_state >= 10'd240)? C_v_count + C_state - 10'd240: C_v_count + C_state;
+	assign next_C_v_count = (C_v_count + C_state >= 10'd240)? C_v_count + C_state - 10'd240: C_v_count + C_state;*/
 		
 endmodule
 

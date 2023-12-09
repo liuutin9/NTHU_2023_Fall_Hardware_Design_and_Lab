@@ -1,0 +1,327 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13492
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1014.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:107]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:107]
+INFO: [Synth 8-6157] synthesizing module 'clk_div__parameterized0' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:107]
+	Parameter n bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div__parameterized0' (1#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:107]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:95]
+INFO: [Synth 8-6157] synthesizing module 'onepulse' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'onepulse' (3#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:85]
+INFO: [Synth 8-6157] synthesizing module 'state_control' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:160]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:176]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'state_control' (4#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:121]
+INFO: [Synth 8-6157] synthesizing module 'mem_addr_gen' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:263]
+INFO: [Synth 8-6155] done synthesizing module 'mem_addr_gen' (5#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:263]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.runs/synth_1/.Xil/Vivado-12256-MSI-Modern-14-B11M/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (6#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.runs/synth_1/.Xil/Vivado-12256-MSI-Modern-14-B11M/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (7#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:278]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (8#1) [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1014.762 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BMG0'
+Finished Parsing XDC File [c:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'BMG0'
+Parsing XDC File [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/cons.xdc]
+Finished Parsing XDC File [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1054.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1054.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1054.105 ; gain = 39.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1054.105 ; gain = 39.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for BMG0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1054.105 ; gain = 39.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'A_state_reg' in module 'state_control'
+INFO: [Synth 8-802] inferred FSM for state register 'B_state_reg' in module 'state_control'
+INFO: [Synth 8-802] inferred FSM for state register 'C_state_reg' in module 'state_control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_C_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:162]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_C_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:162]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                       0000000000
+                 iSTATE0 |                               01 |                       0000000001
+                 iSTATE2 |                               10 |                       0000000010
+                 iSTATE1 |                               11 |                       0000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'C_state_reg' using encoding 'sequential' in module 'state_control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_C_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:162]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_B_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:178]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_B_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:178]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                       0000000000
+                 iSTATE0 |                               01 |                       0000000001
+                 iSTATE2 |                               10 |                       0000000010
+                 iSTATE1 |                               11 |                       0000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'B_state_reg' using encoding 'sequential' in module 'state_control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_B_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:178]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_A_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:194]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_A_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:194]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                       0000000000
+                 iSTATE2 |                              010 |                       0000000001
+                 iSTATE1 |                              100 |                       0000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'A_state_reg' using encoding 'one-hot' in module 'state_control'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_A_to_reg' [C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/slot_machine/LAB6_slot_machine_sample_code.v:194]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1054.105 ; gain = 39.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   17 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 9     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 19    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 10    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP MAG/pixel_addr, operation Mode is: C+A*(B:0x140).
+DSP Report: operator MAG/pixel_addr is absorbed into DSP MAG/pixel_addr.
+DSP Report: operator MAG/pixel_addr0 is absorbed into DSP MAG/pixel_addr.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1054.105 ; gain = 39.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mem_addr_gen | C+A*(B:0x140) | 17     | 9      | 9      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1080.781 ; gain = 66.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1080.930 ; gain = 66.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1100.020 ; gain = 85.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module BMG0 has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |BUFG        |     2|
+|3     |CARRY4      |    44|
+|4     |DSP48E1     |     1|
+|5     |LUT1        |    46|
+|6     |LUT2        |    57|
+|7     |LUT3        |    14|
+|8     |LUT4        |    28|
+|9     |LUT5        |    66|
+|10    |LUT6        |    92|
+|11    |FDRE        |   106|
+|12    |FDSE        |     3|
+|13    |LD          |     3|
+|14    |IBUF        |     4|
+|15    |OBUF        |    14|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1107.789 ; gain = 53.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1107.789 ; gain = 93.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1114.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1114.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 9 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1114.125 ; gain = 99.363
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  9 12:00:54 2023...
