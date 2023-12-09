@@ -31,7 +31,6 @@ module counter(clk, rst_n, start, done);
     end
 
     always@(*) begin
-        next_count = count;
         if (start) begin
             if (count == 27'd100000000) begin
                 done = 1;
@@ -44,7 +43,7 @@ module counter(clk, rst_n, start, done);
         end
         else begin
             done = 0;
-            next_count = 0;
+            next_count = 27'd0;
         end
     end
 endmodule
