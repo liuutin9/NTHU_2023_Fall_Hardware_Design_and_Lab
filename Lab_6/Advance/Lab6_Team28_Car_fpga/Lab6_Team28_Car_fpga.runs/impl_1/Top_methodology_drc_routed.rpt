@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Dec  9 20:28:26 2023
+| Date         : Tue Dec 12 02:46:34 2023
 | Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 99
+             Violations found: 105
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 98         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 104        |
 | LUTAR-1   | Warning          | LUT drives async reset alert | 1          |
 +-----------+------------------+------------------------------+------------+
 
@@ -500,25 +500,55 @@ Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin d0/DFF_reg[0]/C is not reached by a timing clock
+The clock pin C/state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin d0/DFF_reg[1]/C is not reached by a timing clock
+The clock pin C/state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin d0/DFF_reg[2]/C is not reached by a timing clock
+The clock pin C/state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin d0/DFF_reg[3]/C is not reached by a timing clock
+The clock pin C/strong_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin C/strong_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin C/strong_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin d0/DFF_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin d0/DFF_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin d0/DFF_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin d0/DFF_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
 The clock pin d0/DFF_reg[4]/C is not reached by a timing clock
 Related violations: <none>

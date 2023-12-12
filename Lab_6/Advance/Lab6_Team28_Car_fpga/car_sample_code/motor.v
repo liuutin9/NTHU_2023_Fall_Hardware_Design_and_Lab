@@ -14,6 +14,8 @@ module motor(
     parameter BACK = 3'd2;
     parameter LEFT = 3'd3;
     parameter RIGHT = 3'd4;
+    parameter STRONG_LEFT = 3'd5;
+    parameter STRONG_RIGHT = 3'd6;
 
     motor_pwm m0(clk, rst, left_motor, left_pwm);
     motor_pwm m1(clk, rst, right_motor, right_pwm);
@@ -23,14 +25,14 @@ module motor(
             left_motor <= 10'd0;
             right_motor <= 10'd0;
         end else begin
-            left_motor <= next_left_motor;
-            right_motor <= next_right_motor;
+            left_motor <= 10'd1023;
+            right_motor <= 10'd1023;
         end
     end
-
-    assign next_left_motor = 10'd1023;
-    assign next_right_motor = 10'd1023;
-
+    /*
+    assign next_left_motor = 10'd800;
+    assign next_right_motor = 10'd800;
+    */
     /*always @ (*) begin
         case (mode)
             STOP: begin
@@ -38,12 +40,12 @@ module motor(
                 next_right_motor = 10'd0;
             end
             FOWARD: begin
-                next_left_motor = 10'd511;
-                next_right_motor = 10'd511;
+                next_left_motor = 10'd800;
+                next_right_motor = 10'd800;
             end
             BACK: begin
-                next_left_motor = 10'd511;
-                next_right_motor = 10'd511;
+                next_left_motor = 10'd800;
+                next_right_motor = 10'd800;
             end
             LEFT: begin
                 next_left_motor = 10'd0;

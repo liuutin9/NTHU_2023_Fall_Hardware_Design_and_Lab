@@ -17,12 +17,16 @@ module Top(
     parameter BACK = 3'd2;
     parameter LEFT = 3'd3;
     parameter RIGHT = 3'd4;
+    parameter STRONG_LEFT = 3'd5;
+    parameter STRONG_RIGHT = 3'd6;
 
     wire Rst_n, rst_pb, stop;
     wire [2:0] state;
     reg [2:0] mode;
     debounce d0(rst_pb, rst, clk);
     onepulse d1(rst_pb, clk, Rst_n);
+
+    // reg [24:0] state_dclk;
 
     motor A(
         .clk(clk),
@@ -78,9 +82,17 @@ module Top(
                 left = 2'b10;
                 right = 2'b00;
             end
+            STRONG_LEFT: begin
+                left = 2'b01;
+                right = 2'b10;
+            end
+            STRONG_RIGHT: begin
+                left = 2'b10;
+                right = 2'b01;
+            end
             default: begin
-                left = 2'b00;
-                right = 2'b00;
+                left = 2'b01;
+                right = 2'b01;
             end
         endcase
     end
