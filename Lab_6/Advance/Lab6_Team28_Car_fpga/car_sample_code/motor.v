@@ -18,16 +18,7 @@ module motor(
 
     motor_pwm m0(clk, rst, left_motor, left_pwm);
     motor_pwm m1(clk, rst, right_motor, right_pwm);
-    
-    /*always@(posedge clk)begin
-        if(rst)begin
-            left_motor <= 10'd0;
-            right_motor <= 10'd0;
-        end else begin
-            left_motor <= 10'd1023;
-            right_motor <= 10'd1023;
-        end
-    end*/
+
 
     assign left_motor = 10'd1023;
     assign right_motor = 10'd1023;
