@@ -29,39 +29,6 @@ module motor(
             right_motor <= 10'd1023;
         end
     end
-    /*
-    assign next_left_motor = 10'd800;
-    assign next_right_motor = 10'd800;
-    */
-    /*always @ (*) begin
-        case (mode)
-            STOP: begin
-                next_left_motor = 10'd0;
-                next_right_motor = 10'd0;
-            end
-            FOWARD: begin
-                next_left_motor = 10'd800;
-                next_right_motor = 10'd800;
-            end
-            BACK: begin
-                next_left_motor = 10'd800;
-                next_right_motor = 10'd800;
-            end
-            LEFT: begin
-                next_left_motor = 10'd0;
-                next_right_motor = 10'd255;
-            end
-            RIGHT: begin
-                next_left_motor = 10'd255;
-                next_right_motor = 10'd0;
-            end
-            default: begin
-                next_left_motor = 10'd0;
-                next_right_motor = 10'd0;
-            end
-        endcase
-    end
-    */
     // [TO-DO] take the right speed for different situation
     
     assign pwm = {left_pwm, right_pwm};
