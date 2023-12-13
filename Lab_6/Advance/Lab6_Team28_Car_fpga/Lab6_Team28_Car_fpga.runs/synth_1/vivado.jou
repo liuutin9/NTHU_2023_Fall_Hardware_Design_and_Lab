@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Dec 13 17:07:00 2023
-# Process ID: 8628
+# Start of session at: Wed Dec 13 19:35:54 2023
+# Process ID: 12312
 # Current directory: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Car_fpga/Lab6_Team28_Car_fpga.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Car_fpga/Lab6_Team28_Car_fpga.runs/synth_1/Top.vds

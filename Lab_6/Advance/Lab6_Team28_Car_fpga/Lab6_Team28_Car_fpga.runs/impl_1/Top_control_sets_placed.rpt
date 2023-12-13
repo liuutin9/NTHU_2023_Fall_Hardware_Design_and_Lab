@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Dec 13 17:09:12 2023
+| Date         : Wed Dec 13 19:36:50 2023
 | Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     8 |
-|    Minimum number of control sets                        |     8 |
+| Total control sets                                       |     7 |
+|    Minimum number of control sets                        |     7 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    34 |
+| Unused register locations in slices containing registers |    37 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     8 |
-| >= 0 to < 4        |     4 |
+| Total control sets |     7 |
+| >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     2 |
-| >= 8 to < 10       |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,29 +58,28 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               9 |            6 |
-| No           | No                    | Yes                    |              58 |           14 |
-| No           | Yes                   | No                     |              13 |            4 |
+| No           | No                    | No                     |              12 |            7 |
+| No           | No                    | Yes                    |              58 |           15 |
+| No           | Yes                   | No                     |               8 |            2 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               1 |            1 |
-| Yes          | Yes                   | No                     |              21 |            7 |
+| Yes          | Yes                   | No                     |              20 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  |       Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------------+------------------+------------------+----------------+--------------+
-|  B/clk1/CLK    |                           | d0/SR[0]         |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | C/strong_state[0]_i_1_n_0 | d0/SR[0]         |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | B/u1/trig0                | d0/SR[0]         |                1 |              1 |         1.00 |
-|  B/clk1/CLK    |                           |                  |                2 |              3 |         1.50 |
-|  clk_IBUF_BUFG |                           |                  |                4 |              6 |         1.50 |
-|  clk_IBUF_BUFG |                           | B/clk1/clear     |                2 |              7 |         3.50 |
-|  B/clk1/CLK    | B/u2/count[19]_i_1_n_0    | d0/SR[0]         |                6 |             20 |         3.33 |
-|  clk_IBUF_BUFG |                           | d0/SR[0]         |               15 |             63 |         4.20 |
-+----------------+---------------------------+------------------+------------------+----------------+--------------+
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | B/u1/trig0             | d0/rst_pb        |                1 |              1 |         1.00 |
+|  B/clk1/CLK    |                        | d0/rst_pb        |                1 |              1 |         1.00 |
+|  B/clk1/CLK    |                        |                  |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG |                        | B/clk1/clear     |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG |                        |                  |                5 |              9 |         1.80 |
+|  B/clk1/CLK    | B/u2/count[19]_i_1_n_0 | d0/rst_pb        |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG |                        | d0/rst_pb        |               15 |             58 |         3.87 |
++----------------+------------------------+------------------+------------------+----------------+--------------+
 
 
