@@ -5,8 +5,7 @@ module motor(
     output [1:0] pwm
 );
 
-    wire [9:0]next_left_motor, next_right_motor;
-    reg [9:0]left_motor, right_motor;
+    wire [9:0]left_motor, right_motor;
     wire left_pwm, right_pwm;
 
     parameter STOP = 3'd0;
@@ -20,7 +19,7 @@ module motor(
     motor_pwm m0(clk, rst, left_motor, left_pwm);
     motor_pwm m1(clk, rst, right_motor, right_pwm);
     
-    always@(posedge clk)begin
+    /*always@(posedge clk)begin
         if(rst)begin
             left_motor <= 10'd0;
             right_motor <= 10'd0;
@@ -28,7 +27,11 @@ module motor(
             left_motor <= 10'd1023;
             right_motor <= 10'd1023;
         end
-    end
+    end*/
+
+    assign left_motor = 10'd1023;
+    assign right_motor = 10'd1023;
+
     // [TO-DO] take the right speed for different situation
     
     assign pwm = {left_pwm, right_pwm};
