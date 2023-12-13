@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Dec 12 02:45:57 2023
+| Date         : Wed Dec 13 17:09:12 2023
 | Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               9 |            4 |
-| No           | No                    | Yes                    |              58 |           17 |
+| No           | No                    | No                     |               9 |            6 |
+| No           | No                    | Yes                    |              58 |           14 |
 | No           | Yes                   | No                     |              13 |            4 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               1 |            1 |
-| Yes          | Yes                   | No                     |              21 |            5 |
+| Yes          | Yes                   | No                     |              21 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,14 +73,14 @@ Table of Contents
 +----------------+---------------------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  |       Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------------------+------------------+------------------+----------------+--------------+
+|  B/clk1/CLK    |                           | d0/SR[0]         |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | C/strong_state[0]_i_1_n_0 | d0/SR[0]         |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | B/u1/trig0                | d0/SR[0]         |                1 |              1 |         1.00 |
-|  B/clk1/CLK    |                           | d0/SR[0]         |                1 |              1 |         1.00 |
 |  B/clk1/CLK    |                           |                  |                2 |              3 |         1.50 |
-|  clk_IBUF_BUFG |                           |                  |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG |                           |                  |                4 |              6 |         1.50 |
 |  clk_IBUF_BUFG |                           | B/clk1/clear     |                2 |              7 |         3.50 |
-|  B/clk1/CLK    | B/u2/count[19]_i_1_n_0    | d0/SR[0]         |                4 |             20 |         5.00 |
-|  clk_IBUF_BUFG |                           | d0/SR[0]         |               18 |             63 |         3.50 |
+|  B/clk1/CLK    | B/u2/count[19]_i_1_n_0    | d0/SR[0]         |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG |                           | d0/SR[0]         |               15 |             63 |         4.20 |
 +----------------+---------------------------+------------------+------------------+----------------+--------------+
 
 

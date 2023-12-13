@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 13 16:05:44 2023
+# Process ID: 9008
+# Current directory: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4524 C:\Logic_Design_Lab\Lab_6\Advance\Lab6_Team28_Slot_Machine_fpga\Lab6_Team28_Slot_Machine_fpga.xpr
+# Log file: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1018.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 17:47:11 2023...

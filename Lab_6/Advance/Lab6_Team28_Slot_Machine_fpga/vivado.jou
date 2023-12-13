@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Dec 13 16:05:44 2023
+# Process ID: 9008
+# Current directory: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4524 C:\Logic_Design_Lab\Lab_6\Advance\Lab6_Team28_Slot_Machine_fpga\Lab6_Team28_Slot_Machine_fpga.xpr
+# Log file: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/vivado.log
+# Journal file: C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Logic_Design_Lab/Lab_6/Advance/Lab6_Team28_Slot_Machine_fpga/Lab6_Team28_Slot_Machine_fpga.xpr
+update_compile_order -fileset sources_1
