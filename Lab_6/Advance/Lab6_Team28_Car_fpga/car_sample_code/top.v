@@ -56,7 +56,7 @@ module Top(
         // [TO-DO] Use left and right to set your pwm
         //if(stop) {left, right} = ???;
         //else  {left, right} = ???;
-        if (stop) mode = STOP;
+        if (stop) mode = state;
         else mode = state;
     end
 

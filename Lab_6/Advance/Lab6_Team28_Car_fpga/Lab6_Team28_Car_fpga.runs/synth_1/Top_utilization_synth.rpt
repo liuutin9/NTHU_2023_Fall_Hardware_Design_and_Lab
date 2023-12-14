@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Dec 13 20:53:12 2023
+| Date         : Thu Dec 14 16:33:09 2023
 | Host         : MSI-Modern-14-B11M running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
 | Design       : Top
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  294 |     0 |     20800 |  1.41 |
-|   LUT as Logic          |  294 |     0 |     20800 |  1.41 |
+| Slice LUTs*             |   97 |     0 |     20800 |  0.47 |
+|   LUT as Logic          |   97 |     0 |     20800 |  0.47 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |   98 |     0 |     41600 |  0.24 |
-|   Register as Flip Flop |   98 |     0 |     41600 |  0.24 |
+| Slice Registers         |   66 |     0 |     41600 |  0.16 |
+|   Register as Flip Flop |   66 |     0 |     41600 |  0.16 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 58    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 40    |          Yes |       Reset |            - |
+| 8     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -80,8 +80,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    2 |     0 |        90 |  2.22 |
-|   DSP48E1 only |    2 |       |           |       |
+| DSPs           |    1 |     0 |        90 |  1.11 |
+|   DSP48E1 only |    1 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   13 |     0 |       106 | 12.26 |
+| Bonded IOB                  |   12 |     0 |       106 | 11.32 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -150,18 +150,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  150 |                 LUT |
-| LUT4     |   82 |                 LUT |
-| LUT3     |   78 |                 LUT |
-| CARRY4   |   61 |          CarryLogic |
+| LUT2     |   77 |                 LUT |
 | FDCE     |   58 |        Flop & Latch |
-| LUT6     |   46 |                 LUT |
-| FDRE     |   40 |        Flop & Latch |
-| LUT5     |   26 |                 LUT |
-| LUT1     |   11 |                 LUT |
+| LUT4     |   27 |                 LUT |
+| CARRY4   |   22 |          CarryLogic |
+| LUT6     |   12 |                 LUT |
+| FDRE     |    8 |        Flop & Latch |
 | OBUF     |    7 |                  IO |
-| IBUF     |    6 |                  IO |
-| DSP48E1  |    2 |    Block Arithmetic |
+| IBUF     |    5 |                  IO |
+| LUT3     |    4 |                 LUT |
+| LUT1     |    3 |                 LUT |
+| LUT5     |    2 |                 LUT |
+| DSP48E1  |    1 |    Block Arithmetic |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
